@@ -1,0 +1,84 @@
+header.hide {
+    display: none;
+}
+.navbar {
+    background: #fcfcfc;
+    height: 55px;
+    font-family: "Open Sans", sans-serif;
+}
+.header-pro-logo {
+    max-height: 28px;
+    object-fit: contain;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+nav .nav-link {
+    font-size: var(--font-size-eleven);
+    color: black;
+}
+
+nav .nav-link:hover {
+    color: #76cc11;
+}
+.dropdown-item.nav-link:hover {
+    color: black;
+}
+
+.bell-icon {
+    width: 1rem !important;
+}
+@media (max-width: 576px) {
+    .bell-icon {
+        width: 1rem !important;
+    }
+}
+@media (max-width: 767px) {
+    .modal-dialog {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar-toggler,
+    .nav-link {
+        font-size: 14px !important;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 80%;
+        right: 7%;
+        background: #fff;
+        filter: drop-shadow(0 0 4px #ccc);
+        width: 45%;
+        padding: 12px;
+        z-index: 9999;
+    }
+    .nav-link.dropdown-toggle {
+        display: none !important;
+    }
+    .dropdown-menu {
+        display: inline-block !important;
+        border: unset !important;
+        padding: 0;
+        margin: 0;
+        min-width: 100%;
+    }
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+    }
+}
+ul.nav-tabs {
+    padding-left: 0;
+}
+@media screen and (max-width: 340px) {
+    .header-pro-logo {
+        max-height: 24px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .navbar-brand {
+        max-width: 230px;
+    }
+}
