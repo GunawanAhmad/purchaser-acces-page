@@ -10,8 +10,8 @@
         />
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
@@ -31,40 +31,214 @@
 
                 <div class="nav-bar-link ml-auto d-flex align-items-center">
                     <div class="navigation-bar">
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            Menu
-                        </button>
-
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                        >
+                        <div class="">
                             <ul class="navbar-nav mr-auto align-items-center">
                                 <li class="nav-item px-1 active">
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
                                     <a class="nav-link" href="#"
                                         ><i class="far fa-envelope"></i
                                     ></a>
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
                                 </li>
 
-                                <li class="nav-item px-1">
-                                    <a class="nav-link" href="#">
+                                <li class="nav-item px-1 position-relative">
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <a
+                                        class="nav-link red-dot"
+                                        href="#"
+                                        data-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
                                         <i class="far fa-bell"></i>
                                     </a>
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <div
+                                        class="dropdown-menu dropdown-menu-right notification"
+                                        id="notification-dropdown"
+                                    >
+                                        <div>
+                                            <h4
+                                                class="notif-title font-weight-x-bold mb-0"
+                                            >
+                                                Notifikasi
+                                            </h4>
+                                            <div class="message-wrapper">
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet”.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet”.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div class="message-container">
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit
+                                                                ametasdasdwasdasdasdwasdsadasd.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="test.html">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet Lorem
+                                                                ipsum dolor sit
+                                                                amet consectetur
+                                                                adipisicing
+                                                                elit. Ducimus,
+                                                                odio..
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="text-btn green-text eightpx ml-3"
+                                            >
+                                                Tandai semua sudah dibaca
+                                            </button>
+                                            <button
+                                                class="underline-btn eightpx d-block ml-3"
+                                            >
+                                                Lihat semua
+                                            </button>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li
                                     class="nav-item px-1 active position-relative"
                                 >
                                     <a
                                         class="nav-link"
-                                        class="nav-link dropdown-toggle"
                                         data-toggle="dropdown"
                                         href="#"
                                         role="button"
@@ -79,14 +253,64 @@
                                         <a
                                             class="dropdown-item nav-link"
                                             href="#"
-                                            ><i class="fas fa-newspaper"></i>
-                                            <span>Contents</span></a
+                                            ><i
+                                                class="fa-solid fa-newspaper fa-fw"
+                                            ></i
+                                            ><span>Contents</span></a
                                         >
                                         <a
                                             class="dropdown-item nav-link"
                                             href="#"
-                                            ><i class="far fa-repeat"></i
+                                            ><i
+                                                class="fa-solid fa-repeat fa-fw"
+                                            ></i
                                             ><span>Subscription</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                        >
+                                            <i class="fa-solid fa-box fa-fw"></i
+                                            ><span>Items</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-handshake fa-fw"
+                                            ></i
+                                            ><span>Services</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-wallet fa-fw"
+                                            ></i
+                                            ><span>Transaction </span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-users fa-fw"
+                                            ></i
+                                            ><span>Creators</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-circle-user fa-fw"
+                                            ></i
+                                            ><span>Account</span></a
+                                        ><a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-right-from-bracket fa-fw"
+                                            ></i
+                                            ><span>Log out</span></a
                                         >
                                     </div>
                                 </li>
@@ -113,5 +337,6 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"
         ></script>
+        <script src="./js/home.js"></script>
     </body>
 </html>

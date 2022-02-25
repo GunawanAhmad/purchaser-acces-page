@@ -13,4 +13,11 @@ body {
     --font-size-ten: 0.833rem;
     --font-size-eleven: 0.917rem;
     --font-size-twelve: 1rem;
+    --font-size-eight: 0.667rem;
+    --font-size-seven: 0.583rem;
+    --green-color: ##76cc11;
+}
+
+p {
+    margin-bottom: 0;
 }
