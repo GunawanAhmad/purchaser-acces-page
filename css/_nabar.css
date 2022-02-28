@@ -13,11 +13,16 @@ header.hide {
 
 .dropdown-menu {
     border-radius: 10px;
-    padding: 1rem 0;
+    padding: 0.3rem 0;
 }
 
 .dropdown-menu.notification {
     min-width: 18rem;
+    padding: 1rem 0;
+}
+
+.dropdown-menu {
+    min-width: 11rem;
 }
 
 .dropdown-item span {
@@ -150,6 +155,10 @@ ul.nav-tabs {
     padding-left: 0;
 }
 
+.nav-item {
+    position: relative;
+}
+
 @media (max-width: 768px) {
     .navbar-expand-md .navbar-collapse {
         display: flex;
@@ -167,5 +176,23 @@ ul.nav-tabs {
 
     .navbar-nav .dropdown-menu {
         position: absolute;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .nav-item {
+        position: static;
+    }
+
+    .dropdown-menu {
+        right: 1rem;
+        top: auto;
+    }
+
+    .dropdown-menu.notification {
+        width: 80%;
     }
 }
