@@ -21,3 +21,11 @@ body {
 p {
     margin-bottom: 0;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    min-height: calc(100vh - 55px);
+}
