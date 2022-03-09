@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-right: -1rem;
+    padding: 0 1rem;
 }
 
 .wrapper .content {
