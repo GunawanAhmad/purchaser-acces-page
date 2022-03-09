@@ -20,5 +20,5 @@ main {
     max-width: 1200px;
     margin: auto;
     min-height: calc(100vh);
-    padding: 3rem 0;
+    padding: 3rem 0rem;
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 @import url("./_reset.css");
 @import url("./_customClass.css");
-@import url("./_nabar.css");
+@import url("./_navbar.css");
 @import url("./_footer.css");
 
 .wrapper {
@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-right: -1rem;
-    padding: 0 1rem;
 }
 
 .wrapper .content {
