@@ -19,7 +19,8 @@
 }
 
 .wrapper .content:hover {
-    box-shadow: 3px 3px 5px rgb(124, 124, 124);
+    -webkit-box-shadow: 0 0 16px rgb(0 0 0 / 10%) !important;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%) !important;
 }
 
 .wrapper > a {

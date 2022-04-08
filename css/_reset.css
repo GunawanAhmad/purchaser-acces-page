@@ -1,5 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif;
+    color: black;
 }
 
 :root {
@@ -21,4 +22,33 @@ main {
     margin: auto;
     min-height: calc(100vh);
     padding: 3rem 0rem;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: lightgray;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+a:focus,
+a:active {
+    background: transparent !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
 }

@@ -23,7 +23,7 @@
     border-radius: 30px;
     width: 100%;
     padding: 0;
-    padding-left: 2rem;
+    padding: 0 2rem;
     line-height: normal;
 }
 .search input:placeholder-shown + .clear-icon-search {
