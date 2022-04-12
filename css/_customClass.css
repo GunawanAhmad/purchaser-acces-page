@@ -2,7 +2,7 @@
     width: fit-content !important;
     font-size: 1rem;
     font-weight: 400 !important;
-    padding: 0.3rem 0.7rem !important;
+    padding: 7px 13px !important;
     cursor: pointer !important;
     word-break: break-all;
 }
@@ -16,6 +16,10 @@
     /* NEW - Chrome */
     display: -webkit-flex;
     display: flex;
+}
+
+.text-primary {
+    color: var(--green-color) !important;
 }
 
 .green-text {
@@ -52,7 +56,7 @@
 }
 
 .sixteenpx {
-    font-size: 1.333rem;
+    font-size: 1rem;
 }
 .ninepx {
     font-size: 0.75rem;
@@ -168,4 +172,9 @@ a.btn.btn-primary {
 
 .bg-dark {
     background-color: #262626 !important;
+}
+
+.form-control {
+    border-radius: 6px !important;
+    height: 40px;
 }

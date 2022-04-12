@@ -125,7 +125,7 @@ main {
     margin: auto;
 }
 main .content-wrapper {
-    max-width: 800px;
+    max-width: 660px;
     margin: auto;
     min-height: 100vh;
     width: 100%;
@@ -149,8 +149,12 @@ main .content-wrapper.hide {
 .section {
     border: 1px solid #c2c2c2;
     border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 19px;
+    margin-bottom: 2.25rem;
+}
+
+.profile-section.section {
+    padding: 42px 28px;
 }
 .section:last-child {
     margin-bottom: 0;
@@ -176,10 +180,9 @@ main .content-wrapper.hide {
     /* NEW - Chrome */
     display: flex;
     align-items: center;
-    min-height: 100px;
 }
 .profile-section .user-image-wrapper .user-image-setting {
-    margin-left: 1rem;
+    margin-left: 12px;
 }
 .profile-section .user-image-wrapper .user-image-setting .input-container {
     position: relative;
@@ -218,24 +221,24 @@ main .content-wrapper.hide {
     background: none;
     border: none;
     color: #c2c2c2;
-    font-size: 1.4rem;
+    font-size: 18px;
     /* CSS3 */
     cursor: pointer;
     outline: none;
     padding: 0 !important;
-    margin-left: 1rem !important;
+    margin-left: 12px !important;
 }
 .profile-section .user-image-wrapper .setting label {
     margin-bottom: 0 !important;
 }
 .profile-section .user-image-wrapper .profile-img-container {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     background-color: #c2c2c2;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    flex: 0 0 100px;
+    flex: 0 0 90px;
 }
 .profile-section .user-image-wrapper .profile-img-container img {
     height: 100%;
@@ -264,19 +267,21 @@ main .content-wrapper.hide {
 }
 .profile-section .form-wrapper .label {
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 .profile-section .form-wrapper .label .setting {
     font-weight: 400;
 }
-.profile-section .form-wrapper form {
-    margin-bottom: 1.5rem;
-}
+
 .profile-section .form-wrapper form .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 29px;
+}
+
+.profile-section .form-wrapper form .form-group:last-child {
+    margin-bottom: 0;
 }
 .profile-section .form-wrapper form .form-group.counter {
-    margin-bottom: 0.2rem;
+    margin-bottom: 8px;
 }
 .profile-section .form-wrapper form .form-group input {
     min-height: 0;
@@ -389,6 +394,7 @@ main .content-wrapper.hide {
     border: none;
     outline: none;
     padding: 1rem;
+    font-size: 1rem;
 }
 
 .logout-section:hover {
@@ -412,6 +418,31 @@ input[readonly] {
 .logout-section.section,
 .delete-account-section.section {
     padding: 0;
+}
+
+.select2-dropdown {
+    min-width: 200px;
+}
+
+.form-group .select2 {
+    position: relative;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    padding-right: 2.5rem;
+}
+
+.form-group .select2::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f107";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b5b5b5;
 }
 
 @media (min-width: 576px) {
