@@ -14,6 +14,7 @@ body {
     --font-size-eight: 0.667rem;
     --font-size-seven: 0.583rem;
     --font-size-fourteen: 1.167rem;
+    --font-size-24: 1.5rem;
     --green-color: #76cc11;
 }
 
@@ -22,7 +23,7 @@ p {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
     min-height: calc(100vh);
     padding: 2.25rem 0rem;
