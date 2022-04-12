@@ -109,16 +109,16 @@
     word-break: break-all;
 }
 .btn-fill-light.active {
-    background-color: red;
+    background-color: var(--green-color);
     color: #fff !important;
 }
 .btn-fill-light.active:hover {
-    background-color: red;
+    background-color: var(--green-color);
 }
 .btn-outline-primary:hover,
 .btn-fill-light:hover,
 .btn-edit-sm:hover {
-    background-color: red;
+    background-color: var(--green-color);
 }
 a.btn.btn-primary {
     /* OLD - iOS 6-, Safari 3.1-6 */
@@ -138,11 +138,11 @@ a.btn.btn-primary {
     border-radius: 2rem;
 }
 .btn-fill-light {
-    background: #ffeded;
+    background: rgb(223, 251, 223);
     border-radius: 3rem;
     min-height: unset;
     padding: 0.375rem 0.75rem;
-    color: red !important;
+    color: var(--green-color) !important;
     width: 100%;
 }
 .btn-fill-light:hover {

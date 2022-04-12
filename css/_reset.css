@@ -4,6 +4,10 @@ body {
 }
 
 :root {
+    --soft-gray: #fafafa;
+    --bg-gray: rgb(242, 242, 242);
+    --gray: rgb(191, 191, 191);
+    --darker-gray: rgb(127, 127, 127);
     --font-size-ten: 0.833rem;
     --font-size-eleven: 0.917rem;
     --font-size-twelve: 1rem;

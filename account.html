@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1"
+        />
+        <title>Document</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css"
+            integrity="sha512-KuSX+43gVS5MEIJD2ewtrFPOHqC1PJnL8o2f5ciggPC0JUZ8XV0QXlfArO1mSzKkVFdRjsBDfrTU96C5SuRfqQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css"
+            integrity="sha512-zxBiDORGDEAYDdKLuYU9X/JaJo/DPzE42UubfBw9yg8Qvb2YRRIQ8v4KsGHOx2H1/+sdSXyXxLXv5r7tHc9ygg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="./css/account.css" />
+
+        <link
+            rel="icon"
+            href="./src/img/favicon.png"
+            type="image/gif"
+            sizes="16x16"
+        />
+    </head>
+
+    <body>
+        <!-- Header Section Start -->
+        <header>
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-md border-bottom">
+                <a class="navbar-brand" href="/"
+                    ><img
+                        src="./image/logo.png"
+                        class="header-pro-logo d-block"
+                        alt="Sociabuzz Pro Logo"
+                /></a>
+
+                <div class="nav-bar-link ml-auto d-flex align-items-center">
+                    <div class="navigation-bar">
+                        <div class="">
+                            <ul class="navbar-nav mr-auto align-items-center">
+                                <li class="nav-item px-1 active">
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <a class="nav-link" href="#"
+                                        ><i class="far fa-envelope"></i
+                                    ></a>
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                </li>
+
+                                <li class="nav-item px-1">
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <a
+                                        class="nav-link red-dot"
+                                        href="#"
+                                        data-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <i class="far fa-bell"></i>
+                                    </a>
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <div
+                                        class="dropdown-menu dropdown-menu-right notification"
+                                        id="notification-dropdown"
+                                    >
+                                        <div>
+                                            <h4
+                                                class="notif-title font-weight-x-bold mb-0"
+                                            >
+                                                Notifikasi
+                                            </h4>
+                                            <div class="message-wrapper">
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet”.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet”.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div class="message-container">
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit
+                                                                ametasdasdwasdasdasdwasdsadasd.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet Lorem
+                                                                ipsum dolor sit
+                                                                amet consectetur
+                                                                adipisicing
+                                                                elit. Ducimus,
+                                                                odio..
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="text-btn green-text eightpx ml-3 mb-1"
+                                            >
+                                                Tandai semua sudah dibaca
+                                            </button>
+                                            <button
+                                                class="underline-btn eightpx d-block ml-3"
+                                            >
+                                                Lihat semua
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item px-1 active">
+                                    <a
+                                        class="nav-link"
+                                        data-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        ><i class="fas fa-bars"> </i
+                                        ><span class="ml-2">Menu</span></a
+                                    >
+                                    <div
+                                        class="dropdown-menu dropdown-menu-right"
+                                    >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-newspaper fa-fw"
+                                            ></i
+                                            ><span>Contents</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-repeat fa-fw"
+                                            ></i
+                                            ><span>Subscription</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                        >
+                                            <i class="fa-solid fa-box fa-fw"></i
+                                            ><span>Items</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-handshake fa-fw"
+                                            ></i
+                                            ><span>Services</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-wallet fa-fw"
+                                            ></i
+                                            ><span>Transaction </span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-users fa-fw"
+                                            ></i
+                                            ><span>Creators</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-circle-user fa-fw"
+                                            ></i
+                                            ><span>Account</span></a
+                                        ><a
+                                            class="dropdown-item nav-link"
+                                            href="#"
+                                            ><i
+                                                class="fa-solid fa-right-from-bracket fa-fw"
+                                            ></i
+                                            ><span>Log out</span></a
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
+        </header>
+        <!-- Header Section End -->
+
+        <!---------------- main--------------------->
+        <main class="">
+            <section class="content-wrapper">
+                <div class="">
+                    <!--Image input Modal-->
+                    <div
+                        class="modal fade croppie-img-modal"
+                        id="profile-img-modal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="profile-img-modal"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="crop-container">
+                                        <div class="upload-profile-img-wrap">
+                                            <div id="upload-profile-img"></div>
+                                        </div>
+                                    </div>
+                                    <div class="file-input-container">
+                                        <label for="upload">Choose file</label>
+                                        <input
+                                            type="file"
+                                            name="cropped"
+                                            id="upload"
+                                            accept="image/x-png,image/gif,image/jpeg"
+                                        />
+                                        <p class="file-name">
+                                            No file selected
+                                        </p>
+                                    </div>
+                                    <p class="tenpx gray-font mb-0 mt-2">
+                                        Hanya format JPG, JPEG, PNG | Max 1MB |
+                                    </p>
+                                    <p
+                                        class="image-error-msg mb-0 text-primary tenpx"
+                                    ></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="get-cropped-img pointer btn-fill-light active py-2"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        Simpan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Image input Modal-->
+
+                    <!--Email input Modal-->
+                    <div
+                        class="modal fade"
+                        id="email-modal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="email-modal"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered input"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label
+                                            for="email-input-modal"
+                                            class="elevenpx label font-weight-bold"
+                                            >Email
+                                        </label>
+                                        <input
+                                            class="form-control"
+                                            id="email-input-modal"
+                                            value="lorem@email.com"
+                                            type="email"
+                                            name="email"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="get-cropped-img pointer btn-fill-light active py-2"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        Simpan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Email input Modal-->
+
+                    <!--password input Modal-->
+                    <div
+                        class="modal fade"
+                        id="password-modal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="password-modal"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered input"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label
+                                            for="password-input-modal"
+                                            class="elevenpx label font-weight-bold"
+                                            >Password
+                                        </label>
+                                        <input
+                                            class="form-control"
+                                            id="password-input-modal"
+                                            value="lorem@email.com"
+                                            type="password"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="get-cropped-img pointer btn-fill-light active py-2"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        Simpan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--password input Modal-->
+
+                    <!--Delete Modal-->
+                    <div
+                        class="modal fade delete-modal"
+                        id="deleteModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="deleteModal"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button
+                                        type="button"
+                                        class="btn btn-fill-light active mb-3"
+                                        data-dismiss="modal"
+                                        id="confirm-delete-btn"
+                                    >
+                                        Hapus
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-fill-light"
+                                        data-dismiss="modal"
+                                        id="cancel-delete-btn"
+                                    >
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Delete Modal-->
+
+                    <!--Delete Account-->
+                    <div
+                        class="modal fade delete-modal"
+                        id="deleteAccountModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="deleteAccountModal"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button
+                                        type="button"
+                                        class="btn btn-fill-light active mb-3"
+                                        data-dismiss="modal"
+                                        id="confirm-delete-btn"
+                                    >
+                                        Hapus akun
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-fill-light"
+                                        data-dismiss="modal"
+                                        id="cancel-delete-btn"
+                                    >
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="profile-section section">
+                        <div class="user-image-wrapper mb-4">
+                            <div class="profile-img-container">
+                                <img src="" alt="" id="profile-img" />
+                                <div class="user-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="user-image-setting">
+                                <div class="input-container d-flex">
+                                    <button
+                                        class="button btn-fill-light tenpx font-weight-light"
+                                        data-toggle="modal"
+                                        data-target="#profile-img-modal"
+                                    >
+                                        Upload Photo
+                                    </button>
+                                    <button
+                                        class="ml-2 delete-btn"
+                                        data-toggle="modal"
+                                        id="del-btn"
+                                        data-target="#deleteModal"
+                                        data-tooltip="tooltip"
+                                        data-placement="top"
+                                        title="Delete"
+                                    >
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-wrapper">
+                            <form action="">
+                                <div class="form-group counter">
+                                    <label
+                                        for="nama-profil-input"
+                                        class="elevenpx label"
+                                        >Name</label
+                                    >
+                                    <input
+                                        id="nama-profil-input"
+                                        class="form-control"
+                                        maxlength="60"
+                                        type="text"
+                                    />
+                                    <small
+                                        id="nama-profil-input-help"
+                                        class="form-text text-muted text-right eightpx"
+                                        >0 / 60</small
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="email-input"
+                                        class="elevenpx label"
+                                        >Email
+                                        <span
+                                            class="text-secondary font-weight-light"
+                                            ><u
+                                                class="text-primary setting edit-btn pointer"
+                                                data-toggle="modal"
+                                                data-target="#email-modal"
+                                                >Edit</u
+                                            ></span
+                                        >
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        id="email-input"
+                                        aria-describedby="deskripsi-input-help"
+                                        readonly
+                                        value="lorem@email.com"
+                                        type="email"
+                                        name="email"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label class="elevenpx label"
+                                        >Mobile Phone Number
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        aria-describedby="nama-profil-input"
+                                        maxlength="60"
+                                        type="tel"
+                                        name="mobile_Number"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label class="elevenpx label"
+                                        >Password
+                                        <span
+                                            class="text-secondary font-weight-light"
+                                            ><u
+                                                class="text-primary setting edit-btn pointer"
+                                                data-toggle="modal"
+                                                data-target="#password-modal"
+                                                >Edit</u
+                                            ></span
+                                        >
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        readonly
+                                        value="lorem@email.com"
+                                        type="password"
+                                        name="password"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label class="elevenpx label"
+                                        >Country
+                                    </label>
+                                    <div>
+                                        <select
+                                            class="select2 country"
+                                            name="country"
+                                        >
+                                            <option value="AF">
+                                                Afghanistan
+                                            </option>
+                                            <option value="AX">
+                                                Åland Islands
+                                            </option>
+                                            <option value="AL">Albania</option>
+                                            <option value="DZ">Algeria</option>
+                                            <option value="AS">
+                                                American Samoa
+                                            </option>
+                                            <option value="AD">Andorra</option>
+                                            <option value="AO">Angola</option>
+                                            <option value="AI">Anguilla</option>
+                                            <option value="AQ">
+                                                Antarctica
+                                            </option>
+                                            <option value="AG">
+                                                Antigua and Barbuda
+                                            </option>
+                                            <option value="AR">
+                                                Argentina
+                                            </option>
+                                            <option value="AM">Armenia</option>
+                                            <option value="AW">Aruba</option>
+                                            <option value="AU">
+                                                Australia
+                                            </option>
+                                            <option value="AT">Austria</option>
+                                            <option value="AZ">
+                                                Azerbaijan
+                                            </option>
+                                            <option value="BS">Bahamas</option>
+                                            <option value="BH">Bahrain</option>
+                                            <option value="BD">
+                                                Bangladesh
+                                            </option>
+                                            <option value="BB">Barbados</option>
+                                            <option value="BY">Belarus</option>
+                                            <option value="BE">Belgium</option>
+                                            <option value="BZ">Belize</option>
+                                            <option value="BJ">Benin</option>
+                                            <option value="BM">Bermuda</option>
+                                            <option value="BT">Bhutan</option>
+                                            <option value="BO">
+                                                Bolivia, Plurinational State of
+                                            </option>
+                                            <option value="BQ">
+                                                Bonaire, Sint Eustatius and Saba
+                                            </option>
+                                            <option value="BA">
+                                                Bosnia and Herzegovina
+                                            </option>
+                                            <option value="BW">Botswana</option>
+                                            <option value="BV">
+                                                Bouvet Island
+                                            </option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="IO">
+                                                British Indian Ocean Territory
+                                            </option>
+                                            <option value="BN">
+                                                Brunei Darussalam
+                                            </option>
+                                            <option value="BG">Bulgaria</option>
+                                            <option value="BF">
+                                                Burkina Faso
+                                            </option>
+                                            <option value="BI">Burundi</option>
+                                            <option value="KH">Cambodia</option>
+                                            <option value="CM">Cameroon</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="CV">
+                                                Cape Verde
+                                            </option>
+                                            <option value="KY">
+                                                Cayman Islands
+                                            </option>
+                                            <option value="CF">
+                                                Central African Republic
+                                            </option>
+                                            <option value="TD">Chad</option>
+                                            <option value="CL">Chile</option>
+                                            <option value="CN">China</option>
+                                            <option value="CX">
+                                                Christmas Island
+                                            </option>
+                                            <option value="CC">
+                                                Cocos (Keeling) Islands
+                                            </option>
+                                            <option value="CO">Colombia</option>
+                                            <option value="KM">Comoros</option>
+                                            <option value="CG">Congo</option>
+                                            <option value="CD">
+                                                Congo, the Democratic Republic
+                                                of the
+                                            </option>
+                                            <option value="CK">
+                                                Cook Islands
+                                            </option>
+                                            <option value="CR">
+                                                Costa Rica
+                                            </option>
+                                            <option value="CI">
+                                                Côte d'Ivoire
+                                            </option>
+                                            <option value="HR">Croatia</option>
+                                            <option value="CU">Cuba</option>
+                                            <option value="CW">Curaçao</option>
+                                            <option value="CY">Cyprus</option>
+                                            <option value="CZ">
+                                                Czech Republic
+                                            </option>
+                                            <option value="DK">Denmark</option>
+                                            <option value="DJ">Djibouti</option>
+                                            <option value="DM">Dominica</option>
+                                            <option value="DO">
+                                                Dominican Republic
+                                            </option>
+                                            <option value="EC">Ecuador</option>
+                                            <option value="EG">Egypt</option>
+                                            <option value="SV">
+                                                El Salvador
+                                            </option>
+                                            <option value="GQ">
+                                                Equatorial Guinea
+                                            </option>
+                                            <option value="ER">Eritrea</option>
+                                            <option value="EE">Estonia</option>
+                                            <option value="ET">Ethiopia</option>
+                                            <option value="FK">
+                                                Falkland Islands (Malvinas)
+                                            </option>
+                                            <option value="FO">
+                                                Faroe Islands
+                                            </option>
+                                            <option value="FJ">Fiji</option>
+                                            <option value="FI">Finland</option>
+                                            <option value="FR">France</option>
+                                            <option value="GF">
+                                                French Guiana
+                                            </option>
+                                            <option value="PF">
+                                                French Polynesia
+                                            </option>
+                                            <option value="TF">
+                                                French Southern Territories
+                                            </option>
+                                            <option value="GA">Gabon</option>
+                                            <option value="GM">Gambia</option>
+                                            <option value="GE">Georgia</option>
+                                            <option value="DE">Germany</option>
+                                            <option value="GH">Ghana</option>
+                                            <option value="GI">
+                                                Gibraltar
+                                            </option>
+                                            <option value="GR">Greece</option>
+                                            <option value="GL">
+                                                Greenland
+                                            </option>
+                                            <option value="GD">Grenada</option>
+                                            <option value="GP">
+                                                Guadeloupe
+                                            </option>
+                                            <option value="GU">Guam</option>
+                                            <option value="GT">
+                                                Guatemala
+                                            </option>
+                                            <option value="GG">Guernsey</option>
+                                            <option value="GN">Guinea</option>
+                                            <option value="GW">
+                                                Guinea-Bissau
+                                            </option>
+                                            <option value="GY">Guyana</option>
+                                            <option value="HT">Haiti</option>
+                                            <option value="HM">
+                                                Heard Island and McDonald
+                                                Islands
+                                            </option>
+                                            <option value="VA">
+                                                Holy See (Vatican City State)
+                                            </option>
+                                            <option value="HN">Honduras</option>
+                                            <option value="HK">
+                                                Hong Kong
+                                            </option>
+                                            <option value="HU">Hungary</option>
+                                            <option value="IS">Iceland</option>
+                                            <option value="IN">India</option>
+                                            <option value="ID">
+                                                Indonesia
+                                            </option>
+                                            <option value="IR">
+                                                Iran, Islamic Republic of
+                                            </option>
+                                            <option value="IQ">Iraq</option>
+                                            <option value="IE">Ireland</option>
+                                            <option value="IM">
+                                                Isle of Man
+                                            </option>
+                                            <option value="IL">Israel</option>
+                                            <option value="IT">Italy</option>
+                                            <option value="JM">Jamaica</option>
+                                            <option value="JP">Japan</option>
+                                            <option value="JE">Jersey</option>
+                                            <option value="JO">Jordan</option>
+                                            <option value="KZ">
+                                                Kazakhstan
+                                            </option>
+                                            <option value="KE">Kenya</option>
+                                            <option value="KI">Kiribati</option>
+                                            <option value="KP">
+                                                Korea, Democratic People's
+                                                Republic of
+                                            </option>
+                                            <option value="KR">
+                                                Korea, Republic of
+                                            </option>
+                                            <option value="KW">Kuwait</option>
+                                            <option value="KG">
+                                                Kyrgyzstan
+                                            </option>
+                                            <option value="LA">
+                                                Lao People's Democratic Republic
+                                            </option>
+                                            <option value="LV">Latvia</option>
+                                            <option value="LB">Lebanon</option>
+                                            <option value="LS">Lesotho</option>
+                                            <option value="LR">Liberia</option>
+                                            <option value="LY">Libya</option>
+                                            <option value="LI">
+                                                Liechtenstein
+                                            </option>
+                                            <option value="LT">
+                                                Lithuania
+                                            </option>
+                                            <option value="LU">
+                                                Luxembourg
+                                            </option>
+                                            <option value="MO">Macao</option>
+                                            <option value="MK">
+                                                Macedonia, the former Yugoslav
+                                                Republic of
+                                            </option>
+                                            <option value="MG">
+                                                Madagascar
+                                            </option>
+                                            <option value="MW">Malawi</option>
+                                            <option value="MY">Malaysia</option>
+                                            <option value="MV">Maldives</option>
+                                            <option value="ML">Mali</option>
+                                            <option value="MT">Malta</option>
+                                            <option value="MH">
+                                                Marshall Islands
+                                            </option>
+                                            <option value="MQ">
+                                                Martinique
+                                            </option>
+                                            <option value="MR">
+                                                Mauritania
+                                            </option>
+                                            <option value="MU">
+                                                Mauritius
+                                            </option>
+                                            <option value="YT">Mayotte</option>
+                                            <option value="MX">Mexico</option>
+                                            <option value="FM">
+                                                Micronesia, Federated States of
+                                            </option>
+                                            <option value="MD">
+                                                Moldova, Republic of
+                                            </option>
+                                            <option value="MC">Monaco</option>
+                                            <option value="MN">Mongolia</option>
+                                            <option value="ME">
+                                                Montenegro
+                                            </option>
+                                            <option value="MS">
+                                                Montserrat
+                                            </option>
+                                            <option value="MA">Morocco</option>
+                                            <option value="MZ">
+                                                Mozambique
+                                            </option>
+                                            <option value="MM">Myanmar</option>
+                                            <option value="NA">Namibia</option>
+                                            <option value="NR">Nauru</option>
+                                            <option value="NP">Nepal</option>
+                                            <option value="NL">
+                                                Netherlands
+                                            </option>
+                                            <option value="NC">
+                                                New Caledonia
+                                            </option>
+                                            <option value="NZ">
+                                                New Zealand
+                                            </option>
+                                            <option value="NI">
+                                                Nicaragua
+                                            </option>
+                                            <option value="NE">Niger</option>
+                                            <option value="NG">Nigeria</option>
+                                            <option value="NU">Niue</option>
+                                            <option value="NF">
+                                                Norfolk Island
+                                            </option>
+                                            <option value="MP">
+                                                Northern Mariana Islands
+                                            </option>
+                                            <option value="NO">Norway</option>
+                                            <option value="OM">Oman</option>
+                                            <option value="PK">Pakistan</option>
+                                            <option value="PW">Palau</option>
+                                            <option value="PS">
+                                                Palestinian Territory, Occupied
+                                            </option>
+                                            <option value="PA">Panama</option>
+                                            <option value="PG">
+                                                Papua New Guinea
+                                            </option>
+                                            <option value="PY">Paraguay</option>
+                                            <option value="PE">Peru</option>
+                                            <option value="PH">
+                                                Philippines
+                                            </option>
+                                            <option value="PN">Pitcairn</option>
+                                            <option value="PL">Poland</option>
+                                            <option value="PT">Portugal</option>
+                                            <option value="PR">
+                                                Puerto Rico
+                                            </option>
+                                            <option value="QA">Qatar</option>
+                                            <option value="RE">Réunion</option>
+                                            <option value="RO">Romania</option>
+                                            <option value="RU">
+                                                Russian Federation
+                                            </option>
+                                            <option value="RW">Rwanda</option>
+                                            <option value="BL">
+                                                Saint Barthélemy
+                                            </option>
+                                            <option value="SH">
+                                                Saint Helena, Ascension and
+                                                Tristan da Cunha
+                                            </option>
+                                            <option value="KN">
+                                                Saint Kitts and Nevis
+                                            </option>
+                                            <option value="LC">
+                                                Saint Lucia
+                                            </option>
+                                            <option value="MF">
+                                                Saint Martin (French part)
+                                            </option>
+                                            <option value="PM">
+                                                Saint Pierre and Miquelon
+                                            </option>
+                                            <option value="VC">
+                                                Saint Vincent and the Grenadines
+                                            </option>
+                                            <option value="WS">Samoa</option>
+                                            <option value="SM">
+                                                San Marino
+                                            </option>
+                                            <option value="ST">
+                                                Sao Tome and Principe
+                                            </option>
+                                            <option value="SA">
+                                                Saudi Arabia
+                                            </option>
+                                            <option value="SN">Senegal</option>
+                                            <option value="RS">Serbia</option>
+                                            <option value="SC">
+                                                Seychelles
+                                            </option>
+                                            <option value="SL">
+                                                Sierra Leone
+                                            </option>
+                                            <option value="SG">
+                                                Singapore
+                                            </option>
+                                            <option value="SX">
+                                                Sint Maarten (Dutch part)
+                                            </option>
+                                            <option value="SK">Slovakia</option>
+                                            <option value="SI">Slovenia</option>
+                                            <option value="SB">
+                                                Solomon Islands
+                                            </option>
+                                            <option value="SO">Somalia</option>
+                                            <option value="ZA">
+                                                South Africa
+                                            </option>
+                                            <option value="GS">
+                                                South Georgia and the South
+                                                Sandwich Islands
+                                            </option>
+                                            <option value="SS">
+                                                South Sudan
+                                            </option>
+                                            <option value="ES">Spain</option>
+                                            <option value="LK">
+                                                Sri Lanka
+                                            </option>
+                                            <option value="SD">Sudan</option>
+                                            <option value="SR">Suriname</option>
+                                            <option value="SJ">
+                                                Svalbard and Jan Mayen
+                                            </option>
+                                            <option value="SZ">
+                                                Swaziland
+                                            </option>
+                                            <option value="SE">Sweden</option>
+                                            <option value="CH">
+                                                Switzerland
+                                            </option>
+                                            <option value="SY">
+                                                Syrian Arab Republic
+                                            </option>
+                                            <option value="TW">
+                                                Taiwan, Province of China
+                                            </option>
+                                            <option value="TJ">
+                                                Tajikistan
+                                            </option>
+                                            <option value="TZ">
+                                                Tanzania, United Republic of
+                                            </option>
+                                            <option value="TH">Thailand</option>
+                                            <option value="TL">
+                                                Timor-Leste
+                                            </option>
+                                            <option value="TG">Togo</option>
+                                            <option value="TK">Tokelau</option>
+                                            <option value="TO">Tonga</option>
+                                            <option value="TT">
+                                                Trinidad and Tobago
+                                            </option>
+                                            <option value="TN">Tunisia</option>
+                                            <option value="TR">Turkey</option>
+                                            <option value="TM">
+                                                Turkmenistan
+                                            </option>
+                                            <option value="TC">
+                                                Turks and Caicos Islands
+                                            </option>
+                                            <option value="TV">Tuvalu</option>
+                                            <option value="UG">Uganda</option>
+                                            <option value="UA">Ukraine</option>
+                                            <option value="AE">
+                                                United Arab Emirates
+                                            </option>
+                                            <option value="GB">
+                                                United Kingdom
+                                            </option>
+                                            <option value="US">
+                                                United States
+                                            </option>
+                                            <option value="UM">
+                                                United States Minor Outlying
+                                                Islands
+                                            </option>
+                                            <option value="UY">Uruguay</option>
+                                            <option value="UZ">
+                                                Uzbekistan
+                                            </option>
+                                            <option value="VU">Vanuatu</option>
+                                            <option value="VE">
+                                                Venezuela, Bolivarian Republic
+                                                of
+                                            </option>
+                                            <option value="VN">Viet Nam</option>
+                                            <option value="VG">
+                                                Virgin Islands, British
+                                            </option>
+                                            <option value="VI">
+                                                Virgin Islands, U.S.
+                                            </option>
+                                            <option value="WF">
+                                                Wallis and Futuna
+                                            </option>
+                                            <option value="EH">
+                                                Western Sahara
+                                            </option>
+                                            <option value="YE">Yemen</option>
+                                            <option value="ZM">Zambia</option>
+                                            <option value="ZW">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="deskripsi-input"
+                                        class="elevenpx label"
+                                        >Timezone
+                                    </label>
+                                    <div>
+                                        <select
+                                            class="select2"
+                                            name="timezone"
+                                            id="timezone"
+                                            name="timezone"
+                                        >
+                                            <option value="-12">
+                                                (UTC-12:00) International Date
+                                                Line West
+                                            </option>
+                                            <option value="-11">
+                                                (UTC-11:00) Coordinated
+                                                Universal Time-11
+                                            </option>
+                                            <option value="-10">
+                                                (UTC-10:00) Hawaii
+                                            </option>
+                                            <option value="-9">
+                                                (UTC-09:00) Alaska
+                                            </option>
+                                            <option value="-7">
+                                                (UTC-08:00) Baja California
+                                            </option>
+                                            <option value="-7">
+                                                (UTC-07:00) Pacific Time (US
+                                                &amp; Canada)
+                                            </option>
+                                            <option value="-8">
+                                                (UTC-08:00) Pacific Time (US
+                                                &amp; Canada)
+                                            </option>
+                                            <option value="-7">
+                                                (UTC-07:00) Arizona
+                                            </option>
+                                            <option value="-6">
+                                                (UTC-07:00) Chihuahua, La Paz,
+                                                Mazatlan
+                                            </option>
+                                            <option value="-6">
+                                                (UTC-07:00) Mountain Time (US
+                                                &amp; Canada)
+                                            </option>
+                                            <option value="-6">
+                                                (UTC-06:00) Central America
+                                            </option>
+                                            <option value="-5">
+                                                (UTC-06:00) Central Time (US
+                                                &amp; Canada)
+                                            </option>
+                                            <option value="-5">
+                                                (UTC-06:00) Guadalajara, Mexico
+                                                City, Monterrey
+                                            </option>
+                                            <option value="-6">
+                                                (UTC-06:00) Saskatchewan
+                                            </option>
+                                            <option value="-5">
+                                                (UTC-05:00) Bogota, Lima, Quito
+                                            </option>
+                                            <option value="-4">
+                                                (UTC-05:00) Eastern Time (US
+                                                &amp; Canada)
+                                            </option>
+                                            <option value="-4">
+                                                (UTC-05:00) Indiana (East)
+                                            </option>
+                                            <option value="-4.5">
+                                                (UTC-04:30) Caracas
+                                            </option>
+                                            <option value="-4">
+                                                (UTC-04:00) Asuncion
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-04:00) Atlantic Time
+                                                (Canada)
+                                            </option>
+                                            <option value="-4">
+                                                (UTC-04:00) Cuiaba
+                                            </option>
+                                            <option value="-4">
+                                                (UTC-04:00) Georgetown, La Paz,
+                                                Manaus, San Juan
+                                            </option>
+                                            <option value="-4">
+                                                (UTC-04:00) Santiago
+                                            </option>
+                                            <option value="-2.5">
+                                                (UTC-03:30) Newfoundland
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-03:00) Brasilia
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-03:00) Buenos Aires
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-03:00) Cayenne, Fortaleza
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-03:00) Greenland
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-03:00) Montevideo
+                                            </option>
+                                            <option value="-3">
+                                                (UTC-03:00) Salvador
+                                            </option>
+                                            <option value="-2">
+                                                (UTC-02:00) Coordinated
+                                                Universal Time-02
+                                            </option>
+                                            <option value="-1">
+                                                (UTC-02:00) Mid-Atlantic - Old
+                                            </option>
+                                            <option value="0">
+                                                (UTC-01:00) Azores
+                                            </option>
+                                            <option value="-1">
+                                                (UTC-01:00) Cape Verde Is.
+                                            </option>
+                                            <option value="1">
+                                                (UTC) Casablanca
+                                            </option>
+                                            <option value="0">
+                                                (UTC) Coordinated Universal Time
+                                            </option>
+                                            <option value="0">
+                                                (UTC) Edinburgh, London
+                                            </option>
+                                            <option value="1">
+                                                (UTC+01:00) Edinburgh, London
+                                            </option>
+                                            <option value="1">
+                                                (UTC) Dublin, Lisbon
+                                            </option>
+                                            <option value="0">
+                                                (UTC) Monrovia, Reykjavik
+                                            </option>
+                                            <option value="2">
+                                                (UTC+01:00) Amsterdam, Berlin,
+                                                Bern, Rome, Stockholm, Vienna
+                                            </option>
+                                            <option value="2">
+                                                (UTC+01:00) Belgrade,
+                                                Bratislava, Budapest, Ljubljana,
+                                                Prague
+                                            </option>
+                                            <option value="2">
+                                                (UTC+01:00) Brussels,
+                                                Copenhagen, Madrid, Paris
+                                            </option>
+                                            <option value="2">
+                                                (UTC+01:00) Sarajevo, Skopje,
+                                                Warsaw, Zagreb
+                                            </option>
+                                            <option value="1">
+                                                (UTC+01:00) West Central Africa
+                                            </option>
+                                            <option value="1">
+                                                (UTC+01:00) Windhoek
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) Athens, Bucharest
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) Beirut
+                                            </option>
+                                            <option value="2">
+                                                (UTC+02:00) Cairo
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) Damascus
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) E. Europe
+                                            </option>
+                                            <option value="2">
+                                                (UTC+02:00) Harare, Pretoria
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) Helsinki, Kyiv,
+                                                Riga, Sofia, Tallinn, Vilnius
+                                            </option>
+                                            <option value="3">
+                                                (UTC+03:00) Istanbul
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) Jerusalem
+                                            </option>
+                                            <option value="2">
+                                                (UTC+02:00) Tripoli
+                                            </option>
+                                            <option value="3">
+                                                (UTC+03:00) Amman
+                                            </option>
+                                            <option value="3">
+                                                (UTC+03:00) Baghdad
+                                            </option>
+                                            <option value="3">
+                                                (UTC+02:00) Kaliningrad
+                                            </option>
+                                            <option value="3">
+                                                (UTC+03:00) Kuwait, Riyadh
+                                            </option>
+                                            <option value="3">
+                                                (UTC+03:00) Nairobi
+                                            </option>
+                                            <option value="3">
+                                                (UTC+03:00) Moscow, St.
+                                                Petersburg, Volgograd, Minsk
+                                            </option>
+                                            <option value="4">
+                                                (UTC+04:00) Samara, Ulyanovsk,
+                                                Saratov
+                                            </option>
+                                            <option value="4.5">
+                                                (UTC+03:30) Tehran
+                                            </option>
+                                            <option value="4">
+                                                (UTC+04:00) Abu Dhabi, Muscat
+                                            </option>
+                                            <option value="5">
+                                                (UTC+04:00) Baku
+                                            </option>
+                                            <option value="4">
+                                                (UTC+04:00) Port Louis
+                                            </option>
+                                            <option value="4">
+                                                (UTC+04:00) Tbilisi
+                                            </option>
+                                            <option value="4">
+                                                (UTC+04:00) Yerevan
+                                            </option>
+                                            <option value="4.5">
+                                                (UTC+04:30) Kabul
+                                            </option>
+                                            <option value="5">
+                                                (UTC+05:00) Ashgabat, Tashkent
+                                            </option>
+                                            <option value="5">
+                                                (UTC+05:00) Yekaterinburg
+                                            </option>
+                                            <option value="5">
+                                                (UTC+05:00) Islamabad, Karachi
+                                            </option>
+                                            <option value="5.5">
+                                                (UTC+05:30) Chennai, Kolkata,
+                                                Mumbai, New Delhi
+                                            </option>
+                                            <option value="5.5">
+                                                (UTC+05:30) Sri Jayawardenepura
+                                            </option>
+                                            <option value="5.75">
+                                                (UTC+05:45) Kathmandu
+                                            </option>
+                                            <option value="6">
+                                                (UTC+06:00) Nur-Sultan (Astana)
+                                            </option>
+                                            <option value="6">
+                                                (UTC+06:00) Dhaka
+                                            </option>
+                                            <option value="6.5">
+                                                (UTC+06:30) Yangon (Rangoon)
+                                            </option>
+                                            <option value="7">
+                                                (UTC+07:00) Bangkok, Hanoi,
+                                                Jakarta
+                                            </option>
+                                            <option value="7">
+                                                (UTC+07:00) Novosibirsk
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Beijing, Chongqing,
+                                                Hong Kong, Urumqi
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Krasnoyarsk
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Kuala Lumpur,
+                                                Singapore
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Perth
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Taipei
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Ulaanbaatar
+                                            </option>
+                                            <option value="8">
+                                                (UTC+08:00) Irkutsk
+                                            </option>
+                                            <option value="9">
+                                                (UTC+09:00) Osaka, Sapporo,
+                                                Tokyo
+                                            </option>
+                                            <option value="9">
+                                                (UTC+09:00) Seoul
+                                            </option>
+                                            <option value="9.5">
+                                                (UTC+09:30) Adelaide
+                                            </option>
+                                            <option value="9.5">
+                                                (UTC+09:30) Darwin
+                                            </option>
+                                            <option value="10">
+                                                (UTC+10:00) Brisbane
+                                            </option>
+                                            <option value="10">
+                                                (UTC+10:00) Canberra, Melbourne,
+                                                Sydney
+                                            </option>
+                                            <option value="10">
+                                                (UTC+10:00) Guam, Port Moresby
+                                            </option>
+                                            <option value="10">
+                                                (UTC+10:00) Hobart
+                                            </option>
+                                            <option value="9">
+                                                (UTC+09:00) Yakutsk
+                                            </option>
+                                            <option value="11">
+                                                (UTC+11:00) Solomon Is., New
+                                                Caledonia
+                                            </option>
+                                            <option value="11">
+                                                (UTC+11:00) Vladivostok
+                                            </option>
+                                            <option value="12">
+                                                (UTC+12:00) Auckland, Wellington
+                                            </option>
+                                            <option value="12">
+                                                (UTC+12:00) Coordinated
+                                                Universal Time+12
+                                            </option>
+                                            <option value="12">
+                                                (UTC+12:00) Fiji
+                                            </option>
+                                            <option value="12">
+                                                (UTC+12:00) Magadan
+                                            </option>
+                                            <option value="13">
+                                                (UTC+12:00)
+                                                Petropavlovsk-Kamchatsky - Old
+                                            </option>
+                                            <option value="13">
+                                                (UTC+13:00) Nuku'alofa
+                                            </option>
+                                            <option value="13">
+                                                (UTC+13:00) Samoa
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label
+                                        for="deskripsi-input"
+                                        class="elevenpx label"
+                                        >Language
+                                    </label>
+                                    <div>
+                                        <select
+                                            data-placeholder="Choose a Language..."
+                                            class="select2 lang"
+                                            data-live-search="true"
+                                            data-selected-text-format="static"
+                                            name="language"
+                                        >
+                                            <option value="AF">
+                                                Afrikaans
+                                            </option>
+                                            <option value="SQ">Albanian</option>
+                                            <option value="AR">Arabic</option>
+                                            <option value="HY">Armenian</option>
+                                            <option value="EU">Basque</option>
+                                            <option value="BN">Bengali</option>
+                                            <option value="BG">
+                                                Bulgarian
+                                            </option>
+                                            <option value="CA">Catalan</option>
+                                            <option value="KM">
+                                                Cambodian
+                                            </option>
+                                            <option value="ZH">
+                                                Chinese (Mandarin)
+                                            </option>
+                                            <option value="HR">Croatian</option>
+                                            <option value="CS">Czech</option>
+                                            <option value="DA">Danish</option>
+                                            <option value="NL">Dutch</option>
+                                            <option value="EN">English</option>
+                                            <option value="ET">Estonian</option>
+                                            <option value="FJ">Fiji</option>
+                                            <option value="FI">Finnish</option>
+                                            <option value="FR">French</option>
+                                            <option value="KA">Georgian</option>
+                                            <option value="DE">German</option>
+                                            <option value="EL">Greek</option>
+                                            <option value="GU">Gujarati</option>
+                                            <option value="HE">Hebrew</option>
+                                            <option value="HI">Hindi</option>
+                                            <option value="HU">
+                                                Hungarian
+                                            </option>
+                                            <option value="IS">
+                                                Icelandic
+                                            </option>
+                                            <option value="ID">
+                                                Indonesian
+                                            </option>
+                                            <option value="GA">Irish</option>
+                                            <option value="IT">Italian</option>
+                                            <option value="JA">Japanese</option>
+                                            <option value="JW">Javanese</option>
+                                            <option value="KO">Korean</option>
+                                            <option value="LA">Latin</option>
+                                            <option value="LV">Latvian</option>
+                                            <option value="LT">
+                                                Lithuanian
+                                            </option>
+                                            <option value="MK">
+                                                Macedonian
+                                            </option>
+                                            <option value="MS">Malay</option>
+                                            <option value="ML">
+                                                Malayalam
+                                            </option>
+                                            <option value="MT">Maltese</option>
+                                            <option value="MI">Maori</option>
+                                            <option value="MR">Marathi</option>
+                                            <option value="MN">
+                                                Mongolian
+                                            </option>
+                                            <option value="NE">Nepali</option>
+                                            <option value="NO">
+                                                Norwegian
+                                            </option>
+                                            <option value="FA">Persian</option>
+                                            <option value="PL">Polish</option>
+                                            <option value="PT">
+                                                Portuguese
+                                            </option>
+                                            <option value="PA">Punjabi</option>
+                                            <option value="QU">Quechua</option>
+                                            <option value="RO">Romanian</option>
+                                            <option value="RU">Russian</option>
+                                            <option value="SM">Samoan</option>
+                                            <option value="SR">Serbian</option>
+                                            <option value="SK">Slovak</option>
+                                            <option value="SL">
+                                                Slovenian
+                                            </option>
+                                            <option value="ES">Spanish</option>
+                                            <option value="SW">Swahili</option>
+                                            <option value="SV">Swedish</option>
+                                            <option value="TA">Tamil</option>
+                                            <option value="TT">Tatar</option>
+                                            <option value="TE">Telugu</option>
+                                            <option value="TH">Thai</option>
+                                            <option value="BO">Tibetan</option>
+                                            <option value="TO">Tonga</option>
+                                            <option value="TR">Turkish</option>
+                                            <option value="UK">
+                                                Ukrainian
+                                            </option>
+                                            <option value="UR">Urdu</option>
+                                            <option value="UZ">Uzbek</option>
+                                            <option value="VI">
+                                                Vietnamese
+                                            </option>
+                                            <option value="CY">Welsh</option>
+                                            <option value="XH">Xhosa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="logout-section section">
+                        <button class="d-block mx-auto">
+                            <span class="mr-1">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                            Log out
+                        </button>
+                    </section>
+                    <section class="delete-account-section section">
+                        <button
+                            class="d-block mx-auto"
+                            data-toggle="modal"
+                            data-target="#deleteAccountModal"
+                        >
+                            <span class="mr-1">
+                                <i class="fa-solid fa-trash-alt"></i>
+                            </span>
+                            Delete account
+                        </button>
+                    </section>
+                </div>
+            </section>
+            <!--Phone preview-->
+
+            <!--Phone preview-->
+        </main>
+
+        <!---------------- main--------------------->
+
+        <!---------------- Footer --------------------->
+        <!-- footer start -->
+        <footer class="bg-dark text-center p-5">
+            <img
+                src="./image/sociabuzz-logo-white.png"
+                class="mb-4 mx-auto d-block"
+                alt="footer image"
+            />
+            <a href="mailto:support@sociabuzz.com" class="d-block mb-2"
+                >Hubungi Support</a
+            >
+            <a
+                href="https://sociabuzz.freshdesk.com"
+                target="_blank"
+                class="d-block mb-2"
+                >FAQ</a
+            >
+            <a
+                href="https://sociabuzz.com/info/terms"
+                target="_blank"
+                class="d-block mb-2"
+            >
+                Ketentuan Penggunaan
+            </a>
+            <a
+                href="https://sociabuzz.com/info/privacy"
+                target="_blank"
+                class="d-block mb-4"
+            >
+                Kebijakan Privasi
+            </a>
+
+            <p>&copy; PT Komunika Lintas Maya</p>
+        </footer>
+        <!-- footer end -->
+        <!---------------- Footer --------------------->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"
+            integrity="sha512-Gs+PsXsGkmr+15rqObPJbenQ2wB3qYvTHuJO6YJzPe/dTLvhy0fmae2BcnaozxDo5iaF8emzmCZWbQ1XXiX2Ig=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./js/select2.full.min.js"></script>
+        <script src="/js/account.js"></script>
+    </body>
+</html>
