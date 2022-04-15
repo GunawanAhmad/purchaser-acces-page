@@ -141,6 +141,7 @@
 }
 .btn-fill-light.active:hover {
     background-color: var(--green-color);
+    filter: brightness(0.95);
 }
 .btn-outline-primary:hover,
 .btn-fill-light:hover,
@@ -168,7 +169,7 @@ a.btn.btn-primary {
     background: rgb(223, 251, 223);
     border-radius: 3rem;
     min-height: unset;
-    padding: 0.375rem 0.75rem;
+    padding: 12px 0.75rem;
     color: var(--green-color) !important;
     width: 100%;
 }
