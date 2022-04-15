@@ -1,6 +1,8 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: black;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 :root {
@@ -15,6 +17,11 @@ body {
     --font-size-seven: 0.583rem;
     --font-size-fourteen: 1.167rem;
     --font-size-24: 1.5rem;
+    --font-size-10: 0.625;
+    --font-size-12: 0.75rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-10: 0.625rem;
     --green-color: #76cc11;
 }
 

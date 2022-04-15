@@ -15,14 +15,14 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./css/items.css" />
+        <link rel="stylesheet" href="./css/transactions.css" />
     </head>
     <body>
         <!-- Header Section Start -->
         <header>
             <!-- navbar start -->
             <nav class="navbar navbar-expand-md border-bottom">
-                <a class="navbar-brand" href="/"
+                <a class="navbar-brand" href="#"
                     ><img
                         src="./image/logo.png"
                         class="header-pro-logo d-block"
@@ -266,7 +266,7 @@
                                         >
                                         <a
                                             class="dropdown-item nav-link"
-                                            href="#"
+                                            href="items.html"
                                         >
                                             <i class="fa-solid fa-box fa-fw"></i
                                             ><span>Items</span></a
@@ -281,7 +281,7 @@
                                         >
                                         <a
                                             class="dropdown-item nav-link"
-                                            href="./transactions.html"
+                                            href="#"
                                             ><i
                                                 class="fa-solid fa-wallet fa-fw"
                                             ></i
@@ -319,16 +319,94 @@
             </nav>
             <!-- navbar end -->
         </header>
-        <main class="">
-            <div class="col-sm-10 col-lg-8 m-auto">
+        <main>
+            <div class="wrapper">
+                <div class="mx-auto d-flex">
+                    <button class="btn-fill-light active">Transactions</button>
+                    <button class="btn-fill-light">Reward</button>
+                </div>
+                <section class="payment-section section">
+                    <div class="content">
+                        <div class="icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="information">
+                            <p class="title">
+                                SociaBuzz Credits
+                                <span class="info-icon"
+                                    ><i class="fa-solid fa-circle-info"></i
+                                ></span>
+                            </p>
+                            <p class="money-amount">IDR10,000,000</p>
+                            <div class="actions">
+                                <a href="">Add credits </a>&nbsp;&nbsp;
+                                <a href="">Withdraw credit </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="information">
+                            <p class="title">
+                                Gopay
+                                <span class="info-icon"
+                                    ><i class="fa-solid fa-circle-info"></i
+                                ></span>
+                            </p>
+                            <p class="money-amount">IDR500,000</p>
+                            <div class="actions">
+                                <a href="" class="inactive"
+                                    >Disconnect account
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="information">
+                            <p class="title">
+                                Dana
+                                <span class="info-icon"
+                                    ><i class="fa-solid fa-circle-info"></i
+                                ></span>
+                            </p>
+                            <div class="actions">
+                                <a href="">Connect account</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="information">
+                            <p class="title">
+                                OVO
+                                <span class="info-icon"
+                                    ><i class="fa-solid fa-circle-info"></i
+                                ></span>
+                            </p>
+                            <p class="money-amount">IDR50,000</p>
+                            <div class="actions">
+                                <a href="" class="inactive"
+                                    >Disconnect account</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <div class="filter-container">
                     <div class="search">
                         <span class="icon"><i class="fas fa-search"></i></span>
                         <input
                             type="text"
-                            class="form-control tenpx"
+                            class="form-control fourteenpx"
                             placeholder="Search"
-                            id="thumbnail_icon_search_input"
+                            id="search_input"
                         />
                         <button class="clear-icon-search">
                             <i class="fas fa-times"></i>
@@ -340,7 +418,7 @@
                             class="select2"
                             name="select2-1"
                             tabindex="2"
-                            data-placeholder="Creator
+                            data-placeholder="Status
                         "
                         >
                             <option value=""></option>
@@ -361,176 +439,190 @@
                 </div>
                 <div class="content-wrapper">
                     <div class="content-container">
-                        <img
-                            src="./image/person.jpg"
-                            alt=""
-                            class="content-img"
-                        />
                         <div>
-                            <p class="content-title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Nesciunt sed magni a officiis
-                                odit numquam, quas doloribus. Accusantium, odit
-                                ullam? Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Facere, quibusdam voluptates
-                                magnam omnis expedita nobis ut impedit corporis
-                                perferendis temporibus? asdasdasdasdsad
-                            </p>
-                            <div class="user">
-                                <img
-                                    src="./image/person.jpg"
-                                    alt=""
-                                    class="profile-img"
-                                />
-                                <p class="user-name">
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Ea, temporibus! Lorem
-                                    ipsum dolor sit amet consectetur adipisicing
-                                    elit. Aperiam, itaque qui repellat atque a
-                                    provident nostrum doloribus id adipisci
-                                    illum, inventore consequatur minus autem
-                                    veniam rerum molestiae et in. Sunt cumque
-                                    expedita distinctio molestias quam obcaecati
-                                    accusamus natus beatae nihil! Assumenda quia
-                                    saepe amet unde, officia nostrum alias
-                                    doloribus qui quibusdam velit ut
-                                    perspiciatis esse at nesciunt cumque nisi
-                                    labore explicabo ipsam. Ratione obcaecati
-                                    exercitationem impedit consequatur,
-                                    excepturi aliquid blanditiis, quo quidem,
-                                    fuga odit nobis. Cumque dolores cupiditate
-                                    laborum numquam nostrum, quam delectus
-                                    voluptate aut magni blanditiis earum fugit
-                                    inventore quo fuga magnam ipsum nisi
-                                    deserunt nihil itaque similique praesentium?
+                            <div>
+                                <p class="content-desc break-word">
+                                    Description here lorem ipsum dolor sit amet
+                                    consectetur adipi scing elit eiusmod tempor
+                                    incididunt ut labore et dolore
+                                </p>
+                                <p class="twelvepx gray-text">
+                                    2022-06-30 | 17:52 UTC+5 | TRT-0001298721
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    class="money-amount minus bold sixteenpx text-right break-word"
+                                    style="max-width: 500px"
+                                >
+                                    &minus;IDR100,000,000
+                                </p>
+                                <p
+                                    class="fourteenpx text-right break-word gray-text"
+                                >
+                                    SociaBuzz Credits
+                                </p>
+                                <p
+                                    class="status twelvepx text-right bold green-text break-word"
+                                >
+                                    Currently in escro
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="content-container">
-                        <img
-                            src="./image/person.jpg"
-                            alt=""
-                            class="content-img"
-                        />
                         <div>
-                            <p class="content-title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Nesciunt sed magni a officiis
-                                odit numquam, quas doloribus. Accusantium, odit
-                                ullam? Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Facere, quibusdam voluptates
-                                magnam omnis expedita nobis ut impedit corporis
-                                perferendis temporibus? asdasdasdasdsad
-                            </p>
-                            <div class="user">
-                                <img
-                                    src="./image/person.jpg"
-                                    alt=""
-                                    class="profile-img"
-                                />
-                                <p class="user-name">
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Ea, temporibus! Lorem
-                                    ipsum dolor sit amet consectetur adipisicing
-                                    elit. Aperiam, itaque qui repellat atque a
-                                    provident nostrum doloribus id adipisci
-                                    illum, inventore consequatur minus autem
-                                    veniam rerum molestiae et in. Sunt cumque
-                                    expedita distinctio molestias quam obcaecati
-                                    accusamus natus beatae nihil! Assumenda quia
-                                    saepe amet unde, officia nostrum alias
-                                    doloribus qui quibusdam velit ut
-                                    perspiciatis esse at nesciunt cumque nisi
-                                    labore explicabo ipsam. Ratione obcaecati
-                                    exercitationem impedit consequatur,
-                                    excepturi aliquid blanditiis, quo quidem,
-                                    fuga odit nobis. Cumque dolores cupiditate
-                                    laborum numquam nostrum, quam delectus
-                                    voluptate aut magni blanditiis earum fugit
-                                    inventore quo fuga magnam ipsum nisi
-                                    deserunt nihil itaque similique praesentium?
+                            <div>
+                                <p class="content-desc break-word">
+                                    Description here lorem ipsum dolor sit amet
+                                    consectetur adipi scing elit eiusmod tempor
+                                    incididunt ut labore et dolore
+                                </p>
+                                <p class="twelvepx gray-text">
+                                    2022-06-30 | 17:52 UTC+5 | TRT-0001298721
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    class="money-amount minus bold sixteenpx text-right break-word"
+                                    style="max-width: 500px"
+                                >
+                                    &minus;IDR100,000,000
+                                </p>
+                                <p
+                                    class="fourteenpx text-right break-word gray-text"
+                                >
+                                    Gopay
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="content-container">
-                        <img
-                            src="./image/person.jpg"
-                            alt=""
-                            class="content-img"
-                        />
                         <div>
-                            <p class="content-title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Nesciunt sed magni a officiis
-                                odit numquam, quas doloribus. Accusantium, odit
-                                ullam? Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Facere, quibusdam voluptates
-                                magnam omnis expedita nobis ut impedit corporis
-                                perferendis temporibus? asdasdasdasdsad
-                            </p>
-                            <div class="user">
-                                <img
-                                    src="./image/person.jpg"
-                                    alt=""
-                                    class="profile-img"
-                                />
-                                <p class="user-name">
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Ea, temporibus! Lorem
-                                    ipsum dolor sit amet consectetur adipisicing
-                                    elit. Aperiam, itaque qui repellat atque a
-                                    provident nostrum doloribus id adipisci
-                                    illum, inventore consequatur minus autem
-                                    veniam rerum molestiae et in. Sunt cumque
-                                    expedita distinctio molestias quam obcaecati
-                                    accusamus natus beatae nihil! Assumenda quia
-                                    saepe amet unde, officia nostrum alias
-                                    doloribus qui quibusdam velit ut
-                                    perspiciatis esse at nesciunt cumque nisi
-                                    labore explicabo ipsam. Ratione obcaecati
-                                    exercitationem impedit consequatur,
-                                    excepturi aliquid blanditiis, quo quidem,
-                                    fuga odit nobis. Cumque dolores cupiditate
-                                    laborum numquam nostrum, quam delectus
-                                    voluptate aut magni blanditiis earum fugit
-                                    inventore quo fuga magnam ipsum nisi
-                                    deserunt nihil itaque similique praesentium?
+                            <div>
+                                <p class="content-desc break-word">
+                                    Description here lorem ipsum dolor sit amet
+                                    consectetur adipi scing elit eiusmod tempor
+                                    incididunt ut labore et dolore
+                                </p>
+                                <p class="twelvepx gray-text">
+                                    2022-06-30 | 17:52 UTC+5 | TRT-0001298721
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    class="money-amount green-text bold sixteenpx text-right break-word"
+                                    style="max-width: 500px"
+                                >
+                                    &plus;IDR100,000,000
+                                </p>
+                                <p
+                                    class="fourteenpx text-right break-word gray-text"
+                                >
+                                    SociaBuzz Credits
+                                </p>
+                                <p
+                                    class="status twelvepx text-right bold green-text break-word"
+                                >
+                                    Added credits
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="content-container">
-                        <img
-                            src="./image/person.jpg"
-                            alt=""
-                            class="content-img"
-                        />
                         <div>
-                            <p class="content-title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Nesciunt sed magni a officiis
-                                odit numquam, quas doloribus.
-                            </p>
-                            <div class="user">
-                                <img
-                                    src="./image/person.jpg"
-                                    alt=""
-                                    class="profile-img"
-                                />
-                                <p class="user-name">
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Ea, temporibus! Lorem
-                                    ipsum dolor sit amet consectetur adipisicing
-                                    elit.
+                            <div>
+                                <p class="content-desc break-word">
+                                    Description here lorem ipsum dolor sit amet
+                                    consectetur adipi scing elit eiusmod tempor
+                                    incididunt ut labore et dolore
+                                </p>
+                                <p class="twelvepx gray-text">
+                                    2022-06-30 | 17:52 UTC+5 | TRT-0001298721
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    class="money-amount bold sixteenpx text-right break-word"
+                                    style="max-width: 500px"
+                                >
+                                    &minus;IDR100,000,000
+                                </p>
+                                <p
+                                    class="fourteenpx text-right break-word gray-text"
+                                >
+                                    OVO
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Loading animation -->
-                    <div class="loading"></div>
+                    <div class="content-container">
+                        <div>
+                            <div>
+                                <p class="content-desc break-word">
+                                    Description here lorem ipsum dolor sit amet
+                                    consectetur adipi scing elit eiusmod tempor
+                                    incididunt ut labore et dolore
+                                </p>
+                                <p class="twelvepx gray-text">
+                                    2022-06-30 | 17:52 UTC+5 | TRT-0001298721
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    class="money-amount green-text bold sixteenpx text-right break-word"
+                                    style="max-width: 500px"
+                                >
+                                    &plus;IDR100,000,000
+                                </p>
+                                <p
+                                    class="fourteenpx text-right break-word gray-text"
+                                >
+                                    SociaBuzz Credits
+                                </p>
+                                <p
+                                    class="status twelvepx text-right bold green-text break-word"
+                                >
+                                    Refund
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-container">
+                        <div>
+                            <div>
+                                <p class="content-desc break-word">
+                                    Description here lorem ipsum dolor sit amet
+                                    consectetur adipi scing elit eiusmod tempor
+                                    incididunt ut labore et dolore
+                                </p>
+                                <p class="twelvepx gray-text">
+                                    2022-06-30 | 17:52 UTC+5 | TRT-0001298721
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    class="money-amount bold sixteenpx text-right break-word"
+                                    style="max-width: 500px"
+                                >
+                                    &minus;IDR100,000,000
+                                </p>
+                                <p
+                                    class="fourteenpx text-right break-word gray-text"
+                                >
+                                    SociaBuzz Credits
+                                </p>
+                                <p
+                                    class="status twelvepx text-right bold red-text break-word"
+                                >
+                                    Canceled
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Loading animation -->
+                <div class="loading mx-auto"></div>
             </div>
         </main>
         <footer class="bg-dark text-center p-5">
@@ -582,6 +674,18 @@
             crossorigin="anonymous"
         ></script>
         <script src="./js/select2.full.min.js"></script>
-        <script src="./js/items.js"></script>
+        <script src="./js/home.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".select2").select2({
+                    tags: true,
+                });
+            });
+
+            //clear search input
+            $(".clear-icon-search").click(function (e) {
+                $("#search_input").val("");
+            });
+        </script>
     </body>
 </html>

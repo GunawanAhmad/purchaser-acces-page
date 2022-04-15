@@ -13,7 +13,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: calc(1.5em + 0.75rem + 2px);
+    height: 40px;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -26,8 +26,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 1rem;
-    padding: 0.25rem 0.75rem;
+    height: 100%;
+    padding: 10px 19px;
     padding-right: 1.5rem;
+    line-height: 1.3 !important;
 }
 .select2-container .select2-selection--single .select2-selection__clear {
     background-color: transparent;
@@ -192,8 +194,8 @@
 .select2-container--default
     .select2-selection--single
     .select2-selection__placeholder {
-    color: #888787;
-    font-size: 0.833rem;
+    color: #959595;
+    font-size: 0.875rem;
 }
 .select2-container--default
     .select2-selection--single

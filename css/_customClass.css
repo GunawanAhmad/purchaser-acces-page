@@ -18,12 +18,24 @@
     display: flex;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .text-primary {
     color: var(--green-color) !important;
 }
 
 .green-text {
     color: #76cc11;
+}
+
+.red-text {
+    color: #ff0000;
+}
+
+.gray-text {
+    color: #959595;
 }
 
 .caption {
@@ -41,8 +53,12 @@
     font-weight: 700;
 }
 .fourteenbold {
-    font-size: 1.17rem !important;
+    font-size: 0.875rem !important;
     font-weight: 700;
+}
+
+.fourteenpx {
+    font-size: var(--font-size-14);
 }
 .tenpx {
     font-size: 0.833rem;
@@ -55,8 +71,12 @@
     font-size: 0.917rem;
 }
 
+.twelvepx {
+    font-size: var(--font-size-12);
+}
+
 .sixteenpx {
-    font-size: 1rem;
+    font-size: var(--font-size-16);
 }
 .ninepx {
     font-size: 0.75rem;
@@ -83,8 +103,10 @@
     cursor: pointer;
 }
 .break-word {
-    word-break: break-all;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
+
 .btn-primary {
     min-height: 46px;
     padding: 0 36px;
@@ -111,6 +133,7 @@
     border: 1px solid;
     outline: none;
     word-break: break-all;
+    line-height: 1.2;
 }
 .btn-fill-light.active {
     background-color: var(--green-color);
@@ -149,6 +172,7 @@ a.btn.btn-primary {
     color: var(--green-color) !important;
     width: 100%;
 }
+
 .btn-fill-light:hover {
     color: #fff !important;
 }
