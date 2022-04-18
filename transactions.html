@@ -18,6 +18,44 @@
         <link rel="stylesheet" href="./css/transactions.css" />
     </head>
     <body>
+        <!-- info modal -->
+        <div
+            class="modal fade"
+            id="infoModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="infoModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. <br /><br />
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br /><br />
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- info modal -->
+
         <!-- Header Section Start -->
         <header>
             <!-- navbar start -->
@@ -269,7 +307,7 @@
                                             href="items.html"
                                         >
                                             <i class="fa-solid fa-box fa-fw"></i
-                                            ><span>Items</span></a
+                                            ><span>Purchases</span></a
                                         >
                                         <a
                                             class="dropdown-item nav-link"
@@ -297,7 +335,7 @@
                                         >
                                         <a
                                             class="dropdown-item nav-link"
-                                            href="#"
+                                            href="account.html"
                                             ><i
                                                 class="fa-solid fa-circle-user fa-fw"
                                             ></i
@@ -333,9 +371,13 @@
                         <div class="information">
                             <p class="title">
                                 SociaBuzz Credits
-                                <span class="info-icon"
-                                    ><i class="fa-solid fa-circle-info"></i
-                                ></span>
+                                <button
+                                    class="info-icon"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
+                                >
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>
                             </p>
                             <p class="money-amount">IDR10,000,000</p>
                             <div class="actions">
@@ -351,9 +393,13 @@
                         <div class="information">
                             <p class="title">
                                 Gopay
-                                <span class="info-icon"
-                                    ><i class="fa-solid fa-circle-info"></i
-                                ></span>
+                                <button
+                                    class="info-icon"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
+                                >
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>
                             </p>
                             <p class="money-amount">IDR500,000</p>
                             <div class="actions">
@@ -370,9 +416,13 @@
                         <div class="information">
                             <p class="title">
                                 Dana
-                                <span class="info-icon"
-                                    ><i class="fa-solid fa-circle-info"></i
-                                ></span>
+                                <button
+                                    class="info-icon"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
+                                >
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>
                             </p>
                             <div class="actions">
                                 <a href="">Connect account</a>
@@ -386,9 +436,13 @@
                         <div class="information">
                             <p class="title">
                                 OVO
-                                <span class="info-icon"
-                                    ><i class="fa-solid fa-circle-info"></i
-                                ></span>
+                                <button
+                                    class="info-icon"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
+                                >
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>
                             </p>
                             <p class="money-amount">IDR50,000</p>
                             <div class="actions">
@@ -450,7 +504,7 @@
                                     2022-06-30 | 17:52 UTC+5 | TRT-0001298721
                                 </p>
                             </div>
-                            <div>
+                            <div class="text-right">
                                 <p
                                     class="money-amount minus bold sixteenpx text-right break-word"
                                     style="max-width: 500px"
@@ -462,11 +516,14 @@
                                 >
                                     SociaBuzz Credits
                                 </p>
-                                <p
+                                <button
+                                    type="button"
                                     class="status twelvepx text-right bold green-text break-word"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
                                 >
                                     Currently in escro
-                                </p>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -482,7 +539,7 @@
                                     2022-06-30 | 17:52 UTC+5 | TRT-0001298721
                                 </p>
                             </div>
-                            <div>
+                            <div class="text-right">
                                 <p
                                     class="money-amount minus bold sixteenpx text-right break-word"
                                     style="max-width: 500px"
@@ -509,7 +566,7 @@
                                     2022-06-30 | 17:52 UTC+5 | TRT-0001298721
                                 </p>
                             </div>
-                            <div>
+                            <div class="text-right">
                                 <p
                                     class="money-amount green-text bold sixteenpx text-right break-word"
                                     style="max-width: 500px"
@@ -521,11 +578,13 @@
                                 >
                                     SociaBuzz Credits
                                 </p>
-                                <p
+                                <button
                                     class="status twelvepx text-right bold green-text break-word"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
                                 >
                                     Added credits
-                                </p>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -541,7 +600,7 @@
                                     2022-06-30 | 17:52 UTC+5 | TRT-0001298721
                                 </p>
                             </div>
-                            <div>
+                            <div class="text-right">
                                 <p
                                     class="money-amount bold sixteenpx text-right break-word"
                                     style="max-width: 500px"
@@ -568,7 +627,7 @@
                                     2022-06-30 | 17:52 UTC+5 | TRT-0001298721
                                 </p>
                             </div>
-                            <div>
+                            <div class="text-right">
                                 <p
                                     class="money-amount green-text bold sixteenpx text-right break-word"
                                     style="max-width: 500px"
@@ -580,11 +639,13 @@
                                 >
                                     SociaBuzz Credits
                                 </p>
-                                <p
+                                <button
                                     class="status twelvepx text-right bold green-text break-word"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
                                 >
                                     Refund
-                                </p>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -600,7 +661,7 @@
                                     2022-06-30 | 17:52 UTC+5 | TRT-0001298721
                                 </p>
                             </div>
-                            <div>
+                            <div class="text-right">
                                 <p
                                     class="money-amount bold sixteenpx text-right break-word"
                                     style="max-width: 500px"
@@ -612,11 +673,13 @@
                                 >
                                     SociaBuzz Credits
                                 </p>
-                                <p
+                                <button
                                     class="status twelvepx text-right bold red-text break-word"
+                                    data-toggle="modal"
+                                    data-target="#infoModal"
                                 >
                                     Canceled
-                                </p>
+                                </button>
                             </div>
                         </div>
                     </div>
