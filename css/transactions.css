@@ -45,7 +45,6 @@ main {
 
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     max-width: 660px;
@@ -157,6 +156,7 @@ main {
 .search {
     position: relative;
     height: 40px;
+    margin-right: 8px;
 }
 .search .icon {
     position: absolute;
@@ -178,6 +178,8 @@ main {
     color: black;
     vertical-align: middle;
     font-weight: 400;
+    font-size: var(--font-size-14);
+    border: 0.5px solid #a0a0a0;
 }
 .search input:focus {
     color: black;
@@ -206,11 +208,17 @@ main {
 .select-container {
     position: relative;
     color: #c2c2c2;
+    margin-left: 8px;
 }
 .select-container .select2-selection__rendered {
     font-weight: 400;
-    font-size: 0.875rem !important;
+    font-size: var(--font-size-14) !important;
     padding: 0 19px !important;
+    padding-right: 35px !important;
+    color: red;
+    display: block !important;
+    width: 100%;
+    margin-top: 10px;
 }
 .select-container select {
     font-weight: 400;
@@ -220,6 +228,10 @@ main {
     .select2-selection--single
     .select2-selection__placeholder {
     font-weight: 400;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #a0a0a0;
 }
 .select-container input {
     display: block;
@@ -239,7 +251,7 @@ main {
 .select-container span.arrow-icon {
     pointer-events: none;
     position: absolute;
-    right: 1rem;
+    right: 14px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     /* WebKit */
@@ -266,13 +278,25 @@ main {
 .filter-container {
     display: flex;
     justify-content: space-between;
+    margin-right: 16px;
+    margin-bottom: 30px;
+}
+
+.filter-container > div {
+    flex: 1 1 100%;
+    min-width: 50%;
+}
+
+/* .filter-container {
+    display: flex;
+    justify-content: space-between;
     gap: 1rem;
     margin-bottom: 30px;
 }
 
 .filter-container > div {
     flex: 1 1 100%;
-}
+} */
 
 .content-container {
     display: flex;
@@ -338,9 +362,18 @@ main {
 
     .filter-container {
         flex-direction: column;
+        margin-right: 0;
     }
     .filter-container > div {
         flex: inherit;
+    }
+
+    .search,
+    .select-container {
+        margin: 0 !important;
+    }
+    .search {
+        margin-bottom: 14px !important;
     }
 
     .content-container .content-desc {

@@ -235,6 +235,7 @@ main {
 
     .filter-container {
         flex-direction: column;
+        margin-right: 0;
     }
     .filter-container > div {
         flex: inherit;
