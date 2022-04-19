@@ -202,4 +202,9 @@ a.btn.btn-primary {
 .form-control {
     border-radius: 6px !important;
     height: 40px;
+    border-color: #b8b8b8;
+}
+
+.form-control:focus {
+    border-color: #b8b8b8 !important;
 }
