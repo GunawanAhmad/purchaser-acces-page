@@ -469,14 +469,16 @@
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
 }
-.select2-container--classic .select2-selection--single:focus {
-    border: 1px solid #5897fb;
-}
+
 .select2-container--classic
     .select2-selection--single
     .select2-selection__rendered {
     color: #444;
     line-height: 28px;
+}
+
+.select2-selection__rendered:focus {
+    outline: none !important;
 }
 .select2-container--classic
     .select2-selection--single
@@ -543,7 +545,7 @@
     right: auto;
 }
 .select2-container--classic.select2-container--open .select2-selection--single {
-    border: 1px solid #5897fb;
+    border: 1px solid var(--green-color);
 }
 .select2-container--classic.select2-container--open
     .select2-selection--single
@@ -589,9 +591,7 @@
     padding-bottom: 5px;
     padding-right: 5px;
 }
-.select2-container--classic .select2-selection--multiple:focus {
-    border: 1px solid #5897fb;
-}
+
 .select2-container--classic
     .select2-selection--multiple
     .select2-selection__clear {
