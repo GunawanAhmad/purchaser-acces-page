@@ -160,7 +160,7 @@ main {
 
 .content-wrapper {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,6 +231,9 @@ main {
     }
     main {
         padding-top: 23px;
+    }
+    .content-wrapper {
+        margin-top: 24px;
     }
 
     .filter-container {
