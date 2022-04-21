@@ -27,7 +27,7 @@ main {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    color: #c2c2c2;
+    color: #959595;
     font-size: 18px;
     pointer-events: none;
 }
@@ -60,7 +60,7 @@ main {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    color: #c2c2c2;
+    color: #959595;
     background: none;
     outline: none;
     border: none;
@@ -124,7 +124,7 @@ main {
     /* Opera */
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #c2c2c2;
+    color: #959595;
     background-color: white;
     font-size: var(--font-size-ten);
 }
