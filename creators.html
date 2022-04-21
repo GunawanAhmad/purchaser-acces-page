@@ -1,0 +1,551 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/creators.css" />
+    </head>
+    <body>
+        <!-- Header Section Start -->
+        <header>
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#"
+                    ><img
+                        src="./image/logo.png"
+                        class="header-pro-logo d-block"
+                        alt="Sociabuzz Pro Logo"
+                /></a>
+
+                <div class="nav-bar-link ml-auto d-flex align-items-center">
+                    <div class="navigation-bar">
+                        <div class="">
+                            <ul class="navbar-nav mr-auto align-items-center">
+                                <li class="nav-item px-1 active">
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <a class="nav-link" href="#"
+                                        ><i class="far fa-envelope"></i
+                                    ></a>
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                </li>
+
+                                <li class="nav-item px-1">
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <a
+                                        class="nav-link red-dot"
+                                        href="#"
+                                        data-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <i class="far fa-bell"></i>
+                                    </a>
+                                    <!-- tambahkan red-dot class untuk membuat lingkaran merah -->
+                                    <div
+                                        class="dropdown-menu dropdown-menu-right notification"
+                                        id="notification-dropdown"
+                                    >
+                                        <div>
+                                            <h4
+                                                class="notif-title font-weight-x-bold mb-0"
+                                            >
+                                                Notifikasi
+                                            </h4>
+                                            <div class="message-wrapper">
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet”.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet”.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div class="message-container">
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit
+                                                                ametasdasdwasdasdasdwasdsadasd.
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                                <!-- tambahkan class read pada message-container untuk menandakan notification telah dibaca -->
+                                                <div
+                                                    class="message-container read"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src="./image/person.jpg"
+                                                            alt=""
+                                                        />
+                                                        <div>
+                                                            <p
+                                                                class="message mb-0"
+                                                            >
+                                                                <span
+                                                                    class="font-weight-bold"
+                                                                    >Profile
+                                                                    Name
+                                                                    Here</span
+                                                                >
+                                                                posted a new
+                                                                content: “Lorem
+                                                                ipsumasd dolor
+                                                                sit amet Lorem
+                                                                ipsum dolor sit
+                                                                amet consectetur
+                                                                adipisicing
+                                                                elit. Ducimus,
+                                                                odio..
+                                                            </p>
+                                                            <p
+                                                                class="time text-secondary"
+                                                            >
+                                                                1 jam lalu
+                                                            </p>
+                                                        </div>
+                                                        <button
+                                                            class="read-notif"
+                                                            data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Tandai sudah dibaca"
+                                                        ></button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="text-btn green-text eightpx ml-3 mb-1"
+                                            >
+                                                Tandai semua sudah dibaca
+                                            </button>
+                                            <button
+                                                class="underline-btn eightpx d-block ml-3"
+                                            >
+                                                Lihat semua
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item px-1 active">
+                                    <a
+                                        class="nav-link"
+                                        data-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        ><i class="fas fa-bars"> </i
+                                        ><span class="ml-2">Menu</span></a
+                                    >
+                                    <div
+                                        class="dropdown-menu dropdown-menu-right"
+                                    >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./contents.html"
+                                            ><i
+                                                class="fa-solid fa-newspaper fa-fw"
+                                            ></i
+                                            ><span>Contents</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./subscription.html"
+                                            ><i
+                                                class="fa-solid fa-repeat fa-fw"
+                                            ></i
+                                            ><span>Subscription</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./purchases.html"
+                                        >
+                                            <i class="fa-solid fa-box fa-fw"></i
+                                            ><span>Purchases</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./service.html"
+                                            ><i
+                                                class="fa-solid fa-handshake fa-fw"
+                                            ></i
+                                            ><span>Talents & Services</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./transactions.html"
+                                            ><i
+                                                class="fa-solid fa-wallet fa-fw"
+                                            ></i
+                                            ><span>Transactions</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./creators.html"
+                                            ><i
+                                                class="fa-solid fa-users fa-fw"
+                                            ></i
+                                            ><span>Creators</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="./account.html"
+                                            ><i
+                                                class="fa-solid fa-circle-user fa-fw"
+                                            ></i
+                                            ><span>Account</span></a
+                                        ><a
+                                            class="dropdown-item nav-link"
+                                            href="/signin"
+                                            ><i
+                                                class="fa-solid fa-right-to-bracket fa-fw"
+                                            ></i
+                                            ><span>Sign in</span></a
+                                        >
+                                        <a
+                                            class="dropdown-item nav-link"
+                                            href="/logout"
+                                            ><i
+                                                class="fa-solid fa-right-from-bracket fa-fw"
+                                            ></i
+                                            ><span>Log out</span></a
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
+        </header>
+        <main class="">
+            <div class="wrapper">
+                <div class="filter-container">
+                    <div class="search">
+                        <span class="icon"><i class="fas fa-search"></i></span>
+                        <input
+                            type="text"
+                            class="form-control tenpx"
+                            placeholder="Search"
+                            id="thumbnail_icon_search_input"
+                        />
+                        <button class="clear-icon-search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="select-container">
+                        <select
+                            id="select2-extra-1"
+                            class="select2"
+                            name="select2-1"
+                            tabindex="2"
+                            data-placeholder="Last activity
+                        "
+                        >
+                            <option value=""></option>
+                            <option value="1">George Washington</option>
+                            <option value="2">John Adams</option>
+                            <option value="3">Thomas Jefferson</option>
+                            <option value="4">James Madison</option>
+                            <option value="5">James Monroe</option>
+                            <option value="6">John Quincy Adams</option>
+                            <option value="7">Andrew Jackson</option>
+                            <option value="8">Martin Van Buren</option>
+                            <option value="9">William Henry Harrison</option>
+                        </select>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="content-container">
+                        <img
+                            src="./image/person.jpg"
+                            alt=""
+                            class="content-img"
+                        />
+                        <div>
+                            <p class="content-title">
+                                Creator name here lorem ipsum dolor sit amet
+                                consectetur adipiscing elit sed
+                            </p>
+                            <div class="creator">
+                                <p class="creator-profile">
+                                    Creator short profile description here name
+                                    here lorem ipsum dolor sit amet consectetur
+                                    adipiscing elit sed do eiusmod
+                                </p>
+                            </div>
+                            <p class="activity">
+                                Your last activity (24 Jul 2022 - 16:33
+                                UTC+07:00)
+                            </p>
+                            <p class="last-desc">
+                                Ut enim ad minim veniam quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat duis aute irure dolor in
+                                reprehenderit in voluptate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-container">
+                        <img
+                            src="./image/person.jpg"
+                            alt=""
+                            class="content-img"
+                        />
+                        <div>
+                            <p class="content-title">
+                                Creator name here lorem ipsum dolor sit amet
+                                consectetur adipiscing elit sed
+                            </p>
+                            <div class="creator">
+                                <p class="creator-profile">
+                                    Creator short profile description here name
+                                    here lorem ipsum dolor sit amet consectetur
+                                    adipiscing elit sed do eiusmod
+                                </p>
+                            </div>
+                            <p class="activity">
+                                Your last activity (24 Jul 2022 - 16:33
+                                UTC+07:00)
+                            </p>
+                            <p class="last-desc">
+                                Ut enim ad minim veniam quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat duis aute irure dolor in
+                                reprehenderit in voluptate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-container">
+                        <img
+                            src="./image/person.jpg"
+                            alt=""
+                            class="content-img"
+                        />
+                        <div>
+                            <p class="content-title">
+                                Creator name here lorem ipsum dolor sit amet
+                                consectetur adipiscing elit sed
+                            </p>
+                            <div class="creator">
+                                <p class="creator-profile">
+                                    Creator short profile description here name
+                                    here lorem ipsum dolor sit amet consectetur
+                                    adipiscing elit sed do eiusmod
+                                </p>
+                            </div>
+                            <p class="activity">
+                                Your last activity (24 Jul 2022 - 16:33
+                                UTC+07:00)
+                            </p>
+                            <p class="last-desc">
+                                Ut enim ad minim veniam quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat duis aute irure dolor in
+                                reprehenderit in voluptate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-container">
+                        <img
+                            src="./image/person.jpg"
+                            alt=""
+                            class="content-img"
+                        />
+                        <div>
+                            <p class="content-title">
+                                Creator name here lorem ipsum dolor sit amet
+                                consectetur adipiscing elit sed
+                            </p>
+                            <div class="creator">
+                                <p class="creator-profile">
+                                    Creator short profile description here name
+                                    here lorem ipsum dolor sit amet consectetur
+                                    adipiscing elit sed do eiusmod
+                                </p>
+                            </div>
+                            <p class="activity">
+                                Your last activity (24 Jul 2022 - 16:33
+                                UTC+07:00)
+                            </p>
+                            <p class="last-desc">
+                                Ut enim ad minim veniam quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat duis aute irure dolor in
+                                reprehenderit in voluptate
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Loading animation -->
+                    <div class="loading"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark text-center p-5">
+            <img
+                src="./image/sociabuzz-logo-white.png"
+                class="mb-4 mx-auto d-block"
+                alt="footer image"
+            />
+            <a href="mailto:support@sociabuzz.com" class="d-block mb-2"
+                >Hubungi Support</a
+            >
+            <a
+                href="https://sociabuzz.freshdesk.com"
+                target="_blank"
+                class="d-block mb-2"
+                >FAQ</a
+            >
+            <a
+                href="https://sociabuzz.com/info/terms"
+                target="_blank"
+                class="d-block mb-2"
+            >
+                Ketentuan Penggunaan
+            </a>
+            <a
+                href="https://sociabuzz.com/info/privacy"
+                target="_blank"
+                class="d-block mb-4"
+            >
+                Kebijakan Privasi
+            </a>
+
+            <p>&copy; PT Komunika Lintas Maya</p>
+        </footer>
+        <!-- Header Section End -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/select2.full.min.js"></script>
+        <script src="./js/items.js"></script>
+    </body>
+</html>
