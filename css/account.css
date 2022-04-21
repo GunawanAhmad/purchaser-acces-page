@@ -39,7 +39,7 @@ body {
 }
 
 .delete-modal .modal-dialog {
-    max-width: 310px;
+    max-width: 350px;
 }
 .delete-modal .modal-content {
     width: auto;
@@ -65,14 +65,7 @@ body {
 .delete-modal .modal-content .modal-body .btn-fill-light.active:hover {
     background-color: var(--green-color);
 }
-#thumbnailModal .btn {
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-}
-#thumbnailModal .modal-content {
-    max-width: 400px;
-}
+
 .croppie-img-modal .modal-body .croppie-container .cr-boundary {
     position: relative;
     overflow: hidden;
@@ -121,7 +114,7 @@ body {
 }
 @media (min-width: 576px) {
     .croppie-img-modal .modal-dialog {
-        max-width: 350px;
+        max-width: 390px;
         margin: 1.75rem auto;
     }
 }
@@ -151,7 +144,7 @@ main .content-wrapper.hide {
 }
 
 .modal .modal-dialog.input {
-    max-width: 400px;
+    max-width: 440px;
 }
 
 .section {

@@ -208,3 +208,8 @@ a.btn.btn-primary {
 .form-control:focus {
     border-color: #b8b8b8 !important;
 }
+
+.modal-dialog {
+    margin: 0.5rem auto !important;
+    padding: 0 20px;
+}
