@@ -70,11 +70,13 @@ main {
     border: 1px solid #c2c2c2;
 }
 
-.payment-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    grid-gap: 25px;
+.payment-section > div {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.payment-section > div:last-of-type {
+    margin-bottom: 0;
 }
 
 .content .icon {
@@ -97,6 +99,12 @@ main {
     display: flex;
     align-items: flex-start;
     font-size: 1rem;
+    flex: 1 1 100%;
+    margin-right: 60px;
+}
+
+.content:last-child {
+    margin-right: 0;
 }
 
 .content .information {
@@ -367,6 +375,16 @@ main {
     }
     .search {
         margin-bottom: 14px !important;
+    }
+
+    .payment-section > div {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-bottom: 25px;
     }
 
     .content-container .content-desc {
