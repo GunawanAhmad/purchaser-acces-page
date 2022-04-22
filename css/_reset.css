@@ -64,3 +64,8 @@ a:active {
     box-shadow: none !important;
     outline: none;
 }
+
+p {
+    overflow-wrap: break-word !important;
+    word-wrap: break-word;
+}
