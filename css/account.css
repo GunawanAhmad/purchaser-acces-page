@@ -126,11 +126,11 @@ main {
     margin: auto;
 }
 main .content-wrapper {
-    max-width: 660px;
+    max-width: 700px;
     margin: auto;
     min-height: 100vh;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 20px;
 }
 main .content-wrapper.hide {
     display: none;
