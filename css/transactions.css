@@ -357,10 +357,6 @@ main {
 }
 
 @media (max-width: 550px) {
-    .payment-section {
-        grid-template-columns: 1fr;
-    }
-
     .filter-container {
         flex-direction: column;
         margin-right: 0;
@@ -385,6 +381,7 @@ main {
     .content {
         margin-right: 0;
         margin-bottom: 25px;
+        flex: 1 1 auto;
     }
 
     .content-container .content-desc {
