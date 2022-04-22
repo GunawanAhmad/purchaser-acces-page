@@ -282,6 +282,9 @@ main {
     background: #d7d7d7;
     display: block;
     border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .switch label:after {
     content: "";
@@ -308,7 +311,14 @@ main {
     background: var(--green-color);
 }
 .switch input:checked + label:after {
-    left: 100%;
+    /* Firefox */
+    left: -moz-calc(100% - 2px);
+    /* WebKit */
+    left: -webkit-calc(100% - 2px);
+    /* Opera */
+    left: -o-calc(100% - 2px);
+    /* Standard */
+    left: calc(100% - 2px);
     -webkit-transform: translate(-100%, -50%);
     /* WebKit */
     -moz-transform: translate(-100%, -50%);
