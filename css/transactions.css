@@ -74,6 +74,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    grid-gap: 25px;
 }
 
 .content .icon {
@@ -287,17 +288,6 @@ main {
     min-width: 50%;
 }
 
-/* .filter-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 30px;
-}
-
-.filter-container > div {
-    flex: 1 1 100%;
-} */
-
 .content-container {
     display: flex;
     font-size: var(--font-size-fourteen);
@@ -316,7 +306,6 @@ main {
 .content-container > div {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
     justify-content: space-between;
     width: 100%;
 }
@@ -325,6 +314,10 @@ main {
     margin-bottom: 0.5rem;
     font-size: 1rem;
     max-width: 475px;
+}
+
+.content-container .text-right {
+    margin-left: 15px;
 }
 
 .content-container .user-name {
