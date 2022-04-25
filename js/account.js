@@ -109,7 +109,30 @@ function profileSection() {
     }
 
     $(document).ready(function () {
+        const parentElement = document.getElementById("country-flag");
+        const flag = new CountryFlag(parentElement);
+        flag.selectByAlpha2("us");
+
         $(".select2").select2();
+        let selectedTel = $(".tel-pick-container .select2").find(":selected");
+        flag.selectByAlpha2($(selectedTel).attr("data-countryCode"));
+        $(".value_result").text(
+            $(selectedTel).attr("data-countryCode") +
+                " (+" +
+                $(selectedTel).attr("value") +
+                ") "
+        );
+        $(".tel-pick-container .select2").on("select2:select", function (e) {
+            flag.selectByAlpha2(
+                $(e.params.data.element).attr("data-countryCode")
+            );
+            $(".value_result").text(
+                $(e.params.data.element).attr("data-countryCode") +
+                    " (+" +
+                    $(e.params.data.element).attr("value") +
+                    ") "
+            );
+        });
     });
 }
 
