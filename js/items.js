@@ -1,7 +1,5 @@
 $(document).ready(function () {
-    $(".select2").select2({
-        tags: true,
-    });
+    $(".select2").select2();
     $(function () {
         $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
     });

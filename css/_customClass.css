@@ -206,7 +206,7 @@ a.btn.btn-primary {
 }
 
 .form-control:focus {
-    border-color: #b8b8b8 !important;
+    border-color: var(--green-color) !important;
 }
 
 .modal-dialog {

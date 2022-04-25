@@ -431,6 +431,10 @@ input[readonly] {
     padding-right: 2.5rem;
 }
 
+.select2-container--default .select2-selection--single {
+    border-radius: 6px !important;
+}
+
 .form-group .select2::after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
