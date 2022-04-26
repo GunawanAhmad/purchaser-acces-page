@@ -69,3 +69,7 @@ p {
     overflow-wrap: break-word !important;
     word-wrap: break-word;
 }
+
+input {
+    color: black !important;
+}
