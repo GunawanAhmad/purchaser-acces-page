@@ -127,6 +127,11 @@ main {
     color: #959595;
     background-color: white;
     font-size: var(--font-size-ten);
+    transition: transform 250ms ease;
+}
+
+.select-container.rotate span.arrow-icon {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .select2-container--default .select2-selection--single {

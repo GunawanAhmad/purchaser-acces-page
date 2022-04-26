@@ -435,7 +435,11 @@ input[readonly] {
     border-radius: 6px !important;
 }
 
-.form-group .select2::after {
+.form-group .select-container {
+    position: relative;
+}
+
+.form-group .select-container::after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f107";
@@ -445,6 +449,11 @@ input[readonly] {
     transform: translateY(-50%);
     color: #b5b5b5;
     pointer-events: none;
+    transition: transform 250ms ease;
+}
+
+.form-group .select-container.rotate::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .tel-pick-container {
@@ -455,7 +464,7 @@ input[readonly] {
     position: relative;
     width: auto;
     margin-right: 10px;
-    padding-right: 1rem;
+    padding-right: 1.8rem;
     border-radius: 6px;
 }
 
@@ -480,6 +489,14 @@ input[readonly] {
 .select2-dropdown {
     min-width: 300px;
     border-radius: 6px !important;
+}
+
+.tel-pick-container .select-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .select2-container--default .select2-results > .select2-results__options {
