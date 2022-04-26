@@ -114,6 +114,10 @@ function profileSection() {
         flag.selectByAlpha2("us");
 
         $(".select2").select2();
+        $(".tel-pick-container .select2").select2({
+            templateResult: addUserPic,
+            templateSelection: addUserPic,
+        });
         let selectedTel = $(".tel-pick-container .select2").find(":selected");
         flag.selectByAlpha2($(selectedTel).attr("data-countryCode"));
         $(".value_result").text(
@@ -144,3 +148,30 @@ function profileSection() {
 }
 
 profileSection();
+function addUserPic(opt) {
+    if (!opt.id) {
+        return opt.text;
+    }
+    var optimage = $(opt.element).data("countrycode");
+    if (!optimage) {
+        return opt.text;
+    } else {
+        let node = document.createElement("span");
+        let node2 = document.createElement("span");
+        let node3 = document.createElement("p");
+        node3.innerText = $(opt.element)
+            .text()
+            .replace(/(\r\n|\n|\r)/gm, "");
+        console.log($(opt.element).text());
+        node2.id = "country-flag";
+        node.appendChild(node2);
+        node3.style.marginLeft = "10px";
+        node.appendChild(node3);
+        let parentElement = node2;
+        let flag = new CountryFlag(parentElement);
+        flag.selectByAlpha2(optimage);
+        node.style.display = "flex";
+        node.style.alignItems = "center";
+        return node;
+    }
+}
