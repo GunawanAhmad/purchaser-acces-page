@@ -70,13 +70,23 @@ main {
     border: 1px solid #c2c2c2;
 }
 
-.payment-section > div {
-    display: flex;
-    margin-bottom: 25px;
+table tr td {
+    padding: 25px 0;
+    vertical-align: top;
 }
 
-.payment-section > div:last-of-type {
-    margin-bottom: 0;
+table tr td:first-of-type {
+    padding-right: 15px;
+}
+
+table tr {
+    border-top: 1px solid #d7d7d7;
+}
+
+.payment-section {
+    padding: 26px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content .icon {
@@ -99,8 +109,12 @@ main {
     display: flex;
     align-items: flex-start;
     font-size: 1rem;
-    flex: 1 1 100%;
-    margin-right: 60px;
+    flex: 1 1 50%;
+    min-width: 50%;
+}
+
+.content:nth-of-type(1) {
+    margin-bottom: 25px;
 }
 
 .content:last-child {
@@ -108,7 +122,7 @@ main {
 }
 
 .content .information {
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
 }
 
 .content .info-icon {
@@ -120,19 +134,20 @@ main {
     padding: 0;
 }
 
-.content-container .money-amount {
+table .money-amount {
     margin-bottom: 1px;
 }
 
-.content-container .status {
+table .status {
     background: none;
     outline: none;
     border: none;
     padding: 0;
     text-align: right;
+    margin-top: 2px;
 }
 
-.content-container .money-amount.plus {
+table .money-amount.plus {
     color: var(--green-color);
 }
 
@@ -323,14 +338,11 @@ main {
     width: 100%;
 }
 
-.content-container .content-desc {
-    margin-bottom: 0.5rem;
+table .content-desc {
+    margin-bottom: 0.3rem;
     font-size: 1rem;
     max-width: 475px;
-}
-
-.content-container .text-right {
-    margin-left: 15px;
+    line-height: 1.5;
 }
 
 .content-container .user-name {
@@ -378,18 +390,25 @@ main {
         margin-bottom: 14px !important;
     }
 
-    .payment-section > div {
+    .payment-section {
         flex-direction: column;
         margin-bottom: 0;
+        margin-bottom: 25px;
     }
 
     .content {
         margin-right: 0;
-        margin-bottom: 25px;
         flex: 1 1 auto;
     }
 
-    .content-container .content-desc {
+    .content:nth-of-type(3) {
+        margin-bottom: 25px;
+    }
+    .content:nth-of-type(2) {
+        margin-bottom: 25px;
+    }
+
+    table .content-desc {
         font-size: var(--font-size-14);
     }
 
