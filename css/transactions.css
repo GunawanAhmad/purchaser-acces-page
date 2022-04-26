@@ -217,7 +217,7 @@ table .money-amount.plus {
 }
 .search .clear-icon-search {
     position: absolute;
-    right: 0.75rem;
+    right: 14px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
@@ -227,6 +227,7 @@ table .money-amount.plus {
     border: none;
     cursor: pointer;
     visibility: visible;
+    padding: 0;
 }
 
 .select-container {
