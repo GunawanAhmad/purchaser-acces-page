@@ -1,7 +1,32 @@
 $(document).ready(function () {
     $(".select2").select2();
+    $(".lang-select").select2({
+        dropdownCssClass: "navbar-dropdown",
+    });
+    $(".abrev-text-1").html($(".lang").val());
+    $(".lang-select").change(function (e) {
+        $(".abrev-text-1").html(e.target.value);
+        let title = e.target.options[e.target.selectedIndex].innerHTML;
+        $(".lang-container .btn").attr(
+            "data-original-title",
+            "Language: " + title
+        );
+        e.preventDefault();
+    });
     $(function () {
         $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
+    });
+
+    $(".loading-container").css("display", "none");
+    $(".abrev-text-1").html($(".lang").val());
+    $(".select2.lang").change(function (e) {
+        $(".abrev-text-1").html(e.target.value);
+        let title = e.target.options[e.target.selectedIndex].innerHTML;
+        $(".lang-container .btn").attr(
+            "data-original-title",
+            "Language: " + title
+        );
+        e.preventDefault();
     });
 });
 

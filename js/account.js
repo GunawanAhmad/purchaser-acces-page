@@ -114,6 +114,19 @@ function profileSection() {
         flag.selectByAlpha2("us");
 
         $(".select2").select2();
+        $(".lang-select").select2({
+            dropdownCssClass: "navbar-dropdown",
+        });
+        $(".abrev-text-1").html($(".lang").val());
+        $(".lang-select").change(function (e) {
+            $(".abrev-text-1").html(e.target.value);
+            let title = e.target.options[e.target.selectedIndex].innerHTML;
+            $(".lang-container .btn").attr(
+                "data-original-title",
+                "Language: " + title
+            );
+            e.preventDefault();
+        });
         $(".tel-pick-container .select2").select2({
             templateResult: addUserPic,
             templateSelection: addUserPic,
@@ -175,3 +188,12 @@ function addUserPic(opt) {
         return node;
     }
 }
+
+$(".loading-container").css("display", "none");
+$(".abrev-text-1").html($(".lang").val());
+$(".select2.lang").change(function (e) {
+    $(".abrev-text-1").html(e.target.value);
+    let title = e.target.options[e.target.selectedIndex].innerHTML;
+    $(".lang-container .btn").attr("data-original-title", "Language: " + title);
+    e.preventDefault();
+});

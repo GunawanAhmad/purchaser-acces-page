@@ -16,6 +16,8 @@ header.hide {
     box-shadow: 0px 1px 0px #00000029;
     flex-flow: row nowrap;
     justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    padding-right: 20px;
 }
 
 .header-pro-logo {
@@ -26,7 +28,7 @@ header.hide {
 
 .dropdown-menu {
     border-radius: 15px;
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
     max-width: 270px;
     min-width: 215px;
     border: 1px solid #d9d9d9;
@@ -38,7 +40,7 @@ header.hide {
     padding: 1rem 0;
 }
 
-.dropdown-item span {
+.dropdown-item .text {
     margin-left: 0.7rem;
     font-size: 1rem;
     overflow: hidden;
@@ -162,7 +164,7 @@ nav .nav-link:hover {
 }
 .dropdown-item.nav-link:hover {
     color: black;
-    background-color: #00000029;
+    background-color: #f0f0f0;
 }
 
 .bell-icon {
@@ -173,8 +175,52 @@ ul.nav-tabs {
     padding-left: 0;
 }
 
+.nav-item:last-of-type {
+    padding-right: 0 !important;
+}
+
+.nav-item:last-of-type .nav-link {
+    padding-right: 0 !important;
+}
+
 .nav-item {
     position: relative;
+}
+
+.lang-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0 0.5rem;
+}
+
+.lang-container .abrev {
+    display: flex;
+    align-items: center;
+}
+
+.select2-dropdown.navbar-dropdown {
+    min-width: 200px;
+    right: 0;
+    left: -8rem !important;
+    top: 0.5rem;
+}
+
+.lang-container .select2-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.lang-container:hover {
+    color: var(--green-color);
+}
+
+.abrev .abrev-text-1 {
+    margin-left: 5px;
 }
 
 @media (max-width: 768px) {
@@ -198,9 +244,6 @@ ul.nav-tabs {
 }
 
 @media (max-width: 400px) {
-    .navbar {
-        padding: 0.5rem;
-    }
     .nav-item {
         position: static;
     }
@@ -212,5 +255,12 @@ ul.nav-tabs {
 
     .dropdown-menu.notification {
         width: 80%;
+    }
+
+    .select2-dropdown.navbar-dropdown {
+        min-width: 200px;
+        right: 38%;
+        left: auto !important;
+        top: 0.5rem;
     }
 }

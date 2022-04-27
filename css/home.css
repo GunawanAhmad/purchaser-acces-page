@@ -3,6 +3,7 @@
 @import url("./_customClass.css");
 @import url("./_navbar.css");
 @import url("./_footer.css");
+@import url("./_select2.css");
 
 main {
     padding-top: 56px;
