@@ -155,15 +155,12 @@ main {
     min-width: 50%;
 }
 
-.content-container {
+table {
     display: flex;
     font-size: var(--font-size-fourteen);
     font-weight: 800;
     width: 100%;
-    border-top: 1px solid #d7d7d7;
-    padding: 24px 0;
     align-items: start;
-    padding-bottom: 30px;
 }
 
 .content-wrapper {
@@ -174,18 +171,27 @@ main {
     align-items: center;
 }
 
-.content-container .creator-container {
+table tr {
+    border-top: 1px solid #d9d9d9;
+}
+
+table tr td {
+    vertical-align: top;
+    width: 50%;
+    padding: 24px 0;
+}
+
+table .creator-container {
     display: flex;
     align-items: center;
 }
 
-.content-container .section-container {
+table .section-container {
     margin-top: 6px;
     margin-left: 16px;
-    max-width: 350px;
 }
 
-.content-container .content-img {
+table .content-img {
     width: 40.71px;
     height: 40.71px;
     border-radius: 50%;
@@ -193,29 +199,29 @@ main {
     object-fit: cover;
 }
 
-.content-container .content-section {
+table .content-section {
     margin-bottom: 15px;
 }
 
-.content-container .content-section:last-of-type {
+table .content-section:last-of-type {
     margin-bottom: 0;
 }
 
-.content-container .content-section .section-desc {
+table .content-section .section-desc {
     margin-bottom: 3px;
 }
 
-.content-container .content-section .title {
+table .content-section .title {
     font-weight: 800;
     font-size: var(--font-size-12);
     margin-bottom: 5px;
     line-height: 1.5;
 }
 
-.content-container .content-section .section-action {
+table .content-section .section-action {
     margin-top: 5px;
 }
-.content-container .content-section .section-action a {
+table .content-section .section-action a {
     color: var(--green-color);
     font-size: var(--font-size-12);
     font-weight: 700;
@@ -223,24 +229,24 @@ main {
     text-decoration: underline;
 }
 
-.content-container .content-section .switch-container {
+table .content-section .switch-container {
     display: flex;
     align-items: center;
 }
 
-.content-container .content-section .switch-container p {
+table .content-section .switch-container p {
     color: #777777;
     font-size: var(--font-size-12);
     word-break: break-word;
     margin-left: 10px;
 }
 
-.content-container .content-section p {
+table .content-section p {
     font-size: 1rem;
     font-weight: 400;
 }
 
-.content-container .creator-name {
+table .creator-name {
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin-bottom: 4px;
@@ -253,7 +259,7 @@ main {
     overflow: hidden;
 }
 
-.content-container .creator-profile {
+table .creator-profile {
     font-size: 1rem;
     line-height: 22px;
     font-weight: 400;
@@ -340,12 +346,26 @@ main {
     main {
         padding-top: 23px;
     }
-    .content-container {
+    table {
         flex-direction: column;
     }
 
-    .content-container .section-container {
+    table tr td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr td:nth-child(1) {
+        padding-bottom: 0;
+    }
+
+    table tr td:nth-child(2) {
+        padding-top: 0;
+    }
+
+    table .section-container {
         margin-left: 0;
+        margin-top: 12px;
     }
 
     .content-wrapper {
