@@ -117,6 +117,10 @@ function profileSection() {
         $(".lang-select").select2({
             dropdownCssClass: "navbar-dropdown",
         });
+        $(".select2-footer").select2({
+            dropdownCssClass: "footer-dropdown",
+        });
+
         $(".abrev-text-1").html($(".lang").val());
         $(".lang-select").change(function (e) {
             $(".abrev-text-1").html(e.target.value);
@@ -191,7 +195,7 @@ function addUserPic(opt) {
 
 $(".loading-container").css("display", "none");
 $(".abrev-text-1").html($(".lang").val());
-$(".select2.lang").change(function (e) {
+$(".lang-select").change(function (e) {
     $(".abrev-text-1").html(e.target.value);
     let title = e.target.options[e.target.selectedIndex].innerHTML;
     $(".lang-container .btn").attr("data-original-title", "Language: " + title);
