@@ -243,7 +243,7 @@ table .money-amount.plus {
     color: red;
     display: block !important;
     width: 100%;
-    margin-top: 10px !important;
+    margin-top: 8px !important;
 }
 .select-container select {
     font-weight: 400;

@@ -140,6 +140,7 @@ footer .select-container {
 
 footer .select2-container .select2-selection--single {
     border: 1px solid #fff;
+    text-align: center;
 }
 
 footer .select2-container--default .select2-selection--single {
