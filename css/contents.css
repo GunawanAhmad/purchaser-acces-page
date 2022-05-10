@@ -441,6 +441,12 @@ textarea {
     width: 80px;
 }
 
+.collapse-text {
+    background: none;
+    border: none;
+    outline: none;
+}
+
 .collapse-text::after {
     content: "\f107";
     color: #7dcb22;
@@ -1521,11 +1527,6 @@ ol {
     }
     .mb-1-5 {
         margin-bottom: 0.15rem;
-    }
-    .collapse-text {
-        color: #76cc11;
-        font-size: var(--font-size-16) !important;
-        display: inline !important;
     }
     .FSize {
         font-size: var(--font-size-16) !important;
