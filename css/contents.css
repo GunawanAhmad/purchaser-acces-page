@@ -489,7 +489,7 @@ textarea {
     text-align: left;
     width: 100% !important;
     font-size: 0.8rem;
-    border: 1px solid #ced4da !important;
+    border: 1px solid #d9d9d9 !important;
 }
 
 .form-control-sm {
@@ -503,12 +503,7 @@ textarea {
     min-height: 42px;
     text-align: left;
     width: 100% !important;
-    font-size: var(--font-size-16) !important;
-    border: 1px solid #ced4da !important;
-}
-.hapus-filter {
-    font-family: Open Sans;
-    font-size: var(--font-size-16) !important;
+    border: 1px solid #d9d9d9 !important;
 }
 
 input {
@@ -551,23 +546,6 @@ input::-webkit-input-placeholder {
     text-transform: capitalize !important;
 }
 
-/* input[type="search"]::-webkit-search-cancel-button { */
-/* Remove default */
-/* -webkit-appearance: none !important; */
-
-/* Now your own custom styles */
-/* height: 12px;
-    width: 12px;
-    display: block;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Grey_close_x.svg/1024px-Grey_close_x.svg.png"); */
-/* setup all the background tweaks for our custom icon */
-/* background-repeat: no-repeat; */
-
-/* icon size */
-/* background-size: 12px;
-    margin-right: 10px; */
-/* } */
-
 input {
     -webkit-appearance: searchfield;
 }
@@ -582,7 +560,7 @@ input.search {
     padding-right: 30px;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: var(--font-size-16) !important;
+    font-size: var(--font-size-14) !important;
     border-radius: 30px !important;
 } /* This is for the placeholder */
 .wrapper-search::before {
@@ -592,11 +570,10 @@ input.search {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 20px;
-    display: flex;
-    align-items: center;
-    color: #bfbfbf;
+    left: 19px;
+    color: #959595;
     font-size: 16px;
+    pointer-events: none;
 }
 
 .card-content {
@@ -626,10 +603,10 @@ input.search {
 .closeSearch {
     position: absolute;
     top: 6px;
-    right: 15px;
+    right: 14px;
     display: flex;
     align-items: center;
-    color: #bfbfbf;
+    color: #959595;
     font-size: 18px;
     display: none;
     cursor: pointer;
@@ -638,7 +615,7 @@ input.search {
 }
 
 .fa-search {
-    color: #bfbfbf;
+    color: #959595;
 }
 .input-group-custom {
     position: relative;
@@ -1328,7 +1305,7 @@ ol {
 .select-container span.arrow-icon {
     pointer-events: none;
     position: absolute;
-    right: 19px;
+    right: 14px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     /* WebKit */
@@ -1376,17 +1353,7 @@ ol {
         max-height: 30px;
     }
 }
-@media (min-width: 500px) {
-    .wrapper-search::before {
-        font-size: 14px;
-    }
-    .div-category {
-        padding: 5px 11px;
-    }
-    .title {
-        margin-top: -5px;
-    }
-}
+
 @media (max-width: 576px) {
     .talent-img {
         transform: scale(0.85);
@@ -1537,7 +1504,7 @@ ol {
         padding-bottom: 0;
     }
     .select2-selection__placeholder {
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
     input.search {
         color: #444;
@@ -1545,12 +1512,12 @@ ol {
         padding-right: 30px;
         padding-top: 0;
         padding-bottom: 0;
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
     .select2-container--default
         .select2-search--dropdown
         .select2-search__field {
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
     .mb-1-5 {
         margin-bottom: 0.15rem;
@@ -1591,11 +1558,11 @@ ol {
         -webkit-box-pack: end;
     }
     .select2-results__options {
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
     input::-webkit-input-placeholder {
         text-transform: lowercase;
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
     .form-control-sm {
         -webkit-box-shadow: 0;
@@ -1608,22 +1575,18 @@ ol {
         min-height: 42px;
         text-align: left;
         width: 100% !important;
-        font-size: 0.92rem !important;
-        /* border: 1px solid #ced4da !important; */
+        font-size: var(--font-size-14) !important;
+        /* border: 1px solid #d9d9d9 !important; */
     }
     .select2-selection__rendered {
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
     .hapus-filter {
         font-family: Open Sans;
-        font-size: 0.92rem !important;
+        font-size: var(--font-size-14) !important;
     }
 }
-@media (min-width: 768px) and (max-width: 1190px) {
-    .borkmark {
-        margin-top: 0px;
-    }
-}
+
 @media (max-width: 786px) {
     .talent-description,
     .button-list {
@@ -1642,7 +1605,12 @@ ol {
     }
 
     div.mb-filter:nth-of-type(3) {
-        margin-bottom: 1rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    button.mb-filter:nth-of-type(1) {
+        margin-top: 1rem !important;
+        margin-bottom: 4px !important;
     }
 }
 @media (min-width: 800px) and (max-width: 1300px) {
@@ -2017,17 +1985,6 @@ ol {
     .font-size-10 {
         font-size: 0.876rem !important;
         font-family: Open Sans;
-    }
-    .closeSearch {
-        position: absolute;
-        top: 6px;
-        right: 19px;
-        display: flex;
-        align-items: center;
-        color: #bfbfbf;
-        font-size: 18px;
-        display: none;
-        cursor: pointer;
     }
 }
 
