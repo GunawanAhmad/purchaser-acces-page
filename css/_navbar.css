@@ -104,8 +104,10 @@ header.hide {
 
 .message-container img {
     max-height: 48.024px;
+    max-width: 48.024px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
 }
 
 nav .nav-link {
