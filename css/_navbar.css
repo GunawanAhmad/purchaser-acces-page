@@ -261,8 +261,8 @@ ul.nav-tabs {
 
     .select2-dropdown.navbar-dropdown {
         min-width: 200px;
-        right: 38%;
-        left: auto !important;
+        right: 20%;
+        transform: translateX(-50%);
         top: 0.5rem;
     }
 }
