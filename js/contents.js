@@ -3,7 +3,6 @@ $(".filter-select2").select2({
 });
 
 $(".dropdownnew2").select2({
-    minimumResultsForSearch: -1,
     width: "100%",
 });
 
@@ -11,6 +10,40 @@ $(".dropdownnew3").select2({
     minimumResultsForSearch: -1,
     width: "100%",
 });
+
+function checkFilterValue() {
+    var valueSelect =
+        $("#creator-filter-select").find("option:selected").val() == "";
+
+    var valueSelect2 =
+        $("#acces-filter-select").find("option:selected").val() == "";
+    var valueSearch = $(".search").val() == "";
+    var bookmark = $(".bookmark-filter").hasClass("iconBorkmarkClick");
+    console.log(bookmark);
+
+    return valueSearch && valueSelect && valueSelect2 && !bookmark;
+}
+
+function removeFilter() {
+    var valueSelect = $("#creator-filter-select").find("option:selected").val();
+
+    var valueSelect2 = $("#acces-filter-select").find("option:selected").val();
+
+    if (valueSelect == "" && valueSelect2 == "") {
+        $(".search").val("");
+        $(".reset").css("backgroundColor", "#f2f2f2");
+        $(".reset").css("color", "#7f7f7f");
+        $(".closeSearch").css("display", "none");
+        $(".reset").css("display", "none");
+    } else {
+        $(".search").val("");
+        $(".closeSearch").css("display", "none");
+        $(".reset").css("backgroundColor", "#f2f2f2");
+        $(".reset").css("color", "#7f7f7f");
+        $(".reset").css("display", "block");
+    }
+}
+
 $(function () {
     $(".reset").click(function () {
         $(".filter-select2").select2("val", "");
@@ -25,37 +58,14 @@ $(function () {
 $(function () {
     $(".reset").click(function (e) {
         e.preventDefault();
-        $("#selectfirst").val("").trigger("change");
-        $("#selectsecond").val("").trigger("change");
-
-        $("#creator-filter-select").val("").trigger("change");
-        $("#acces-filter-select").val("").trigger("change");
-
-        $(".search").val("");
-        $(".closeSearch").css("display", "none");
+        removeFilter();
     });
     $(".closeSearch").click(function (e) {
         e.preventDefault();
-        var valueSelect = $("#creator-filter-select")
-            .find("option:selected")
-            .val();
-
-        var valueSelect2 = $("#acces-filter-select")
-            .find("option:selected")
-            .val();
-
-        if (valueSelect == "" && valueSelect2 == "") {
-            $(".search").val("");
-            $(".reset").css("backgroundColor", "#f2f2f2");
-            $(".reset").css("color", "#7f7f7f");
-            $(".closeSearch").css("display", "none");
-            $(".reset").css("display", "none");
-        } else {
-            $(".search").val("");
-            $(".closeSearch").css("display", "none");
-            $(".reset").css("backgroundColor", "#f2f2f2");
-            $(".reset").css("color", "#7f7f7f");
-            $(".reset").css("display", "block");
+        $(".search").val("");
+        $(".closeSearch").css("display", "none");
+        if (checkFilterValue()) {
+            removeFilter();
         }
     });
 });
@@ -94,6 +104,13 @@ $(function () {
         e.preventDefault();
         $(this).toggleClass("fas fa-bookmark iconBorkmarkClick");
         $(this).toggleClass("fa-regular fa-bookmark color-custom");
+        if ($(this).hasClass("bookmark-filter")) {
+            if (checkFilterValue()) {
+                $(".reset").css("display", "none");
+            } else {
+                $(".reset").css("display", "block");
+            }
+        }
     });
 });
 $(function () {

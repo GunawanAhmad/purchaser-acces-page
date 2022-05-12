@@ -447,9 +447,23 @@ input[readonly] {
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    color: #b5b5b5;
+    color: #959595;
     pointer-events: none;
     transition: transform 250ms ease;
+}
+
+.flag {
+    position: relative;
+}
+
+.flag::before {
+    content: "";
+    border: 1px solid lightgray;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 100%;
 }
 
 .form-group .select-container.rotate::after {

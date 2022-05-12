@@ -138,6 +138,10 @@ table .money-amount {
     margin-bottom: 1px;
 }
 
+.money-amount.break {
+    word-break: break-all;
+}
+
 table .status {
     background: none;
     outline: none;
@@ -243,7 +247,6 @@ table .money-amount.plus {
     color: red;
     display: block !important;
     width: 100%;
-    margin-top: 8px !important;
 }
 .select-container select {
     font-weight: 400;
