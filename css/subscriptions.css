@@ -350,6 +350,17 @@ table .creator-profile {
         flex-direction: column;
     }
 
+    tbody {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     table tr td {
         display: block;
         width: 100%;
