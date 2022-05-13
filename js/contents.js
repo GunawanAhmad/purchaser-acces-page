@@ -44,6 +44,18 @@ function removeFilter() {
     }
 }
 
+function clearFilter() {
+    $(".search").val("");
+    $(".closeSearch").css("display", "none");
+    $("#creator-filter-select").val("").trigger("change");
+    $("#acces-filter-select").val("").trigger("change");
+    let bookmark = $(".bookmark-filter");
+    $(bookmark).removeClass();
+    bookmark.addClass(
+        "fa-regular fa-bookmark borkmark bookmark-filter color-custom"
+    );
+}
+
 $(function () {
     $(".reset").click(function () {
         $(".filter-select2").select2("val", "");
@@ -58,7 +70,7 @@ $(function () {
 $(function () {
     $(".reset").click(function (e) {
         e.preventDefault();
-        removeFilter();
+        clearFilter();
     });
     $(".closeSearch").click(function (e) {
         e.preventDefault();
@@ -93,7 +105,9 @@ $(document).ready(function () {
 $(".search").on("input", function (e) {
     if (this.value.length < 1) {
         $(".closeSearch").css("display", "none");
-        $(".reset").css("display", "none");
+        if (checkFilterValue()) {
+            $(".reset").css("display", "none");
+        }
         return;
     }
     $(".reset").css("display", "block");
