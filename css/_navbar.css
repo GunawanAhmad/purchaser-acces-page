@@ -204,7 +204,7 @@ ul.nav-tabs {
 .select2-dropdown.navbar-dropdown {
     min-width: 200px;
     right: 0;
-    left: -8rem !important;
+    left: -7rem !important;
     top: 0.5rem;
 }
 
@@ -261,6 +261,14 @@ ul.nav-tabs {
 
     .select2-dropdown.navbar-dropdown {
         min-width: 200px;
+        top: 0.5rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .select2-dropdown.navbar-dropdown {
+        right: 0;
+        left: 0 !important;
         top: 0.5rem;
     }
 }
