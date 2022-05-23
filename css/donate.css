@@ -49,6 +49,14 @@ main {
     padding: 20px 28px;
 }
 
+.padding-2 {
+    padding: 9px 14px;
+}
+
+.padding-3 {
+    padding: 16px 18px;
+}
+
 .radius-15 {
     border-radius: 15px;
 }
@@ -77,6 +85,259 @@ main {
     margin-top: 6px;
 }
 
+.mt-9 {
+    margin-top: 9px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-11 {
+    margin-top: 11px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-17 {
     margin-top: 17px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.gray-text {
+    color: #606060;
+}
+
+.font-size-12 {
+    font-size: 0.75rem;
+}
+
+.font-size-14 {
+    font-size: 0.875rem;
+}
+
+.button-outline {
+    border: 1px solid #76cc11;
+    color: #76cc11;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 100%;
+    padding: 12px 20px;
+    padding-bottom: 14px;
+    line-height: 1.2;
+    max-height: 45px;
+}
+
+.button-outline:hover {
+    background-color: #76cc11;
+    color: white;
+}
+
+.tel-pick-container {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #b8b8b8;
+    position: relative;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.tel-pick-container .value_result {
+    white-space: nowrap;
+    margin: 0 0.5rem;
+}
+
+.tel-pick-container
+    .select2-container
+    .select2-selection--single
+    .select2-selection__rendered {
+    margin-top: 0;
+}
+
+.tel-pick-container .arrow-icon {
+    color: #c2c2c2;
+    font-size: 0.667rem !important;
+    /* margin-bottom: 20px; */
+}
+
+.select2-dropdown {
+    min-width: 300px;
+    border-radius: 6px !important;
+}
+
+.tel-pick-container .select-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    font-size: 1rem;
+}
+
+.tel-input-container .form-control {
+    width: 100% !important;
+    width: 100%;
+}
+
+.tel-input-container {
+    display: flex;
+}
+
+.tel-pick-container .select2-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.tel-pick-container .select2-container--default .select2-selection--single {
+    border: none;
+}
+
+.money-list {
+    flex-wrap: wrap;
+}
+.money-list > span {
+    margin-right: 9px;
+    margin-bottom: 9px;
+}
+
+.radio-container {
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.radio-container input {
+    opacity: 0;
+}
+
+.radio-container .fake-radio {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    height: 100%;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #afafaf;
+    height: 20px;
+}
+
+.radio-container .fake-radio::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: unset;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 0px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    transition: all 150ms ease;
+}
+
+.radio-container input:checked ~ .fake-radio::before {
+    height: 40%;
+    width: 40%;
+}
+
+.radio-container input:checked ~ .fake-radio {
+    background-color: black;
+}
+
+.form-control:focus {
+    border: 1px solid var(--green-color);
+    box-shadow: none;
+}
+
+main .icon {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+    border: none;
+    outline: none;
+}
+main .icon.active {
+    background-color: #ff0000;
+}
+
+.time-input {
+    display: flex;
+    align-items: center;
+    margin-right: -15px;
+}
+
+.time-input label {
+    margin: 0;
+    margin-right: 7px;
+}
+
+.time-input > div {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.time-input input {
+    max-width: 52px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.preview {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 189px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+main a {
+    text-decoration: underline;
+}
+
+main a:hover,
+main a:active,
+main a:focus {
+    color: #606060;
 }
