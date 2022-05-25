@@ -1339,7 +1339,7 @@ ol {
     }
 
     :root {
-        --font-size-16: 12px;
+        --font-size-16: 0.825rem;
     }
 
     .title-header {
@@ -1349,6 +1349,22 @@ ol {
     .creator img {
         max-width: 30px;
         max-height: 30px;
+    }
+
+    .ml-3 {
+        margin-left: 12px !important;
+    }
+
+    .font-size-i {
+        font-size: 0.9rem !important;
+    }
+
+    .row-tanggal .mr-3 {
+        margin-right: 12px !important;
+    }
+
+    .content-text .div-category p {
+        font-size: 10.8px;
     }
 }
 

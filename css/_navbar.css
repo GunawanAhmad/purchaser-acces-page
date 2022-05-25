@@ -20,6 +20,10 @@ header.hide {
     padding-right: 20px;
 }
 
+.navbar select {
+    opacity: 0;
+}
+
 .header-pro-logo {
     height: 39px;
     width: 39px;
