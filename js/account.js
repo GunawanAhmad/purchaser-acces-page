@@ -179,7 +179,6 @@ function addUserPic(opt) {
         node3.innerText = $(opt.element)
             .text()
             .replace(/(\r\n|\n|\r)/gm, "");
-        console.log($(opt.element).text());
         node2.id = "country-flag";
         node.appendChild(node2);
         node3.style.marginLeft = "10px";
@@ -200,4 +199,21 @@ $(".lang-select").change(function (e) {
     let title = e.target.options[e.target.selectedIndex].innerHTML;
     $(".lang-container .btn").attr("data-original-title", "Language: " + title);
     e.preventDefault();
+});
+
+$(document).ready(function () {
+    $(".abrev-lang-head").html($(".select2.lang").val());
+    $(".select2.lang").trigger({
+        type: "select2:select",
+        params: { data: { text: $(".select2.lang option:selected").text() } },
+    });
+});
+
+$(".lang-select").on("select2:select", function (e) {
+    $(".abrev-lang-head").html($(".select2.lang").val());
+    $("#lang-head-tooltip")
+        .attr("data-original-title", e.params.data.text)
+        .attr("data-original-title", e.params.data.text)
+        .tooltip("update")
+        .tooltip("hide");
 });

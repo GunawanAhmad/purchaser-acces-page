@@ -60,9 +60,9 @@
                     <div class="navigation-bar">
                         <div class="">
                             <ul class="navbar-nav mr-auto align-items-center">
-                                <li class="nav-item px-1" data-toggle="tooltip" data-placement="top"  id="lang-head-tooltip">
-                                    <div class="lang-container" >
-                                        <select class="select2 lang-select lang">
+                                <li class="nav-item px-1">
+                                    <div class="lang-container" data-toggle="tooltip" data-placement="top"  id="lang-head-tooltip" data-toggle="tooltip" data-placement="top"  id="lang-head-tooltip">
+                                        <select class="select2 lang-select lang select2">
                                             <option value="AF" selected>
                                                 Afrikaans
                                             </option>
@@ -330,7 +330,7 @@
                 exercitation ullamco
             </p>
             <p
-                class="gray-bg gray-border padding-1 radius-15 line-h-17 font-italic text-center mt-30"
+                class="gray-bg gray-border padding-1 radius-15 line-h-17 font-italic text-center mt-30 letter-space-minus"
             >
                 “Call to action for support goes here lorem ipsum dolor sit
                 amet, consectetur adipisci ngelit, sed do eiusmod tempor
@@ -1082,12 +1082,12 @@
                         veniam quis nostrud exercitation ullamco.
                     </p>
                     <div class="d-flex justify-content-center mt-24">
-                        <!-- <iframe
+                        <iframe
                             src="https://www.youtube.com/embed/tgbNymZ7vqY"
                             class="preview mb-10"
                             id="yt-preview"
                         >
-                        </iframe> -->
+                        </iframe>
                     </div>
                 </div>
                 <div class="gray-bg gray-border radius-15 padding-3 mt-17">
@@ -1416,12 +1416,12 @@
             
             $(".select2.currency").on("select2:select", function (e) {
                 $(".abrev-currency").html($(".select2.currency").val());
-                $('#currency-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update');
+                $('#currency-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update').tooltip("hide");
             });
 
             $('.lang-select').on('select2:select', function(e) {
                 $(".abrev-lang-head").html($(".select2.lang").val());
-                $('#lang-head-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update');
+                $('#lang-head-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update').tooltip("hide");
             })
 
             function ytIdParser(url) {

@@ -37,3 +37,20 @@ $(document).ready(function () {
         $(e.target).parent().toggleClass("rotate");
     });
 });
+
+$(document).ready(function () {
+    $(".abrev-lang-head").html($(".select2.lang").val());
+    $(".select2.lang").trigger({
+        type: "select2:select",
+        params: { data: { text: $(".select2.lang option:selected").text() } },
+    });
+});
+
+$(".lang-select").on("select2:select", function (e) {
+    $(".abrev-lang-head").html($(".select2.lang").val());
+    $("#lang-head-tooltip")
+        .attr("data-original-title", e.params.data.text)
+        .attr("data-original-title", e.params.data.text)
+        .tooltip("update")
+        .tooltip("hide");
+});

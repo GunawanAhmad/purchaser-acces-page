@@ -9,6 +9,7 @@ main {
     max-width: 700px;
     margin: 36px auto;
     padding: 0 20px;
+    margin-bottom: 5rem;
 }
 
 .main-img {
@@ -123,6 +124,10 @@ main {
 
 .font-size-14 {
     font-size: 0.875rem;
+}
+
+.letter-space-minus {
+    letter-spacing: -0.5px;
 }
 
 .button-outline {

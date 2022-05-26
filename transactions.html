@@ -76,8 +76,8 @@
                         <div class="">
                             <ul class="navbar-nav mr-auto align-items-center">
                                 <li class="nav-item px-1">
-                                    <div class="lang-container">
-                                        <select class="lang-select lang">
+                                    <div class="lang-container" data-toggle="tooltip" data-placement="top"  id="lang-head-tooltip">
+                                        <select class="lang-select lang select2">
                                             <option value="AF" selected>
                                                 Afrikaans
                                             </option>
@@ -1011,6 +1011,23 @@
             });
             $(".select2").on("select2:close", function (e) {
                 $(e.target).parent().toggleClass("rotate");
+            });
+
+            $(document).ready(function () {
+                $(".abrev-lang-head").html($(".select2.lang").val());
+                $(".select2.lang").trigger({
+                    type: "select2:select",
+                    params: { data: { text: $(".select2.lang option:selected").text() } },
+                });
+            });
+
+            $(".lang-select").on("select2:select", function (e) {
+                $(".abrev-lang-head").html($(".select2.lang").val());
+                $("#lang-head-tooltip")
+                    .attr("data-original-title", e.params.data.text)
+                    .attr("data-original-title", e.params.data.text)
+                    .tooltip("update")
+                    .tooltip("hide");
             });
         </script>
     </body>

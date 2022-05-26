@@ -290,6 +290,10 @@ button.bg-hover:active {
     width: 25%;
 }
 
+.bookmarked-contents {
+    margin-top: -1px;
+}
+
 .cover-img {
     height: 29vw;
 }
@@ -1349,6 +1353,7 @@ ol {
     .creator img {
         max-width: 30px;
         max-height: 30px;
+        margin-right: 7px;
     }
 
     .ml-3 {

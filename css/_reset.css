@@ -89,7 +89,6 @@ h5 {
     word-wrap: break-word;
 }
 
-button,
-label {
+button {
     word-break: break-all;
 }
