@@ -130,12 +130,11 @@ main {
     color: #76cc11;
     font-weight: 800;
     font-size: 1rem;
-    border-radius: 30px;
+    border-radius: 23px;
     width: 100%;
     padding: 12px 20px;
     padding-bottom: 14px;
     line-height: 1.2;
-    max-height: 45px;
     background: none;
 }
 
@@ -144,12 +143,11 @@ main {
     color: white;
     font-weight: 800;
     font-size: 1rem;
-    border-radius: 30px;
+    border-radius: 23px;
     width: 100%;
     padding: 12px 20px;
     padding-bottom: 14px;
     line-height: 1.2;
-    max-height: 45px;
     background: #76cc11;
 }
 
@@ -232,12 +230,16 @@ main {
     border: none;
 }
 
+.currency-pick-container .select2-selection__rendered {
+    display: none !important;
+}
+
 .money-list {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-bottom: -10px;
 }
-.money-list > span {
+.money-list > button {
     margin-right: 9px;
     margin-bottom: 9px;
 }
@@ -245,8 +247,7 @@ main {
 .radio-container {
     position: relative;
     padding-left: 30px;
-    display: flex;
-    align-items: flex-start;
+    display: block;
     cursor: pointer;
 }
 
@@ -408,8 +409,8 @@ main {
 main .icon {
     background-color: black;
     color: white;
-    height: 40px;
-    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;

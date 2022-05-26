@@ -121,9 +121,9 @@ function profileSection() {
             dropdownCssClass: "footer-dropdown",
         });
 
-        $(".abrev-text-1").html($(".lang").val());
+        $(".abrev-lang-head").html($(".lang").val());
         $(".lang-select").change(function (e) {
-            $(".abrev-text-1").html(e.target.value);
+            $(".abrev-lang-head").html(e.target.value);
             let title = e.target.options[e.target.selectedIndex].innerHTML;
             $(".lang-container .btn").attr(
                 "data-original-title",
@@ -194,9 +194,9 @@ function addUserPic(opt) {
 }
 
 $(".loading-container").css("display", "none");
-$(".abrev-text-1").html($(".lang").val());
+$(".abrev-lang-head").html($(".lang").val());
 $(".lang-select").change(function (e) {
-    $(".abrev-text-1").html(e.target.value);
+    $(".abrev-lang-head").html(e.target.value);
     let title = e.target.options[e.target.selectedIndex].innerHTML;
     $(".lang-container .btn").attr("data-original-title", "Language: " + title);
     e.preventDefault();

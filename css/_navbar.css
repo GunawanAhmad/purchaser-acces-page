@@ -221,12 +221,27 @@ ul.nav-tabs {
     opacity: 0;
 }
 
+.select2-container
+    .select2-container
+    .select2-selection--single
+    .select2-selection__rendered {
+    display: none !important;
+}
+
+.lang-container .select2-selection__rendered {
+    display: none !important;
+}
+
 .lang-container:hover {
     color: var(--green-color);
 }
 
-.abrev .abrev-text-1 {
+.abrev .abrev-lang-head {
     margin-left: 5px;
+}
+
+.tooltip {
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {
