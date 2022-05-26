@@ -343,21 +343,20 @@
                     Amount to be given
                 </p>
                 <div class="form-group mb-0 mt-6">
-                    <div class="tel">
-                        <div class="tel-input-container">
-                            <div class="tel-pick-container">
-                                <div class="abrev d-flex align-items-center">
-                                    <span class="mr-2">MWMW</span>
+                    <div class="currency">
+                        <div class="currency-input-container">
+                            <div class="currency-pick-container">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="abrev-currency mr-2 font-weight-bold"
+                                        >MWMW</span
+                                    >
                                     <span class="arrow-icon">
                                         <i class="fas fa-chevron-down"></i>
                                     </span>
                                 </div>
                                 <div class="select-container">
-                                    <select
-                                        class="select2"
-                                        data-live-search="true"
-                                        data-selected-text-format="static"
-                                    >
+                                    <select class="select2 currency">
                                         <option value="AED">
                                             United Arab Emirates dirham
                                         </option>
@@ -913,7 +912,7 @@
                 </p>
                 <textarea
                     name=""
-                    id=""
+                    id="message"
                     rows="1"
                     class="form-control mt-9"
                 ></textarea>
@@ -924,7 +923,12 @@
                         incididu labore et dolore magna aliqua. Ut enim ad minim
                         veniam quis nostrud exercitation ullamco.
                     </p>
-                    <p class="line-h-15 gray-text font-size-12">99/99</p>
+                    <p
+                        class="line-h-15 gray-text font-size-12"
+                        id="message-counter"
+                    >
+                        0/999
+                    </p>
                 </div>
                 <p class="font-weight-bold sixteenpx line-h-15 mt-35">
                     Voice message
@@ -1014,7 +1018,7 @@
                     </p>
                     <textarea
                         name=""
-                        id=""
+                        id="yt-link"
                         rows="1"
                         class="form-control mt-6"
                     ></textarea>
@@ -1070,6 +1074,7 @@
                         <iframe
                             src="https://www.youtube.com/embed/tgbNymZ7vqY"
                             class="preview mb-10"
+                            id="yt-preview"
                         >
                         </iframe>
                     </div>
@@ -1087,7 +1092,9 @@
                             >
                         </span>
                     </p>
-                    <div class="d-flex justify-content-center mt-24">
+                    <div
+                        class="d-flex justify-content-center mt-24 preview-container"
+                    >
                         <img
                             class="preview mb-10"
                             src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif"
@@ -1095,7 +1102,51 @@
                         />
                     </div>
                 </div>
+                <form class="mt-35">
+                    <div>
+                        <label
+                            for=""
+                            class="font-weight-bold sixteenpx line-h-15 mb-0"
+                            >Your name</label
+                        >
+                        <input type="text" class="form-control mt-6" />
+                        <label
+                            class="checkbox-container-1 font-size-12 mt-9 mb-0"
+                        >
+                            Anonymous
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="mt-35">
+                        <label
+                            for=""
+                            class="font-weight-bold sixteenpx line-h-15 mb-0"
+                            >Your email</label
+                        >
+                        <input type="text" class="form-control mt-6" />
+                        <p class="line-h-15 gray-text font-size-12 mt-6">
+                            Help text goes here lorem ipsum dolor sit amet
+                            consectetur adipisci ngelit sed do eiusmod tempor
+                            incididu labore et dolore magna aliqua. Ut enim ad
+                            minim veniam quis nostrud exercitation ullamco.
+                        </p>
+                    </div>
+                    <div class="mt-35">
+                        <label class="checkbox-container-2 font-size-14 mb-0">
+                            I declare this transaction is purely my support for
+                            CreatorNameHere, it is non-refundable, and it is not
+                            for a commercial transaction.
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
             </section>
+            <button class="button-fill mt-24">
+                Choose payment method
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
         </main>
         <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -1152,6 +1203,42 @@
             $(".select2").on("select2:close", function (e) {
                 $(e.target).parent().toggleClass("rotate");
             });
+
+            $("textarea")
+                .each(function () {
+                    this.setAttribute(
+                        "style",
+                        "height:" + this.scrollHeight + "px;overflow-y:hidden;"
+                    );
+                })
+                .on("input", function () {
+                    this.style.height = "auto";
+                    this.style.height = this.scrollHeight + "px";
+                    if (this.id === "message") {
+                        messageCouter(this.value.length);
+                    } else if (this.id === "yt-link") {
+                        changeYtPreview(changeYtPreview(this.value));
+                        $("#yt-preview").attr("src", this.value);
+                    }
+                });
+
+            function messageCouter(count) {
+                $("#message-counter").text(count + "/999");
+            }
+
+            $(document).ready(function () {
+                $(".abrev-currency").html($(".select2.currency").val());
+                let currencySelectorElm =
+                    document.querySelector(".select2.currency");
+                console.log(currencySelectorElm.options);
+                let selectedCurrency =
+                    currencySelectorElm.options[
+                        currencySelectorElm.selectedIndex
+                    ].innerHTML;
+                $(".select2.currency").select2("val", "AF");
+            });
+
+            function changeDropdown() {}
         </script>
     </body>
 </html>
