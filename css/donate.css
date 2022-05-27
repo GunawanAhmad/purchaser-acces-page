@@ -463,6 +463,9 @@ input[type="number"] {
 
 .preview-container {
     max-width: 568px;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .preview {
