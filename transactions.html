@@ -1029,6 +1029,23 @@
                     .tooltip("update")
                     .tooltip("hide");
             });
+
+            window.addEventListener('resize', function(){
+                tableSize()
+                tableSize()
+            })
+
+            function tableSize() {
+                let leftWidth = $('.left-side').width();
+                let tableWidth = $('.wrapper').width();
+                if(leftWidth < 100) {
+                    $('.money-amount').addClass('break');
+                    $('.money-amount').width(tableWidth - leftWidth - 20);
+                } else {
+                    $('.money-amount').removeClass('break');
+                    $('.money-amount').width('auto');
+                }
+            }
         </script>
     </body>
 </html>
