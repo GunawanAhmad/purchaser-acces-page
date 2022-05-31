@@ -679,7 +679,7 @@
                         <td class="right-side">
                             <div class="text-right ">
                                 <p
-                                    class="money-amount minus bold sixteenpx text-right break-word"
+                                    class="money-amount minus bold sixteenpx text-right"
                                 >
                                     &minus;IDR100,000,000,000,000
                                 <p
@@ -1029,6 +1029,23 @@
                     .tooltip("update")
                     .tooltip("hide");
             });
+
+            window.addEventListener('resize', function(){
+                tableSize()
+                tableSize()
+            })
+
+            function tableSize() {
+                let leftWidth = $('.left-side').width();
+                let tableWidth = $('.wrapper').width();
+                if(leftWidth < 100) {
+                    $('.money-amount').addClass('break');
+                    $('.money-amount').width(tableWidth - leftWidth - 20);
+                } else {
+                    $('.money-amount').removeClass('break');
+                    $('.money-amount').width('auto');
+                }
+            }
         </script>
     </body>
 </html>
