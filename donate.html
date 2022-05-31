@@ -1,1436 +1,1335 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta name="format-detection" content="telephone=no" />
-        <title>Document</title>
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./tel/country-flag.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css"
-            integrity="sha512-KuSX+43gVS5MEIJD2ewtrFPOHqC1PJnL8o2f5ciggPC0JUZ8XV0QXlfArO1mSzKkVFdRjsBDfrTU96C5SuRfqQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Document</title>
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css"
-            integrity="sha512-zxBiDORGDEAYDdKLuYU9X/JaJo/DPzE42UubfBw9yg8Qvb2YRRIQ8v4KsGHOx2H1/+sdSXyXxLXv5r7tHc9ygg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./tel/country-flag.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css"
+        integrity="sha512-KuSX+43gVS5MEIJD2ewtrFPOHqC1PJnL8o2f5ciggPC0JUZ8XV0QXlfArO1mSzKkVFdRjsBDfrTU96C5SuRfqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="./css/donate.css" />
-        <link
-            rel="icon"
-            href="./src/img/favicon.png"
-            type="image/gif"
-            sizes="16x16"
-        />
-    </head>
-    <body>
-        <header>
-            <!-- navbar start -->
-            <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="https://sociabuzz.com"
-                    ><img
-                        src="./image/logo.png"
-                        class="header-pro-logo d-block"
-                        alt="Sociabuzz Pro Logo"
-                /></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css"
+        integrity="sha512-zxBiDORGDEAYDdKLuYU9X/JaJo/DPzE42UubfBw9yg8Qvb2YRRIQ8v4KsGHOx2H1/+sdSXyXxLXv5r7tHc9ygg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-                <div class="nav-bar-link ml-auto d-flex align-items-center">
-                    <div class="navigation-bar">
-                        <div class="">
-                            <ul class="navbar-nav mr-auto align-items-center">
-                                <li class="nav-item px-1">
-                                    <div class="lang-container" data-toggle="tooltip" data-placement="top"  id="lang-head-tooltip" data-toggle="tooltip" data-placement="top"  id="lang-head-tooltip">
-                                        <select class="select2 lang-select lang select2">
-                                            <option value="AF" selected>
-                                                Afrikaans
-                                            </option>
-                                            <option value="SQ">Albanian</option>
-                                            <option value="AR">Arabic</option>
-                                            <option value="HY">Armenian</option>
-                                            <option value="EU">Basque</option>
-                                            <option value="BN">Bengali</option>
-                                            <option value="BG">
-                                                Bulgarian
-                                            </option>
-                                            <option value="CA">Catalan</option>
-                                            <option value="KM">
-                                                Cambodian
-                                            </option>
-                                            <option value="ZH">
-                                                Chinese (Mandarin)
-                                            </option>
-                                            <option value="HR">Croatian</option>
-                                            <option value="CS">Czech</option>
-                                            <option value="DA">Danish</option>
-                                            <option value="NL">Dutch</option>
-                                            <option value="EN">English</option>
-                                            <option value="ET">Estonian</option>
-                                            <option value="FJ">Fiji</option>
-                                            <option value="FI">Finnish</option>
-                                            <option value="FR">French</option>
-                                            <option value="KA">Georgian</option>
-                                            <option value="DE">German</option>
-                                            <option value="EL">Greek</option>
-                                            <option value="GU">Gujarati</option>
-                                            <option value="HE">Hebrew</option>
-                                            <option value="HI">Hindi</option>
-                                            <option value="HU">
-                                                Hungarian
-                                            </option>
-                                            <option value="IS">
-                                                Icelandic
-                                            </option>
-                                            <option value="ID">
-                                                Indonesian
-                                            </option>
-                                            <option value="GA">Irish</option>
-                                            <option value="IT">Italian</option>
-                                            <option value="JA">Japanese</option>
-                                            <option value="JW">Javanese</option>
-                                            <option value="KO">Korean</option>
-                                            <option value="LA">Latin</option>
-                                            <option value="LV">Latvian</option>
-                                            <option value="LT">
-                                                Lithuanian
-                                            </option>
-                                            <option value="MK">
-                                                Macedonian
-                                            </option>
-                                            <option value="MS">Malay</option>
-                                            <option value="ML">
-                                                Malayalam
-                                            </option>
-                                            <option value="MT">Maltese</option>
-                                            <option value="MI">Maori</option>
-                                            <option value="MR">Marathi</option>
-                                            <option value="MN">
-                                                Mongolian
-                                            </option>
-                                            <option value="NE">Nepali</option>
-                                            <option value="NO">
-                                                Norwegian
-                                            </option>
-                                            <option value="FA">Persian</option>
-                                            <option value="PL">Polish</option>
-                                            <option value="PT">
-                                                Portuguese
-                                            </option>
-                                            <option value="PA">Punjabi</option>
-                                            <option value="QU">Quechua</option>
-                                            <option value="RO">Romanian</option>
-                                            <option value="RU">Russian</option>
-                                            <option value="SM">Samoan</option>
-                                            <option value="SR">Serbian</option>
-                                            <option value="SK">Slovak</option>
-                                            <option value="SL">
-                                                Slovenian
-                                            </option>
-                                            <option value="ES">Spanish</option>
-                                            <option value="SW">Swahili</option>
-                                            <option value="SV">Swedish</option>
-                                            <option value="TA">Tamil</option>
-                                            <option value="TT">Tatar</option>
-                                            <option value="TE">Telugu</option>
-                                            <option value="TH">Thai</option>
-                                            <option value="BO">Tibetan</option>
-                                            <option value="TO">Tonga</option>
-                                            <option value="TR">Turkish</option>
-                                            <option value="UK">
-                                                Ukrainian
-                                            </option>
-                                            <option value="UR">Urdu</option>
-                                            <option value="UZ">Uzbek</option>
-                                            <option value="VI">
-                                                Vietnamese
-                                            </option>
-                                            <option value="CY">Welsh</option>
-                                            <option value="XH">Xhosa</option>
-                                        </select>
-                                        <div class="abrev">
-                                            <span class="nav-icon">
-                                                <i
-                                                    class="fa-solid fa-language"
-                                                ></i>
-                                            </span>
-                                            <p class="abrev-lang-head"></p>
-                                        </div>
-                                    </div>
-                                </li>
+    <link rel="stylesheet" href="./css/donate.css" />
+    <link rel="icon" href="./src/img/favicon.png" type="image/gif" sizes="16x16" />
+</head>
 
-                                <li class="nav-item px-1 active">
-                                    <a
-                                        class="nav-link"
-                                        data-toggle="dropdown"
-                                        href="#"
-                                        role="button"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><i class="fas fa-bars"> </i
-                                        ><span class="ml-2">Menu</span></a
-                                    >
-                                    <div
-                                        class="dropdown-menu dropdown-menu-right"
-                                    >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./contents.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-newspaper fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text"
-                                                >Contents</span
-                                            ></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./subscriptions.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-repeat fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text"
-                                                >Subscriptions</span
-                                            ></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./purchases.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-box fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text"
-                                                >Purchases</span
-                                            ></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./service.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-handshake fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text"
-                                                >Talents & Services</span
-                                            ></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./transactions.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-wallet fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text"
-                                                >Transactions</span
-                                            ></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./creators.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-users fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text"
-                                                >Creators</span
-                                            ></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="./account.html"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-circle-user fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text">Account</span></a
-                                        ><a
-                                            class="dropdown-item nav-link"
-                                            href="/signin"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-right-to-bracket fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text">Sign in</span></a
-                                        >
-                                        <a
-                                            class="dropdown-item nav-link"
-                                            href="/logout"
-                                        >
-                                            <span class="icon">
-                                                <i
-                                                    class="fa-solid fa-right-from-bracket fa-fw"
-                                                ></i>
-                                            </span>
-                                            <span class="text">Log out</span></a
-                                        >
-                                    </div>
-                                </li>
-                            </ul>
+<body>
+    <div class="modal fade" id="thumbnail-icon-modal" tabindex="1" role="dialog" aria-labelledby="thumbnail-img-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="font-weight-bold twelvepx">Pilih icon</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="gif search mb-3">
+                        <span class="icon"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search" id="thumbnail_icon_search_input">
+                        <button class="clear-icon-search"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="icons-wrapper grid">
+                        <div class="grid-items">
+                            <img  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif" alt="">
                         </div>
+                        <div class="grid-items">
+                            <img  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://ecommerceiq.asia/wp-content/uploads/2020/04/gifs.gif" alt="">
+                        </div>
+                        <div class="grid-items">
+                            <img  src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="">
+                        </div>
+                        
+                        
                     </div>
                 </div>
-            </nav>
-            <!-- navbar end -->
-        </header>
-        <main>
-            <div class="main-img">
-                <img
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg"
-                    alt=""
-                />
             </div>
-            <h1 class="main-title text-center font-weight-x-bold">
-                Creator name lorem ipsum dolor sit amet consectetur adipiscing
-                elit sed do eiusmod
-            </h1>
-            <p class="profile-desc text-center sixteenpx">
-                Profile description here lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco
-            </p>
-            <p
-                class="gray-bg gray-border padding-1 radius-15 line-h-17 font-italic text-center mt-30 letter-space-minus"
-            >
-                “Call to action for support goes here lorem ipsum dolor sit
-                amet, consectetur adipisci ngelit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco.”
-            </p>
+        </div>
+    </div>
+    <header>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="https://sociabuzz.com"><img src="./image/logo.png"
+                    class="header-pro-logo d-block" alt="Sociabuzz Pro Logo" /></a>
 
-            <section class="gray-border padding-1 radius-15 mt-40">
-                <p class="font-weight-bold sixteenpx line-h-15">
-                    Amount to be given
-                </p>
-                <div class="form-group mb-0 mt-6">
-                    <div class="currency">
-                        <div class="currency-input-container">
-                            <div class="currency-pick-container" id="currency-tooltip" data-toggle="tooltip" data-placement="top">
-                                <div class="d-flex align-items-center">
-                                    <span
-                                        class="abrev-currency mr-2 font-weight-bold"
-                                        ></span
-                                    >
-                                    <span class="arrow-icon">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </div>
-                                <div class="select-container">
-                                    <select class="select2 currency">
-                                        <option value="AED">
-                                            United Arab Emirates dirham
-                                        </option>
-                                        <option value="AFN">
-                                            Afghan afghani
-                                        </option>
-                                        <option value="ALL">
-                                            Albanian lek
-                                        </option>
-                                        <option value="AMD">
-                                            Armenian dram
-                                        </option>
-                                        <option value="AOA">
-                                            Angolan kwanza
-                                        </option>
-                                        <option value="ARS">
-                                            Argentine peso
-                                        </option>
-                                        <option value="AUD">
-                                            Australian dollar
-                                        </option>
-                                        <option value="AWG">
-                                            Aruban florin
-                                        </option>
-                                        <option value="AZN">
-                                            Azerbaijani manat
-                                        </option>
-                                        <option value="BAM">
-                                            Bosnia and Herzegovina convertible
-                                            mark
-                                        </option>
-                                        <option value="BBD">
-                                            Barbadian dollar
-                                        </option>
-                                        <option value="BDT">
-                                            Bangladeshi taka
-                                        </option>
-                                        <option value="BGN">
-                                            Bulgarian lev
-                                        </option>
-                                        <option value="BHD">
-                                            Bahraini dinar
-                                        </option>
-                                        <option value="BIF">
-                                            Burundian franc
-                                        </option>
-                                        <option value="BMD">
-                                            Bermudian dollar
-                                        </option>
-                                        <option value="BND">
-                                            Brunei dollar
-                                        </option>
-                                        <option value="BOB">
-                                            Bolivian boliviano
-                                        </option>
-                                        <option value="BRL">
-                                            Brazilian real
-                                        </option>
-                                        <option value="BSD">
-                                            Bahamian dollar
-                                        </option>
-                                        <option value="BTN">
-                                            Bhutanese ngultrum
-                                        </option>
-                                        <option value="BWP">
-                                            Botswana pula
-                                        </option>
-                                        <option value="BYR">
-                                            Belarusian ruble
-                                        </option>
-                                        <option value="BZD">
-                                            Belize dollar
-                                        </option>
-                                        <option value="CAD">
-                                            Canadian dollar
-                                        </option>
-                                        <option value="CDF">
-                                            Congolese franc
-                                        </option>
-                                        <option value="CHF">Swiss franc</option>
-                                        <option value="CLP">
-                                            Chilean peso
-                                        </option>
-                                        <option value="CNY">
-                                            Chinese yuan
-                                        </option>
-                                        <option value="COP">
-                                            Colombian peso
-                                        </option>
-                                        <option value="CRC">
-                                            Costa Rican colón
-                                        </option>
-                                        <option value="CUP">
-                                            Cuban convertible peso
-                                        </option>
-                                        <option value="CVE">
-                                            Cape Verdean escudo
-                                        </option>
-                                        <option value="CZK">
-                                            Czech koruna
-                                        </option>
-                                        <option value="DJF">
-                                            Djiboutian franc
-                                        </option>
-                                        <option value="DKK">
-                                            Danish krone
-                                        </option>
-                                        <option value="DOP">
-                                            Dominican peso
-                                        </option>
-                                        <option value="DZD">
-                                            Algerian dinar
-                                        </option>
-                                        <option value="EGP">
-                                            Egyptian pound
-                                        </option>
-                                        <option value="ERN">
-                                            Eritrean nakfa
-                                        </option>
-                                        <option value="ETB">
-                                            Ethiopian birr
-                                        </option>
-                                        <option value="EUR">Euro</option>
-                                        <option value="FJD">
-                                            Fijian dollar
-                                        </option>
-                                        <option value="FKP">
-                                            Falkland Islands pound
-                                        </option>
-                                        <option value="GBP">
-                                            British pound
-                                        </option>
-                                        <option value="GEL">
-                                            Georgian lari
-                                        </option>
-                                        <option value="GHS">Ghana cedi</option>
-                                        <option value="GMD">
-                                            Gambian dalasi
-                                        </option>
-                                        <option value="GNF">
-                                            Guinean franc
-                                        </option>
-                                        <option value="GTQ">
-                                            Guatemalan quetzal
-                                        </option>
-                                        <option value="GYD">
-                                            Guyanese dollar
-                                        </option>
-                                        <option value="HKD">
-                                            Hong Kong dollar
-                                        </option>
-                                        <option value="HNL">
-                                            Honduran lempira
-                                        </option>
-                                        <option value="HRK">
-                                            Croatian kuna
-                                        </option>
-                                        <option value="HTG">
-                                            Haitian gourde
-                                        </option>
-                                        <option value="HUF">
-                                            Hungarian forint
-                                        </option>
-                                        <option value="IDR">
-                                            Indonesian rupiah
-                                        </option>
-                                        <option value="ILS">
-                                            Israeli new shekel
-                                        </option>
-                                        <option value="IMP">Manx pound</option>
-                                        <option value="INR">
-                                            Indian rupee
-                                        </option>
-                                        <option value="IQD">Iraqi dinar</option>
-                                        <option value="IRR">
-                                            Iranian rial
-                                        </option>
-                                        <option value="ISK">
-                                            Icelandic króna
-                                        </option>
-                                        <option value="JEP">
-                                            Jersey pound
-                                        </option>
-                                        <option value="JMD">
-                                            Jamaican dollar
-                                        </option>
-                                        <option value="JOD">
-                                            Jordanian dinar
-                                        </option>
-                                        <option value="JPY">
-                                            Japanese yen
-                                        </option>
-                                        <option value="KES">
-                                            Kenyan shilling
-                                        </option>
-                                        <option value="KGS">
-                                            Kyrgyzstani som
-                                        </option>
-                                        <option value="KHR">
-                                            Cambodian riel
-                                        </option>
-                                        <option value="KMF">
-                                            Comorian franc
-                                        </option>
-                                        <option value="KPW">
-                                            North Korean won
-                                        </option>
-                                        <option value="KRW">
-                                            South Korean won
-                                        </option>
-                                        <option value="KWD">
-                                            Kuwaiti dinar
-                                        </option>
-                                        <option value="KYD">
-                                            Cayman Islands dollar
-                                        </option>
-                                        <option value="KZT">
-                                            Kazakhstani tenge
-                                        </option>
-                                        <option value="LAK">Lao kip</option>
-                                        <option value="LBP">
-                                            Lebanese pound
-                                        </option>
-                                        <option value="LKR">
-                                            Sri Lankan rupee
-                                        </option>
-                                        <option value="LRD">
-                                            Liberian dollar
-                                        </option>
-                                        <option value="LSL">
-                                            Lesotho loti
-                                        </option>
-                                        <option value="LTL">
-                                            Lithuanian litas
-                                        </option>
-                                        <option value="LVL">
-                                            Latvian lats
-                                        </option>
-                                        <option value="LYD">
-                                            Libyan dinar
-                                        </option>
-                                        <option value="MAD">
-                                            Moroccan dirham
-                                        </option>
-                                        <option value="MDL">
-                                            Moldovan leu
-                                        </option>
-                                        <option value="MGA">
-                                            Malagasy ariary
-                                        </option>
-                                        <option value="MKD">
-                                            Macedonian denar
-                                        </option>
-                                        <option value="MMK">
-                                            Burmese kyat
-                                        </option>
-                                        <option value="MNT">
-                                            Mongolian tögrög
-                                        </option>
-                                        <option value="MOP">
-                                            Macanese pataca
-                                        </option>
-                                        <option value="MRO">
-                                            Mauritanian ouguiya
-                                        </option>
-                                        <option value="MUR">
-                                            Mauritian rupee
-                                        </option>
-                                        <option value="MVR">
-                                            Maldivian rufiyaa
-                                        </option>
-                                        <option value="MWK">
-                                            Malawian kwacha
-                                        </option>
-                                        <option value="MXN">
-                                            Mexican peso
-                                        </option>
-                                        <option value="MYR">
-                                            Malaysian ringgit
-                                        </option>
-                                        <option value="MZN">
-                                            Mozambican metical
-                                        </option>
-                                        <option value="NAD">
-                                            Namibian dollar
-                                        </option>
-                                        <option value="NGN">
-                                            Nigerian naira
-                                        </option>
-                                        <option value="NIO">
-                                            Nicaraguan córdoba
-                                        </option>
-                                        <option value="NOK">
-                                            Norwegian krone
-                                        </option>
-                                        <option value="NPR">
-                                            Nepalese rupee
-                                        </option>
-                                        <option value="NZD">
-                                            New Zealand dollar
-                                        </option>
-                                        <option value="OMR">Omani rial</option>
-                                        <option value="PAB">
-                                            Panamanian balboa
-                                        </option>
-                                        <option value="PEN">
-                                            Peruvian nuevo sol
-                                        </option>
-                                        <option value="PGK">
-                                            Papua New Guinean kina
-                                        </option>
-                                        <option value="PHP">
-                                            Philippine peso
-                                        </option>
-                                        <option value="PKR">
-                                            Pakistani rupee
-                                        </option>
-                                        <option value="PLN">
-                                            Polish złoty
-                                        </option>
-                                        <option value="PRB">
-                                            Transnistrian ruble
-                                        </option>
-                                        <option value="PYG">
-                                            Paraguayan guaraní
-                                        </option>
-                                        <option value="QAR">
-                                            Qatari riyal
-                                        </option>
-                                        <option value="RON">
-                                            Romanian leu
-                                        </option>
-                                        <option value="RSD">
-                                            Serbian dinar
-                                        </option>
-                                        <option value="RUB">
-                                            Russian ruble
-                                        </option>
-                                        <option value="RWF">
-                                            Rwandan franc
-                                        </option>
-                                        <option value="SAR">Saudi riyal</option>
-                                        <option value="SBD">
-                                            Solomon Islands dollar
-                                        </option>
-                                        <option value="SCR">
-                                            Seychellois rupee
-                                        </option>
-                                        <option value="SDG">
-                                            Singapore dollar
-                                        </option>
-                                        <option value="SEK">
-                                            Swedish krona
-                                        </option>
-                                        <option value="SGD">
-                                            Singapore dollar
-                                        </option>
-                                        <option value="SHP">
-                                            Saint Helena pound
-                                        </option>
-                                        <option value="SLL">
-                                            Sierra Leonean leone
-                                        </option>
-                                        <option value="SOS">
-                                            Somali shilling
-                                        </option>
-                                        <option value="SRD">
-                                            Surinamese dollar
-                                        </option>
-                                        <option value="SSP">
-                                            South Sudanese pound
-                                        </option>
-                                        <option value="STD">
-                                            São Tomé and Príncipe dobra
-                                        </option>
-                                        <option value="SVC">
-                                            Salvadoran colón
-                                        </option>
-                                        <option value="SYP">
-                                            Syrian pound
-                                        </option>
-                                        <option value="SZL">
-                                            Swazi lilangeni
-                                        </option>
-                                        <option value="THB">Thai baht</option>
-                                        <option value="TJS">
-                                            Tajikistani somoni
-                                        </option>
-                                        <option value="TMT">
-                                            Turkmenistan manat
-                                        </option>
-                                        <option value="TND">
-                                            Tunisian dinar
-                                        </option>
-                                        <option value="TOP">
-                                            Tongan paʻanga
-                                        </option>
-                                        <option value="TRY">
-                                            Turkish lira
-                                        </option>
-                                        <option value="TTD">
-                                            Trinidad and Tobago dollar
-                                        </option>
-                                        <option value="TWD">
-                                            New Taiwan dollar
-                                        </option>
-                                        <option value="TZS">
-                                            Tanzanian shilling
-                                        </option>
-                                        <option value="UAH">
-                                            Ukrainian hryvnia
-                                        </option>
-                                        <option value="UGX">
-                                            Ugandan shilling
-                                        </option>
-                                        <option value="USD">
-                                            United States dollar
-                                        </option>
-                                        <option value="UYU">
-                                            Uruguayan peso
-                                        </option>
-                                        <option value="UZS">
-                                            Uzbekistani som
-                                        </option>
-                                        <option value="VEF">
-                                            Venezuelan bolívar
-                                        </option>
-                                        <option value="VND">
-                                            Vietnamese đồng
-                                        </option>
-                                        <option value="VUV">
-                                            Vanuatu vatu
-                                        </option>
-                                        <option value="WST">Samoan tālā</option>
-                                        <option value="XAF">
-                                            Central African CFA franc
-                                        </option>
-                                        <option value="XCD">
-                                            East Caribbean dollar
-                                        </option>
-                                        <option value="XOF">
-                                            West African CFA franc
-                                        </option>
-                                        <option value="XPF">CFP franc</option>
-                                        <option value="YER">Yemeni rial</option>
-                                        <option value="ZAR">
-                                            South African rand
-                                        </option>
-                                        <option value="ZMW">
-                                            Zambian kwacha
-                                        </option>
-                                        <option value="ZWL">
-                                            Zimbabwean dollar
-                                        </option>
+            <div class="nav-bar-link ml-auto d-flex align-items-center">
+                <div class="navigation-bar">
+                    <div class="">
+                        <ul class="navbar-nav mr-auto align-items-center">
+                            <li class="nav-item px-1">
+                                <div class="lang-container" data-toggle="tooltip" data-placement="top"
+                                    id="lang-head-tooltip" data-toggle="tooltip" data-placement="top"
+                                    id="lang-head-tooltip">
+                                    <select class="select2 lang-select lang select2">
+                                        <option value="AF" selected>
+                                            Afrikaans
+                                        </option>
+                                        <option value="SQ">Albanian</option>
+                                        <option value="AR">Arabic</option>
+                                        <option value="HY">Armenian</option>
+                                        <option value="EU">Basque</option>
+                                        <option value="BN">Bengali</option>
+                                        <option value="BG">
+                                            Bulgarian
+                                        </option>
+                                        <option value="CA">Catalan</option>
+                                        <option value="KM">
+                                            Cambodian
+                                        </option>
+                                        <option value="ZH">
+                                            Chinese (Mandarin)
+                                        </option>
+                                        <option value="HR">Croatian</option>
+                                        <option value="CS">Czech</option>
+                                        <option value="DA">Danish</option>
+                                        <option value="NL">Dutch</option>
+                                        <option value="EN">English</option>
+                                        <option value="ET">Estonian</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finnish</option>
+                                        <option value="FR">French</option>
+                                        <option value="KA">Georgian</option>
+                                        <option value="DE">German</option>
+                                        <option value="EL">Greek</option>
+                                        <option value="GU">Gujarati</option>
+                                        <option value="HE">Hebrew</option>
+                                        <option value="HI">Hindi</option>
+                                        <option value="HU">
+                                            Hungarian
+                                        </option>
+                                        <option value="IS">
+                                            Icelandic
+                                        </option>
+                                        <option value="ID">
+                                            Indonesian
+                                        </option>
+                                        <option value="GA">Irish</option>
+                                        <option value="IT">Italian</option>
+                                        <option value="JA">Japanese</option>
+                                        <option value="JW">Javanese</option>
+                                        <option value="KO">Korean</option>
+                                        <option value="LA">Latin</option>
+                                        <option value="LV">Latvian</option>
+                                        <option value="LT">
+                                            Lithuanian
+                                        </option>
+                                        <option value="MK">
+                                            Macedonian
+                                        </option>
+                                        <option value="MS">Malay</option>
+                                        <option value="ML">
+                                            Malayalam
+                                        </option>
+                                        <option value="MT">Maltese</option>
+                                        <option value="MI">Maori</option>
+                                        <option value="MR">Marathi</option>
+                                        <option value="MN">
+                                            Mongolian
+                                        </option>
+                                        <option value="NE">Nepali</option>
+                                        <option value="NO">
+                                            Norwegian
+                                        </option>
+                                        <option value="FA">Persian</option>
+                                        <option value="PL">Polish</option>
+                                        <option value="PT">
+                                            Portuguese
+                                        </option>
+                                        <option value="PA">Punjabi</option>
+                                        <option value="QU">Quechua</option>
+                                        <option value="RO">Romanian</option>
+                                        <option value="RU">Russian</option>
+                                        <option value="SM">Samoan</option>
+                                        <option value="SR">Serbian</option>
+                                        <option value="SK">Slovak</option>
+                                        <option value="SL">
+                                            Slovenian
+                                        </option>
+                                        <option value="ES">Spanish</option>
+                                        <option value="SW">Swahili</option>
+                                        <option value="SV">Swedish</option>
+                                        <option value="TA">Tamil</option>
+                                        <option value="TT">Tatar</option>
+                                        <option value="TE">Telugu</option>
+                                        <option value="TH">Thai</option>
+                                        <option value="BO">Tibetan</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TR">Turkish</option>
+                                        <option value="UK">
+                                            Ukrainian
+                                        </option>
+                                        <option value="UR">Urdu</option>
+                                        <option value="UZ">Uzbek</option>
+                                        <option value="VI">
+                                            Vietnamese
+                                        </option>
+                                        <option value="CY">Welsh</option>
+                                        <option value="XH">Xhosa</option>
                                     </select>
+                                    <div class="abrev">
+                                        <span class="nav-icon">
+                                            <i class="fa-solid fa-language"></i>
+                                        </span>
+                                        <p class="abrev-lang-head"></p>
+                                    </div>
                                 </div>
+                            </li>
+
+                            <li class="nav-item px-1 active">
+                                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false"><i class="fas fa-bars"> </i><span class="ml-2 menu-text">Menu</span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item nav-link" href="./contents.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-newspaper fa-fw"></i>
+                                        </span>
+                                        <span class="text">Contents</span></a>
+                                    <a class="dropdown-item nav-link" href="./subscriptions.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-repeat fa-fw"></i>
+                                        </span>
+                                        <span class="text">Subscriptions</span></a>
+                                    <a class="dropdown-item nav-link" href="./purchases.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-box fa-fw"></i>
+                                        </span>
+                                        <span class="text">Purchases</span></a>
+                                    <a class="dropdown-item nav-link" href="./service.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-handshake fa-fw"></i>
+                                        </span>
+                                        <span class="text">Talents & Services</span></a>
+                                    <a class="dropdown-item nav-link" href="./transactions.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-wallet fa-fw"></i>
+                                        </span>
+                                        <span class="text">Transactions</span></a>
+                                    <a class="dropdown-item nav-link" href="./creators.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-users fa-fw"></i>
+                                        </span>
+                                        <span class="text">Creators</span></a>
+                                    <a class="dropdown-item nav-link" href="./account.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-circle-user fa-fw"></i>
+                                        </span>
+                                        <span class="text">Account</span></a><a class="dropdown-item nav-link"
+                                        href="/signin">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-right-to-bracket fa-fw"></i>
+                                        </span>
+                                        <span class="text">Sign in</span></a>
+                                    <a class="dropdown-item nav-link" href="/logout">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-right-from-bracket fa-fw"></i>
+                                        </span>
+                                        <span class="text">Log out</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <main>
+        <div class="main-img">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg"
+                alt="" />
+        </div>
+        <h1 class="main-title text-center font-weight-x-bold">
+            Creator name lorem ipsum dolor sit amet consectetur adipiscing
+            elit sed do eiusmod
+        </h1>
+        <p class="profile-desc text-center sixteenpx">
+            Profile description here lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco
+        </p>
+        <p class="gray-bg gray-border padding-1 radius-15 line-h-17 font-italic text-center mt-30 letter-space-minus">
+            “Call to action for support goes here lorem ipsum dolor sit
+            amet, consectetur adipisci ngelit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco.”
+        </p>
+
+        <section class="gray-border padding-1 radius-15 mt-40">
+            <p class="font-weight-bold sixteenpx line-h-15">
+                Amount to be given
+            </p>
+            <div class="form-group mb-0 mt-6">
+                <div class="currency">
+                    <div class="currency-input-container">
+                        <div class="currency-pick-container" id="currency-tooltip" data-toggle="tooltip"
+                            data-placement="top">
+                            <div class="d-flex align-items-center">
+                                <span class="abrev-currency mr-2 font-weight-bold"></span>
+                                <span class="arrow-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
                             </div>
-                            <input
-                                class="form-control"
-                                type="text"
-                                id="money-input"
-                            />
+                            <div class="select-container">
+                                <select class="select2 currency">
+                                    <option value="AED">
+                                        United Arab Emirates dirham
+                                    </option>
+                                    <option value="AFN">
+                                        Afghan afghani
+                                    </option>
+                                    <option value="ALL">
+                                        Albanian lek
+                                    </option>
+                                    <option value="AMD">
+                                        Armenian dram
+                                    </option>
+                                    <option value="AOA">
+                                        Angolan kwanza
+                                    </option>
+                                    <option value="ARS">
+                                        Argentine peso
+                                    </option>
+                                    <option value="AUD">
+                                        Australian dollar
+                                    </option>
+                                    <option value="AWG">
+                                        Aruban florin
+                                    </option>
+                                    <option value="AZN">
+                                        Azerbaijani manat
+                                    </option>
+                                    <option value="BAM">
+                                        Bosnia and Herzegovina convertible
+                                        mark
+                                    </option>
+                                    <option value="BBD">
+                                        Barbadian dollar
+                                    </option>
+                                    <option value="BDT">
+                                        Bangladeshi taka
+                                    </option>
+                                    <option value="BGN">
+                                        Bulgarian lev
+                                    </option>
+                                    <option value="BHD">
+                                        Bahraini dinar
+                                    </option>
+                                    <option value="BIF">
+                                        Burundian franc
+                                    </option>
+                                    <option value="BMD">
+                                        Bermudian dollar
+                                    </option>
+                                    <option value="BND">
+                                        Brunei dollar
+                                    </option>
+                                    <option value="BOB">
+                                        Bolivian boliviano
+                                    </option>
+                                    <option value="BRL">
+                                        Brazilian real
+                                    </option>
+                                    <option value="BSD">
+                                        Bahamian dollar
+                                    </option>
+                                    <option value="BTN">
+                                        Bhutanese ngultrum
+                                    </option>
+                                    <option value="BWP">
+                                        Botswana pula
+                                    </option>
+                                    <option value="BYR">
+                                        Belarusian ruble
+                                    </option>
+                                    <option value="BZD">
+                                        Belize dollar
+                                    </option>
+                                    <option value="CAD">
+                                        Canadian dollar
+                                    </option>
+                                    <option value="CDF">
+                                        Congolese franc
+                                    </option>
+                                    <option value="CHF">Swiss franc</option>
+                                    <option value="CLP">
+                                        Chilean peso
+                                    </option>
+                                    <option value="CNY">
+                                        Chinese yuan
+                                    </option>
+                                    <option value="COP">
+                                        Colombian peso
+                                    </option>
+                                    <option value="CRC">
+                                        Costa Rican colón
+                                    </option>
+                                    <option value="CUP">
+                                        Cuban convertible peso
+                                    </option>
+                                    <option value="CVE">
+                                        Cape Verdean escudo
+                                    </option>
+                                    <option value="CZK">
+                                        Czech koruna
+                                    </option>
+                                    <option value="DJF">
+                                        Djiboutian franc
+                                    </option>
+                                    <option value="DKK">
+                                        Danish krone
+                                    </option>
+                                    <option value="DOP">
+                                        Dominican peso
+                                    </option>
+                                    <option value="DZD">
+                                        Algerian dinar
+                                    </option>
+                                    <option value="EGP">
+                                        Egyptian pound
+                                    </option>
+                                    <option value="ERN">
+                                        Eritrean nakfa
+                                    </option>
+                                    <option value="ETB">
+                                        Ethiopian birr
+                                    </option>
+                                    <option value="EUR">Euro</option>
+                                    <option value="FJD">
+                                        Fijian dollar
+                                    </option>
+                                    <option value="FKP">
+                                        Falkland Islands pound
+                                    </option>
+                                    <option value="GBP">
+                                        British pound
+                                    </option>
+                                    <option value="GEL">
+                                        Georgian lari
+                                    </option>
+                                    <option value="GHS">Ghana cedi</option>
+                                    <option value="GMD">
+                                        Gambian dalasi
+                                    </option>
+                                    <option value="GNF">
+                                        Guinean franc
+                                    </option>
+                                    <option value="GTQ">
+                                        Guatemalan quetzal
+                                    </option>
+                                    <option value="GYD">
+                                        Guyanese dollar
+                                    </option>
+                                    <option value="HKD">
+                                        Hong Kong dollar
+                                    </option>
+                                    <option value="HNL">
+                                        Honduran lempira
+                                    </option>
+                                    <option value="HRK">
+                                        Croatian kuna
+                                    </option>
+                                    <option value="HTG">
+                                        Haitian gourde
+                                    </option>
+                                    <option value="HUF">
+                                        Hungarian forint
+                                    </option>
+                                    <option value="IDR">
+                                        Indonesian rupiah
+                                    </option>
+                                    <option value="ILS">
+                                        Israeli new shekel
+                                    </option>
+                                    <option value="IMP">Manx pound</option>
+                                    <option value="INR">
+                                        Indian rupee
+                                    </option>
+                                    <option value="IQD">Iraqi dinar</option>
+                                    <option value="IRR">
+                                        Iranian rial
+                                    </option>
+                                    <option value="ISK">
+                                        Icelandic króna
+                                    </option>
+                                    <option value="JEP">
+                                        Jersey pound
+                                    </option>
+                                    <option value="JMD">
+                                        Jamaican dollar
+                                    </option>
+                                    <option value="JOD">
+                                        Jordanian dinar
+                                    </option>
+                                    <option value="JPY">
+                                        Japanese yen
+                                    </option>
+                                    <option value="KES">
+                                        Kenyan shilling
+                                    </option>
+                                    <option value="KGS">
+                                        Kyrgyzstani som
+                                    </option>
+                                    <option value="KHR">
+                                        Cambodian riel
+                                    </option>
+                                    <option value="KMF">
+                                        Comorian franc
+                                    </option>
+                                    <option value="KPW">
+                                        North Korean won
+                                    </option>
+                                    <option value="KRW">
+                                        South Korean won
+                                    </option>
+                                    <option value="KWD">
+                                        Kuwaiti dinar
+                                    </option>
+                                    <option value="KYD">
+                                        Cayman Islands dollar
+                                    </option>
+                                    <option value="KZT">
+                                        Kazakhstani tenge
+                                    </option>
+                                    <option value="LAK">Lao kip</option>
+                                    <option value="LBP">
+                                        Lebanese pound
+                                    </option>
+                                    <option value="LKR">
+                                        Sri Lankan rupee
+                                    </option>
+                                    <option value="LRD">
+                                        Liberian dollar
+                                    </option>
+                                    <option value="LSL">
+                                        Lesotho loti
+                                    </option>
+                                    <option value="LTL">
+                                        Lithuanian litas
+                                    </option>
+                                    <option value="LVL">
+                                        Latvian lats
+                                    </option>
+                                    <option value="LYD">
+                                        Libyan dinar
+                                    </option>
+                                    <option value="MAD">
+                                        Moroccan dirham
+                                    </option>
+                                    <option value="MDL">
+                                        Moldovan leu
+                                    </option>
+                                    <option value="MGA">
+                                        Malagasy ariary
+                                    </option>
+                                    <option value="MKD">
+                                        Macedonian denar
+                                    </option>
+                                    <option value="MMK">
+                                        Burmese kyat
+                                    </option>
+                                    <option value="MNT">
+                                        Mongolian tögrög
+                                    </option>
+                                    <option value="MOP">
+                                        Macanese pataca
+                                    </option>
+                                    <option value="MRO">
+                                        Mauritanian ouguiya
+                                    </option>
+                                    <option value="MUR">
+                                        Mauritian rupee
+                                    </option>
+                                    <option value="MVR">
+                                        Maldivian rufiyaa
+                                    </option>
+                                    <option value="MWK">
+                                        Malawian kwacha
+                                    </option>
+                                    <option value="MXN">
+                                        Mexican peso
+                                    </option>
+                                    <option value="MYR">
+                                        Malaysian ringgit
+                                    </option>
+                                    <option value="MZN">
+                                        Mozambican metical
+                                    </option>
+                                    <option value="NAD">
+                                        Namibian dollar
+                                    </option>
+                                    <option value="NGN">
+                                        Nigerian naira
+                                    </option>
+                                    <option value="NIO">
+                                        Nicaraguan córdoba
+                                    </option>
+                                    <option value="NOK">
+                                        Norwegian krone
+                                    </option>
+                                    <option value="NPR">
+                                        Nepalese rupee
+                                    </option>
+                                    <option value="NZD">
+                                        New Zealand dollar
+                                    </option>
+                                    <option value="OMR">Omani rial</option>
+                                    <option value="PAB">
+                                        Panamanian balboa
+                                    </option>
+                                    <option value="PEN">
+                                        Peruvian nuevo sol
+                                    </option>
+                                    <option value="PGK">
+                                        Papua New Guinean kina
+                                    </option>
+                                    <option value="PHP">
+                                        Philippine peso
+                                    </option>
+                                    <option value="PKR">
+                                        Pakistani rupee
+                                    </option>
+                                    <option value="PLN">
+                                        Polish złoty
+                                    </option>
+                                    <option value="PRB">
+                                        Transnistrian ruble
+                                    </option>
+                                    <option value="PYG">
+                                        Paraguayan guaraní
+                                    </option>
+                                    <option value="QAR">
+                                        Qatari riyal
+                                    </option>
+                                    <option value="RON">
+                                        Romanian leu
+                                    </option>
+                                    <option value="RSD">
+                                        Serbian dinar
+                                    </option>
+                                    <option value="RUB">
+                                        Russian ruble
+                                    </option>
+                                    <option value="RWF">
+                                        Rwandan franc
+                                    </option>
+                                    <option value="SAR">Saudi riyal</option>
+                                    <option value="SBD">
+                                        Solomon Islands dollar
+                                    </option>
+                                    <option value="SCR">
+                                        Seychellois rupee
+                                    </option>
+                                    <option value="SDG">
+                                        Singapore dollar
+                                    </option>
+                                    <option value="SEK">
+                                        Swedish krona
+                                    </option>
+                                    <option value="SGD">
+                                        Singapore dollar
+                                    </option>
+                                    <option value="SHP">
+                                        Saint Helena pound
+                                    </option>
+                                    <option value="SLL">
+                                        Sierra Leonean leone
+                                    </option>
+                                    <option value="SOS">
+                                        Somali shilling
+                                    </option>
+                                    <option value="SRD">
+                                        Surinamese dollar
+                                    </option>
+                                    <option value="SSP">
+                                        South Sudanese pound
+                                    </option>
+                                    <option value="STD">
+                                        São Tomé and Príncipe dobra
+                                    </option>
+                                    <option value="SVC">
+                                        Salvadoran colón
+                                    </option>
+                                    <option value="SYP">
+                                        Syrian pound
+                                    </option>
+                                    <option value="SZL">
+                                        Swazi lilangeni
+                                    </option>
+                                    <option value="THB">Thai baht</option>
+                                    <option value="TJS">
+                                        Tajikistani somoni
+                                    </option>
+                                    <option value="TMT">
+                                        Turkmenistan manat
+                                    </option>
+                                    <option value="TND">
+                                        Tunisian dinar
+                                    </option>
+                                    <option value="TOP">
+                                        Tongan paʻanga
+                                    </option>
+                                    <option value="TRY">
+                                        Turkish lira
+                                    </option>
+                                    <option value="TTD">
+                                        Trinidad and Tobago dollar
+                                    </option>
+                                    <option value="TWD">
+                                        New Taiwan dollar
+                                    </option>
+                                    <option value="TZS">
+                                        Tanzanian shilling
+                                    </option>
+                                    <option value="UAH">
+                                        Ukrainian hryvnia
+                                    </option>
+                                    <option value="UGX">
+                                        Ugandan shilling
+                                    </option>
+                                    <option value="USD">
+                                        United States dollar
+                                    </option>
+                                    <option value="UYU">
+                                        Uruguayan peso
+                                    </option>
+                                    <option value="UZS">
+                                        Uzbekistani som
+                                    </option>
+                                    <option value="VEF">
+                                        Venezuelan bolívar
+                                    </option>
+                                    <option value="VND">
+                                        Vietnamese đồng
+                                    </option>
+                                    <option value="VUV">
+                                        Vanuatu vatu
+                                    </option>
+                                    <option value="WST">Samoan tālā</option>
+                                    <option value="XAF">
+                                        Central African CFA franc
+                                    </option>
+                                    <option value="XCD">
+                                        East Caribbean dollar
+                                    </option>
+                                    <option value="XOF">
+                                        West African CFA franc
+                                    </option>
+                                    <option value="XPF">CFP franc</option>
+                                    <option value="YER">Yemeni rial</option>
+                                    <option value="ZAR">
+                                        South African rand
+                                    </option>
+                                    <option value="ZMW">
+                                        Zambian kwacha
+                                    </option>
+                                    <option value="ZWL">
+                                        Zimbabwean dollar
+                                    </option>
+                                </select>
+                            </div>
                         </div>
+                        <input class="form-control" type="text" id="money-input" />
                     </div>
                 </div>
-                <p class="line-h-15 mt-6 gray-text font-size-12">
-                    Help text goes here lorem ipsum dolor sit amet consectetur
-                    adipisci ngelit sed do eiusmod tempor incididu labore et
-                    dolore magna aliqua. Ut enim ad minim veniam quis nostrud
-                    exercitation ullamco.
-                </p>
-                <div class="d-flex money-list mt-9">
-                    <button
-                        class="gray-bg padding-2 radius-15 font-weight-bold gray-border"
-                        data-currency="USD"
-                        data-amount="10.000.35"
-                    >
-                        USD10,000.35
-                    </button>
-                    <button
-                        class="gray-bg padding-2 radius-15 font-weight-bold gray-border"
-                        data-currency="USD"
-                        data-amount="10"
-                    >
-                        USD10
-                    </button>
+            </div>
+            <p class="line-h-15 mt-6 gray-text font-size-12">
+                Help text goes here lorem ipsum dolor sit amet consectetur
+                adipisci ngelit sed do eiusmod tempor incididu labore et
+                dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                exercitation ullamco.
+            </p>
+            <div class="d-flex money-list mt-9">
+                <button class="gray-bg padding-2 radius-15 font-weight-bold gray-border" data-currency="USD"
+                    data-amount="10.000.35">
+                    USD10,000.35
+                </button>
+                <button class="gray-bg padding-2 radius-15 font-weight-bold gray-border" data-currency="USD"
+                    data-amount="10">
+                    USD10
+                </button>
 
-                    <button
-                        class="gray-bg padding-2 radius-15 font-weight-bold gray-border"
-                        data-currency="IDR"
-                        data-amount="10.000"
-                    >
-                        IDR10,000
-                    </button>
+                <button class="gray-bg padding-2 radius-15 font-weight-bold gray-border" data-currency="IDR"
+                    data-amount="10.000">
+                    IDR10,000
+                </button>
 
-                    <button
-                        class="gray-bg padding-2 radius-15 font-weight-bold gray-border"
-                        data-currency="USD"
-                        data-amount="100.000"
-                    >
-                        USD100,000
-                    </button>
-                    <button
-                        class="gray-bg padding-2 radius-15 font-weight-bold gray-border"
-                        data-currency="AED"
-                        data-amount="1.000"
-                    >
-                        AED1,000
-                    </button>
-                </div>
-                <p class="font-weight-bold sixteenpx line-h-15 mt-35">
-                    Which one do you choose?
-                </p>
-                <p class="line-h-15 gray-text font-size-12">
-                    Help text goes here lorem ipsum dolor sit amet consectetur
-                    adipisci ngelit sed do eiusmod tempor incididu labore et
-                    dolore magna aliqua. Ut enim ad minim veniam quis nostrud
-                    exercitation ullamco.
-                </p>
-                <div class="gray-bg gray-border radius-15 padding-3 mt-9">
-                    <p class="font-weight-bold line-h-15">
-                        Voting question goes here lorem ipsum dolor sit amet
-                        consectetur adip ngelit sed do eiusmod tempor incididu?
-                    </p>
-                    <div class="mt-9">
-                        <label class="radio-container">
-                            Option goes here lorem ipsum dolor sit amet
-                            consectetur adip ngelitsed do eiusmod tempor
-                            incididu
-                            <input type="radio" name="radio" />
-                            <span class="fake-radio"></span>
-                        </label>
-                        <label class="radio-container">
-                            Option goes here lorem ipsum dolor sit amet
-                            consectetur adip ngelitsed do eiusmod tempor
-                            incididu
-                            <input type="radio" name="radio" />
-                            <span class="fake-radio"></span>
-                        </label>
-                        <label class="radio-container">
-                            Option goes here lorem ipsum dolor sit amet
-                            consectetur adip ngelitsed do eiusmod tempor
-                            incididu
-                            <input type="radio" name="radio" />
-                            <span class="fake-radio"></span>
-                        </label>
-                        <label class="radio-container">
-                            Option goes here lorem ipsum dolor sit amet
-                            consectetur adip ngelitsed do eiusmod tempor
-                            incididu
-                            <input type="radio" name="radio" />
-                            <span class="fake-radio"></span>
-                        </label>
-                    </div>
-                </div>
-                <p class="font-weight-bold sixteenpx line-h-15 mt-35">
-                    Write your message
-                </p>
-                <p class="line-h-15 gray-text font-size-12 mt-9">
-                    Help text goes here lorem ipsum dolor sit amet consectetur
-                    adipisci ngelit sed do eiusmod tempor incididu labore et
-                    dolore magna aliqua. Ut enim ad minim veniam quis nostrud
-                    exercitation ullamco.
-                </p>
-                <textarea
-                    name=""
-                    id="message"
-                    rows="1"
-                    class="form-control mt-9"
-                ></textarea>
-                <div class="d-flex align-items-start mt-6">
-                    <p class="line-h-15 gray-text font-size-12 mr-3 break-word">
-                        Help text goes here lorem ipsum dolor sit amet
-                        consectetur adipisci ngelit sed do eiusmod tempor
-                        incididu labore et dolore magna aliqua. Ut enim ad minim
-                        veniam quis nostrud exercitation ullamco.
-                    </p>
-                    <p
-                        class="line-h-15 gray-text font-size-12"
-                        id="message-counter"
-                    >
-                        0/999
-                    </p>
-                </div>
-                <p class="font-weight-bold sixteenpx line-h-15 mt-35">
-                    Voice message
-                </p>
-                <p class="line-h-15 gray-text font-size-12">
-                    Help text goes here lorem ipsum dolor sit amet consectetur
-                    adipisci ngelit sed do eiusmod tempor incididu labore et
-                    dolore magna aliqua. Ut enim ad minim veniam quis nostrud
-                    exercitation ullamco.
-                </p>
-                <div class="gray-bg gray-border radius-15 padding-3 mt-10">
-                    <div class="d-flex align-items-center">
-                        <button class="icon">
-                            <i class="fa-solid fa-microphone-lines-slash"></i>
-                        </button>
-                        <span class="font-size-14">Minimum IDR10,000 </span>
-                    </div>
-                    <div class="d-flex align-items-center mt-11">
-                        <button class="icon">
-                            <i class="fa-solid fa-microphone-lines"></i>
-                        </button>
-                        <span class="font-size-14">Record your voice</span>
-                    </div>
-                    <div class="d-flex align-items-center mt-11">
-                        <button class="icon active">
-                            <i class="fa-solid fa-microphone-lines"></i>
-                        </button>
-                        <span class="font-size-14"
-                            >Now recording... (00:09)</span
-                        >
-                    </div>
-                    <div class="d-flex align-items-center mt-11">
-                        <button class="icon">
-                            <i class="fa-solid fa-microphone-lines"></i>
-                        </button>
-                        <span class="font-size-14">Re-record</span>
-                    </div>
-                    <div class="d-flex align-items-center mt-11">
-                        <button class="icon">
-                            <i class="fa-solid fa-play"></i>
-                        </button>
-                        <span class="font-size-14">Listen to message</span>
-                    </div>
-                    <div class="d-flex align-items-center mt-11">
-                        <button class="icon">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </button>
-                        <span class="font-size-14">Delete it</span>
-                    </div>
-                    <p class="line-h-15 gray-text font-size-12 mt-9">
-                        Help text goes here lorem ipsum dolor sit amet
-                        consectetur adipisci ngelit sed do eiusmod tempor
-                        incididu labore et dolore magna aliqua. Ut enim ad minim
-                        veniam quis nostrud exercitation ullamco.
-                    </p>
-                </div>
-                <p class="font-weight-bold sixteenpx line-h-15 mt-35">
-                    Add media
-                </p>
-                <p class="line-h-15 gray-text font-size-12">
-                    Help text goes here lorem ipsum dolor sit amet consectetur
-                    adipisci ngelit sed do eiusmod tempor incididu labore et
-                    dolore magna aliqua. Ut enim ad minim veniam quis nostrud
-                    exercitation ullamco.
+                <button class="gray-bg padding-2 radius-15 font-weight-bold gray-border" data-currency="USD"
+                    data-amount="100.000">
+                    USD100,000
+                </button>
+                <button class="gray-bg padding-2 radius-15 font-weight-bold gray-border" data-currency="AED"
+                    data-amount="1.000">
+                    AED1,000
+                </button>
+            </div>
+            <p class="font-weight-bold sixteenpx line-h-15 mt-35">
+                Which one do you choose?
+            </p>
+            <p class="line-h-15 gray-text font-size-12">
+                Help text goes here lorem ipsum dolor sit amet consectetur
+                adipisci ngelit sed do eiusmod tempor incididu labore et
+                dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                exercitation ullamco.
+            </p>
+            <div class="gray-bg gray-border radius-15 padding-3 mt-9">
+                <p class="font-weight-bold line-h-15">
+                    Voting question goes here lorem ipsum dolor sit amet
+                    consectetur adip ngelit sed do eiusmod tempor incididu?
                 </p>
                 <div class="mt-9">
                     <label class="radio-container">
-                        Option goes here lorem ipsum dolor sit amet consectetur
-                        adip ngelitsed do eiusmod tempor incididu
+                        Option goes here lorem ipsum dolor sit amet
+                        consectetur adip ngelitsed do eiusmod tempor
+                        incididu
                         <input type="radio" name="radio" />
                         <span class="fake-radio"></span>
                     </label>
                     <label class="radio-container">
-                        Option goes here lorem ipsum dolor sit amet consectetur
-                        adip ngelitsed do eiusmod tempor incididu
+                        Option goes here lorem ipsum dolor sit amet
+                        consectetur adip ngelitsed do eiusmod tempor
+                        incididu
+                        <input type="radio" name="radio" />
+                        <span class="fake-radio"></span>
+                    </label>
+                    <label class="radio-container">
+                        Option goes here lorem ipsum dolor sit amet
+                        consectetur adip ngelitsed do eiusmod tempor
+                        incididu
+                        <input type="radio" name="radio" />
+                        <span class="fake-radio"></span>
+                    </label>
+                    <label class="radio-container">
+                        Option goes here lorem ipsum dolor sit amet
+                        consectetur adip ngelitsed do eiusmod tempor
+                        incididu
                         <input type="radio" name="radio" />
                         <span class="fake-radio"></span>
                     </label>
                 </div>
-                <div class="gray-bg gray-border radius-15 padding-3 mt-11">
-                    <p class="font-weight-bold sixteenpx line-h-15">
-                        USD10,000.35 per second
-                    </p>
-                    <p>Max duration: 300 seconds</p>
-                    <p class="font-weight-bold sixteenpx line-h-15 mt-15">
-                        YouTube Video Link
-                    </p>
-                    <textarea
-                        name=""
-                        id="yt-link"
-                        rows="1"
-                        class="form-control mt-6"
-                    ></textarea>
-                    <p class="line-h-15 gray-text font-size-12 mt-6">
-                        Help text goes here lorem ipsum dolor sit amet
-                        consectetur adipisci ngelit sed do eiusmod tempor
-                        incididu labore et dolore magna aliqua. Ut enim ad minim
-                        veniam quis nostrud exercitation ullamco.
-                    </p>
-                    <p class="font-weight-bold sixteenpx line-h-15 mt-15">
-                        Video start time
-                    </p>
-                    <div class="time-input mt-6">
-                        <div>
-                            <label for="hour" class="font-size-14">Hours</label>
-                            <input
-                                type="number"
-                                id="hour"
-                                class="form-control"
-                                min="0"
-                            />
-                        </div>
-                        <div>
-                            <label for="minutes" class="font-size-14"
-                                >Minutes</label
-                            >
-                            <input
-                                type="number"
-                                id="minutes"
-                                class="form-control"
-                                min="0"
-                            />
-                        </div>
-                        <div>
-                            <label for="seconds" class="font-size-14"
-                                >Seconds</label
-                            >
-                            <input
-                                type="number"
-                                id="seconds"
-                                class="form-control"
-                                min="0"
-                            />
-                        </div>
-                    </div>
-                    <p class="line-h-15 gray-text font-size-12 mt-6">
-                        Help text goes here lorem ipsum dolor sit amet
-                        consectetur adipisci ngelit sed do eiusmod tempor
-                        incididu labore et dolore magna aliqua. Ut enim ad minim
-                        veniam quis nostrud exercitation ullamco.
-                    </p>
-                    <div class="d-flex justify-content-center mt-24 preview-container mb-10">
-                        <iframe
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                            class="preview"
-                            id="yt-preview"
-                        >
-                        </iframe>
-                    </div>
-                </div>
-                <div class="gray-bg gray-border radius-15 padding-3 mt-17">
-                    <button class="button-outline mt-15">Choose </button>
-                    <p class="text-center line-h-15">
-                        <span class="gray-text font-size-12 text-center">
-                            Powered by
-                            <a
-                                class="gray-text font-size-12"
-                                href="https://giphy.com/"
-                                target="_blank"
-                                >GIPHY</a
-                            >
-                        </span>
-                    </p>
-                    <div
-                        class="d-flex justify-content-center mt-24 preview-container mb-10"
-                    >
-                        <img
-                            class="preview"
-                            src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <form class="mt-35">
-                    <div>
-                        <label
-                            for=""
-                            class="font-weight-bold sixteenpx line-h-15 mb-0"
-                            >Your name</label
-                        >
-                        <input type="text" class="form-control mt-6" />
-                        <label
-                            class="checkbox-container-1 font-size-12 mt-9 mb-0"
-                        >
-                            Anonymous
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="mt-35">
-                        <label
-                            for=""
-                            class="font-weight-bold sixteenpx line-h-15 mb-0"
-                            >Your email</label
-                        >
-                        <input type="text" class="form-control mt-6" />
-                        <p class="line-h-15 gray-text font-size-12 mt-6">
-                            Help text goes here lorem ipsum dolor sit amet
-                            consectetur adipisci ngelit sed do eiusmod tempor
-                            incididu labore et dolore magna aliqua. Ut enim ad
-                            minim veniam quis nostrud exercitation ullamco.
-                        </p>
-                    </div>
-                    <div class="mt-35">
-                        <label class="checkbox-container-2 font-size-14 mb-0">
-                            I declare this transaction is purely my support for
-                            CreatorNameHere, it is non-refundable, and it is not
-                            for a commercial transaction.
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </form>
-            </section>
-            <button class="button-fill mt-24">
-                Choose payment method
-                <span><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
-        </main>
-        <footer class="bg-dark text-center py-5 ">
-            <div class="footer-wrapper">
-                <img src="./image/sociabuzz-logo-white.png" class="mb-4 mx-auto d-block" alt="footer image" />
-                <p class="mb-2">
-                    <a href="mailto:support@sociabuzz.com">Contact Us</a>
-                </p>
-                <p class="mb-2">
-                    <a href="https://sociabuzz.freshdesk.com" target="_blank">FAQ</a>
-                </p>
-                <p class="d-block mb-2">
-                    <a href="https://sociabuzz.com/info/terms" target="_blank">
-                        Terms of Use
-                    </a>
-                </p>
-    
-                <p class="d-block mb-4">
-                    <a href="https://sociabuzz.com/info/privacy" target="_blank">
-                        Privacy Policy
-                    </a>
-                </p>
-                <div class="socials mb-4">
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a href="">
-                    <a href="">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-discord"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-telegram"></i>
-                    </a>
-                </div>
-                <div class="select-wrapper">
-                    <p>Language</p>
-                    <div class="select-container">
-                        <select class="select2 select2-footer">
-                            <option value="AF" selected>
-                                Afrikaans
-                            </option>
-                            <option value="SQ">Albanian</option>
-                            <option value="AR">Arabic</option>
-                            <option value="HY">Armenian</option>
-                            <option value="EU">Basque</option>
-                            <option value="BN">Bengali</option>
-                            <option value="BG">
-                                Bulgarian
-                            </option>
-                            <option value="CA">Catalan</option>
-                            <option value="KM">
-                                Cambodian
-                            </option>
-                            <option value="ZH">
-                                Chinese (Mandarin)
-                            </option>
-                            <option value="HR">Croatian</option>
-                            <option value="CS">Czech</option>
-                            <option value="DA">Danish</option>
-                            <option value="NL">Dutch</option>
-                            <option value="EN">English</option>
-                            <option value="ET">Estonian</option>
-                            <option value="FJ">Fiji</option>
-                            <option value="FI">Finnish</option>
-                            <option value="FR">French</option>
-                            <option value="KA">Georgian</option>
-                            <option value="DE">German</option>
-                            <option value="EL">Greek</option>
-                            <option value="GU">Gujarati</option>
-                            <option value="HE">Hebrew</option>
-                            <option value="HI">Hindi</option>
-                            <option value="HU">
-                                Hungarian
-                            </option>
-                            <option value="IS">
-                                Icelandic
-                            </option>
-                            <option value="ID">
-                                Indonesian
-                            </option>
-                            <option value="GA">Irish</option>
-                            <option value="IT">Italian</option>
-                            <option value="JA">Japanese</option>
-                            <option value="JW">Javanese</option>
-                            <option value="KO">Korean</option>
-                            <option value="LA">Latin</option>
-                            <option value="LV">Latvian</option>
-                            <option value="LT">
-                                Lithuanian
-                            </option>
-                            <option value="MK">
-                                Macedonian
-                            </option>
-                            <option value="MS">Malay</option>
-                            <option value="ML">
-                                Malayalam
-                            </option>
-                            <option value="MT">Maltese</option>
-                            <option value="MI">Maori</option>
-                            <option value="MR">Marathi</option>
-                            <option value="MN">
-                                Mongolian
-                            </option>
-                            <option value="NE">Nepali</option>
-                            <option value="NO">
-                                Norwegian
-                            </option>
-                            <option value="FA">Persian</option>
-                            <option value="PL">Polish</option>
-                            <option value="PT">
-                                Portuguese
-                            </option>
-                            <option value="PA">Punjabi</option>
-                            <option value="QU">Quechua</option>
-                            <option value="RO">Romanian</option>
-                            <option value="RU">Russian</option>
-                            <option value="SM">Samoan</option>
-                            <option value="SR">Serbian</option>
-                            <option value="SK">Slovak</option>
-                            <option value="SL">
-                                Slovenian
-                            </option>
-                            <option value="ES">Spanish</option>
-                            <option value="SW">Swahili</option>
-                            <option value="SV">Swedish</option>
-                            <option value="TA">Tamil</option>
-                            <option value="TT">Tatar</option>
-                            <option value="TE">Telugu</option>
-                            <option value="TH">Thai</option>
-                            <option value="BO">Tibetan</option>
-                            <option value="TO">Tonga</option>
-                            <option value="TR">Turkish</option>
-                            <option value="UK">
-                                Ukrainian
-                            </option>
-                            <option value="UR">Urdu</option>
-                            <option value="UZ">Uzbek</option>
-                            <option value="VI">
-                                Vietnamese
-                            </option>
-                            <option value="CY">Welsh</option>
-                            <option value="XH">Xhosa</option>
-                        </select>
-                        <span class="arrow-icon">
-                            <i class="fas fa-chevron-down"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="comp-desc">
-                        <p class="font-weight-bold">
-                            SociaBuzz &copy; All Rights Reserved
-                        </p>
-                        <p class="comp-desc">
-                            Company: PT Komunika Lintas Maya | Address: Epiwalk 5th
-                            Floor 540A, Jl. HR. Rasuna Said, Jakarta 12940,
-                            Indonesia | Business Registration Number: 9120008622154
-                            | Electronic System Registration Number: 
-                            <a
-                                href="https://pse.kominfo.go.id/tdpse-detail/1062"
-                                target="_blank"
-                            >
-                                000781.01/DJAI.PSE/06/2021</a>
-                            | Email: info@sociabuzz.com | Support:
-                            support@sociabuzz.com
-                        </p>
-                    </div>
             </div>
-        </footer>
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-        <script src="./js/select2.full.min.js"></script>
-        <script>
-            $(".select2").select2();
-            $(".lang-select").select2({
-                dropdownCssClass: "navbar-dropdown",
-            });
-            $(".select2-footer").select2({
-                dropdownCssClass: "footer-dropdown",
-            });
+            <p class="font-weight-bold sixteenpx line-h-15 mt-35">
+                Write your message
+            </p>
+            <p class="line-h-15 gray-text font-size-12">
+                Help text goes here lorem ipsum dolor sit amet consectetur
+                adipisci ngelit sed do eiusmod tempor incididu labore et
+                dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                exercitation ullamco.
+            </p>
+            <textarea name="" id="message" rows="1" class="form-control mt-9"></textarea>
+            <div class="d-flex align-items-start mt-6">
+                <p class="line-h-15 gray-text font-size-12 mr-3 break-word">
+                    Help text goes here lorem ipsum dolor sit amet
+                    consectetur adipisci ngelit sed do eiusmod tempor
+                    incididu labore et dolore magna aliqua. Ut enim ad minim
+                    veniam quis nostrud exercitation ullamco.
+                </p>
+                <p class="line-h-15 gray-text font-size-12" id="message-counter">
+                    0 / 999
+                </p>
+            </div>
+            <p class="font-weight-bold sixteenpx line-h-15 mt-35">
+                Voice message
+            </p>
+            <p class="line-h-15 gray-text font-size-12">
+                Help text goes here lorem ipsum dolor sit amet consectetur
+                adipisci ngelit sed do eiusmod tempor incididu labore et
+                dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                exercitation ullamco.
+            </p>
+            <div class="gray-bg gray-border radius-15 padding-3 mt-10">
+                <div class="d-flex align-items-center">
+                    <button class="icon">
+                        <i class="fa-solid fa-microphone-lines-slash"></i>
+                    </button>
+                    <span class="font-size-14">Minimum IDR10,000 </span>
+                </div>
+                <div class="d-flex align-items-center mt-11">
+                    <button class="icon">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </button>
+                    <span class="font-size-14">Record your voice</span>
+                </div>
+                <div class="d-flex align-items-center mt-11">
+                    <button class="icon active">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </button>
+                    <span class="font-size-14">Now recording... (00:09)</span>
+                </div>
+                <div class="d-flex align-items-center mt-11">
+                    <button class="icon">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </button>
+                    <span class="font-size-14">Re-record</span>
+                </div>
+                <div class="d-flex align-items-center mt-11">
+                    <button class="icon">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <span class="font-size-14">Listen to message</span>
+                </div>
+                <div class="d-flex align-items-center mt-11">
+                    <button class="icon">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                    <span class="font-size-14">Delete it</span>
+                </div>
+                <p class="line-h-15 gray-text font-size-12 mt-9">
+                    Help text goes here lorem ipsum dolor sit amet
+                    consectetur adipisci ngelit sed do eiusmod tempor
+                    incididu labore et dolore magna aliqua. Ut enim ad minim
+                    veniam quis nostrud exercitation ullamco.
+                </p>
+            </div>
+            <p class="font-weight-bold sixteenpx line-h-15 mt-35">
+                Add media
+            </p>
+            <p class="line-h-15 gray-text font-size-12">
+                Help text goes here lorem ipsum dolor sit amet consectetur
+                adipisci ngelit sed do eiusmod tempor incididu labore et
+                dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                exercitation ullamco.
+            </p>
+            <div class="mt-9">
+                <label class="radio-container">
+                    Option goes here lorem ipsum dolor sit amet consectetur
+                    adip ngelitsed do eiusmod tempor incididu
+                    <input type="radio" name="radio" />
+                    <span class="fake-radio"></span>
+                </label>
+                <label class="radio-container">
+                    Option goes here lorem ipsum dolor sit amet consectetur
+                    adip ngelitsed do eiusmod tempor incididu
+                    <input type="radio" name="radio" />
+                    <span class="fake-radio"></span>
+                </label>
+            </div>
+            <div class="gray-bg gray-border radius-15 padding-3 mt-11">
+                <p class="font-weight-bold sixteenpx line-h-15">
+                    USD10,000.35 per second
+                </p>
+                <p>Max duration: 300 seconds</p>
+                <p class="font-weight-bold sixteenpx line-h-15 mt-15">
+                    YouTube Video Link
+                </p>
+                <textarea name="" id="yt-link" rows="1" class="form-control mt-6"></textarea>
+                <p class="line-h-15 gray-text font-size-12 mt-6">
+                    Help text goes here lorem ipsum dolor sit amet
+                    consectetur adipisci ngelit sed do eiusmod tempor
+                    incididu labore et dolore magna aliqua. Ut enim ad minim
+                    veniam quis nostrud exercitation ullamco.
+                </p>
+                <p class="font-weight-bold sixteenpx line-h-15 mt-15">
+                    Video start time
+                </p>
+                <div class="time-input mt-6">
+                    <div>
+                        <label for="hour" class="font-size-14">Hours</label>
+                        <input type="number" id="hour" class="form-control" min="0" />
+                    </div>
+                    <div>
+                        <label for="minutes" class="font-size-14">Minutes</label>
+                        <input type="number" id="minutes" class="form-control" min="0" />
+                    </div>
+                    <div>
+                        <label for="seconds" class="font-size-14">Seconds</label>
+                        <input type="number" id="seconds" class="form-control" min="0" />
+                    </div>
+                </div>
+                <p class="line-h-15 gray-text font-size-12 mt-6">
+                    Help text goes here lorem ipsum dolor sit amet
+                    consectetur adipisci ngelit sed do eiusmod tempor
+                    incididu labore et dolore magna aliqua. Ut enim ad minim
+                    veniam quis nostrud exercitation ullamco.
+                </p>
+                <div class="d-flex justify-content-center mt-24 preview-container mb-10">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class="preview" id="yt-preview">
+                    </iframe>
+                </div>
+            </div>
+            <div class="gray-bg gray-border radius-15 padding-3 mt-17">
+                <button class="button-outline mt-15" data-toggle="modal" data-target="#thumbnail-icon-modal">Choose
+                    GIF</button>
+                <p class="text-center line-h-15">
+                    <span class="gray-text font-size-12 text-center">
+                        Powered by
+                        <a class="gray-text font-size-12" href="https://giphy.com/" target="_blank">GIPHY</a>
+                    </span>
+                </p>
+                <div class="d-flex justify-content-center mt-24 preview-container mb-10">
+                    <img class="preview" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Pivot_Wave.gif"
+                        alt="" />
+                </div>
+            </div>
+            <form class="mt-35">
+                <div>
+                    <label for="" class="font-weight-bold sixteenpx line-h-15 mb-0">Your name</label>
+                    <input type="text" class="form-control mt-6" />
+                    <label class="checkbox-container-2 font-size-12 mt-9 mb-0">
+                        Anonymous
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="mt-35">
+                    <label for="" class="font-weight-bold sixteenpx line-h-15 mb-0">Your email</label>
+                    <input type="text" class="form-control mt-6" />
+                    <p class="line-h-15 gray-text font-size-12 mt-6">
+                        Help text goes here lorem ipsum dolor sit amet
+                        consectetur adipisci ngelit sed do eiusmod tempor
+                        incididu labore et dolore magna aliqua. Ut enim ad
+                        minim veniam quis nostrud exercitation ullamco.
+                    </p>
+                </div>
+                <div class="mt-35">
+                    <label class="checkbox-container-2 font-size-14 mb-0">
+                        I declare this transaction is purely my support for
+                        CreatorNameHere, it is non-refundable, and it is not
+                        for a commercial transaction.
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </form>
+        </section>
+        <button class="button-fill mt-24">
+            Choose payment method
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+    </main>
+    <footer class="bg-dark text-center py-5 ">
+        <div class="footer-wrapper">
+            <img src="./image/sociabuzz-logo-white.png" class="mb-4 mx-auto d-block" alt="footer image" />
+            <p class="mb-2">
+                <a href="mailto:support@sociabuzz.com">Contact Us</a>
+            </p>
+            <p class="mb-2">
+                <a href="https://sociabuzz.freshdesk.com" target="_blank">FAQ</a>
+            </p>
+            <p class="d-block mb-2">
+                <a href="https://sociabuzz.com/info/terms" target="_blank">
+                    Terms of Use
+                </a>
+            </p>
 
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
-            });
+            <p class="d-block mb-4">
+                <a href="https://sociabuzz.com/info/privacy" target="_blank">
+                    Privacy Policy
+                </a>
+            </p>
+            <div class="socials mb-4">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a href="">
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+            <div class="select-wrapper">
+                <p>Language</p>
+                <div class="select-container">
+                    <select class="select2 select2-footer">
+                        <option value="AF" selected>
+                            Afrikaans
+                        </option>
+                        <option value="SQ">Albanian</option>
+                        <option value="AR">Arabic</option>
+                        <option value="HY">Armenian</option>
+                        <option value="EU">Basque</option>
+                        <option value="BN">Bengali</option>
+                        <option value="BG">
+                            Bulgarian
+                        </option>
+                        <option value="CA">Catalan</option>
+                        <option value="KM">
+                            Cambodian
+                        </option>
+                        <option value="ZH">
+                            Chinese (Mandarin)
+                        </option>
+                        <option value="HR">Croatian</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finnish</option>
+                        <option value="FR">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="EL">Greek</option>
+                        <option value="GU">Gujarati</option>
+                        <option value="HE">Hebrew</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">
+                            Hungarian
+                        </option>
+                        <option value="IS">
+                            Icelandic
+                        </option>
+                        <option value="ID">
+                            Indonesian
+                        </option>
+                        <option value="GA">Irish</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="JW">Javanese</option>
+                        <option value="KO">Korean</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">
+                            Lithuanian
+                        </option>
+                        <option value="MK">
+                            Macedonian
+                        </option>
+                        <option value="MS">Malay</option>
+                        <option value="ML">
+                            Malayalam
+                        </option>
+                        <option value="MT">Maltese</option>
+                        <option value="MI">Maori</option>
+                        <option value="MR">Marathi</option>
+                        <option value="MN">
+                            Mongolian
+                        </option>
+                        <option value="NE">Nepali</option>
+                        <option value="NO">
+                            Norwegian
+                        </option>
+                        <option value="FA">Persian</option>
+                        <option value="PL">Polish</option>
+                        <option value="PT">
+                            Portuguese
+                        </option>
+                        <option value="PA">Punjabi</option>
+                        <option value="QU">Quechua</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="SM">Samoan</option>
+                        <option value="SR">Serbian</option>
+                        <option value="SK">Slovak</option>
+                        <option value="SL">
+                            Slovenian
+                        </option>
+                        <option value="ES">Spanish</option>
+                        <option value="SW">Swahili</option>
+                        <option value="SV">Swedish</option>
+                        <option value="TA">Tamil</option>
+                        <option value="TT">Tatar</option>
+                        <option value="TE">Telugu</option>
+                        <option value="TH">Thai</option>
+                        <option value="BO">Tibetan</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TR">Turkish</option>
+                        <option value="UK">
+                            Ukrainian
+                        </option>
+                        <option value="UR">Urdu</option>
+                        <option value="UZ">Uzbek</option>
+                        <option value="VI">
+                            Vietnamese
+                        </option>
+                        <option value="CY">Welsh</option>
+                        <option value="XH">Xhosa</option>
+                    </select>
+                    <span class="arrow-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="comp-desc">
+                <p class="font-weight-bold">
+                    SociaBuzz &copy; All Rights Reserved
+                </p>
+                <p class="comp-desc">
+                    Company: PT Komunika Lintas Maya | Address: Epiwalk 5th
+                    Floor 540A, Jl. HR. Rasuna Said, Jakarta 12940,
+                    Indonesia | Business Registration Number: 9120008622154
+                    | Electronic System Registration Number:
+                    <a href="https://pse.kominfo.go.id/tdpse-detail/1062" target="_blank">
+                        000781.01/DJAI.PSE/06/2021</a>
+                    | Email: info@sociabuzz.com | Support:
+                    support@sociabuzz.com
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./js/select2.full.min.js"></script>
+    <script>
+        
 
-            //when "tandai sudah dibaca" got clicked
-            $("#notification-dropdown").click(function (e) {
-                if ($(e.target).hasClass("read-notif")) {
-                    $(e.target).parent().parent().addClass("read");
-                    e.preventDefault();
-                    e.stopPropagation();
+        
+
+       
+
+        $('#thumbnail-icon-modal').on( 'shown.bs.modal', function() {
+            $('.grid').masonry({
+                itemSelector: '.grid-items',
+            });
+        });
+        
+
+        $(".select2").select2();
+        $(".lang-select").select2({
+            dropdownCssClass: "navbar-dropdown",
+        });
+        $(".select2-footer").select2({
+            dropdownCssClass: "footer-dropdown",
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
+        });
+
+        //when "tandai sudah dibaca" got clicked
+        $("#notification-dropdown").click(function (e) {
+            if ($(e.target).hasClass("read-notif")) {
+                $(e.target).parent().parent().addClass("read");
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        });
+        $(".loading-container").css("display", "none");
+        $(".abrev-lang-head").html($(".select2.lang").val());
+
+        $(".select2").on("select2:open", function (e) {
+            $(e.target).parent().toggleClass("rotate");
+        });
+        $(".select2").on("select2:close", function (e) {
+            $(e.target).parent().toggleClass("rotate");
+        });
+
+        $("textarea")
+            .each(function () {
+                this.setAttribute(
+                    "style",
+                    "height:" + this.scrollHeight + "px;overflow-y:hidden;"
+                );
+            })
+            .on("input", function () {
+                this.style.height = "auto";
+                this.style.height = this.scrollHeight + "px";
+                if (this.id === "message") {
+                    $("#message-counter").text(this.value.length + " " + " / 999");
+                } else if (this.id === "yt-link") {
+                    $("#yt-preview").attr(
+                        "src",
+                        "https://www.youtube.com/embed/" +
+                        ytIdParser(this.value)
+                    );
                 }
             });
-            $(".loading-container").css("display", "none");
+
+        $(".money-list button").click(function (e) {
+            $("#money-input").val($(e.currentTarget).attr("data-amount"));
+            $(".select2.currency").val(
+                $(e.currentTarget).attr("data-currency")
+            );
+            $(".select2.currency").trigger({ type: "select2:select", params: { data: { text: $(".select2.currency option:selected").text() } } });
+        });
+
+        window.addEventListener('resize', ()=> {
+            console.log("hie");
+        })
+
+        $(document).ready(function () {
+        $(window).trigger('resize');
+
+            $(".abrev-currency").html($(".select2.currency").val());
+            $(".select2.currency").trigger({ type: "select2:select", params: { data: { text: $(".select2.currency option:selected").text() } } });
+
             $(".abrev-lang-head").html($(".select2.lang").val());
+            $(".select2.lang").trigger({ type: "select2:select", params: { data: { text: $(".select2.lang option:selected").text() } } });
+        });
 
-            $(".select2").on("select2:open", function (e) {
-                $(e.target).parent().toggleClass("rotate");
-            });
-            $(".select2").on("select2:close", function (e) {
-                $(e.target).parent().toggleClass("rotate");
-            });
+        $(".select2.currency").on("select2:select", function (e) {
+            $(".abrev-currency").html($(".select2.currency").val());
+            $('#currency-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update').tooltip("hide");
+        });
 
-            $("textarea")
-                .each(function () {
-                    this.setAttribute(
-                        "style",
-                        "height:" + this.scrollHeight + "px;overflow-y:hidden;"
-                    );
-                })
-                .on("input", function () {
-                    this.style.height = "auto";
-                    this.style.height = this.scrollHeight + "px";
-                    if (this.id === "message") {
-                        $("#message-counter").text(this.value.length + "/999");
-                    } else if (this.id === "yt-link") {
-                        $("#yt-preview").attr(
-                            "src",
-                            "https://www.youtube.com/embed/" +
-                                ytIdParser(this.value)
-                        );
-                    }
-                });
+        $('.lang-select').on('select2:select', function (e) {
+            $(".abrev-lang-head").html($(".select2.lang").val());
+            $('#lang-head-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update').tooltip("hide");
+        })
 
-            $(".money-list button").click(function (e) {
-                $("#money-input").val($(e.currentTarget).attr("data-amount"));
-                $(".select2.currency").val(
-                    $(e.currentTarget).attr("data-currency")
-                );
-                $(".select2.currency").trigger({ type: "select2:select", params: {data: {text: $(".select2.currency option:selected").text()}}});
-            });
+        $('.clear-icon-search').click(function() {
+            console.log("he8");
+            $('#thumbnail_icon_search_input').val("");
+        })
+        
 
-            $(document).ready(function () {
-                $(".abrev-currency").html($(".select2.currency").val());
-                $(".select2.currency").trigger({ type: "select2:select", params: {data: {text: $(".select2.currency option:selected").text()}}});
+        function ytIdParser(url) {
+            var regExp =
+                /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+            var match = url.match(regExp);
+            return match && match[7].length == 11 ? match[7] : false;
+        }
 
-                $(".abrev-lang-head").html($(".select2.lang").val());
-                $(".select2.lang").trigger({ type: "select2:select", params: {data: {text: $(".select2.lang option:selected").text()}}});
-            });
-            
-            $(".select2.currency").on("select2:select", function (e) {
-                $(".abrev-currency").html($(".select2.currency").val());
-                $('#currency-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update').tooltip("hide");
-            });
+    </script>
+</body>
 
-            $('.lang-select').on('select2:select', function(e) {
-                $(".abrev-lang-head").html($(".select2.lang").val());
-                $('#lang-head-tooltip').attr('data-original-title', e.params.data.text).attr('data-original-title', e.params.data.text).tooltip('update').tooltip("hide");
-            })
-
-            function ytIdParser(url) {
-                var regExp =
-                    /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-                var match = url.match(regExp);
-                return match && match[7].length == 11 ? match[7] : false;
-            }
-
-        </script>
-    </body>
 </html>

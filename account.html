@@ -390,7 +390,7 @@
                                         aria-haspopup="true"
                                         aria-expanded="false"
                                         ><i class="fas fa-bars"> </i
-                                        ><span class="ml-2">Menu</span></a
+                                        ><span class="ml-2 menu-text">Menu</span></a
                                     >
                                     <div
                                         class="dropdown-menu dropdown-menu-right"
@@ -672,12 +672,17 @@
                                             class="sixteenpx label font-weight-bold"
                                             >Password
                                         </label>
-                                        <input
-                                            class="form-control"
-                                            id="password-input-modal"
-                                            value="lorem@email.com"
-                                            type="password"
-                                        />
+                                        <div class="pass-input">
+                                            <input
+                                                class="form-control"
+                                                value="lorem@email.com"
+                                                type="password"
+                                                name="password"
+                                            />
+                                            <button type="button" class="pass-switch">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -2165,13 +2170,18 @@
                                             ></span
                                         >
                                     </label>
-                                    <input
-                                        class="form-control"
-                                        readonly
-                                        value="lorem@email.com"
-                                        type="password"
-                                        name="password"
-                                    />
+                                    <div class="pass-input">
+                                        <input
+                                            class="form-control"
+                                            readonly
+                                            value="lorem@email.com"
+                                            type="password"
+                                            name="password"
+                                        />
+                                        <button type="button" class="pass-switch">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="sixteenpx label"

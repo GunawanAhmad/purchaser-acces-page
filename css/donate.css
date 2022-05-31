@@ -247,6 +247,16 @@ main {
 .money-list > button {
     margin-right: 9px;
     margin-bottom: 9px;
+    color: black;
+}
+
+.money-list > button:hover {
+    background-color: #e4e4e4;
+}
+
+#message-counter {
+    min-width: 55px;
+    text-align: right;
 }
 
 .radio-container {
@@ -430,6 +440,10 @@ main .icon.active {
     background-color: #ff0000;
 }
 
+input {
+    color: black !important ;
+}
+
 .time-input {
     display: flex;
     align-items: center;
@@ -490,6 +504,156 @@ main a:focus {
     color: #606060;
 }
 
+#thumbnail-icon-modal .modal-header {
+    padding: 0 1rem 0rem;
+}
+
+#thumbnail-icon-modal .modal-header p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+#thumbnail-icon-modal .modal-content {
+    padding: 2rem 1rem;
+}
+#thumbnail-icon-modal .search {
+    position: relative;
+    height: calc(2.25rem + 2px);
+}
+#thumbnail-icon-modal .search .icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #c2c2c2;
+}
+#thumbnail-icon-modal .modal-dialog {
+    max-width: 700px;
+}
+#thumbnail-icon-modal .search input {
+    position: absolute;
+    height: 100%;
+    border-radius: 20px !important;
+    width: 100%;
+    padding: 0;
+    padding-left: 2rem;
+    line-height: normal;
+}
+#thumbnail-icon-modal .search input:placeholder-shown + .clear-icon-search {
+    visibility: hidden;
+}
+#thumbnail-icon-modal .search .clear-icon-search {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #c2c2c2;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    visibility: visible;
+}
+#thumbnail-icon-modal .icons-wrapper {
+    position: relative !important;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.icons-wrapper .grid-items {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 33%;
+    overflow: hidden;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.icons-wrapper .grid-items img {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+}
+#thumbnail-icon-modal .icons-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+#thumbnail-icon-modal .icons-wrapper::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: #ccc;
+}
+#thumbnail-icon-modal .icons-wrapper::-webkit-scrollbar-thumb {
+    background: #888787;
+    border-radius: 15px;
+}
+#thumbnail-icon-modal .icons-wrapper .icon-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #000;
+    grid-column: span 1;
+    padding-bottom: 95%;
+}
+#thumbnail-icon-modal .icons-wrapper .icon-container .inner-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #c2c2c2;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+}
+#thumbnail-icon-modal .icons-wrapper .icon-container .inner-container:hover {
+    border: 1px solid #c2c2c2;
+}
+#thumbnail-icon-modal .icons-wrapper .icon-container .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 0;
+}
+
+.modal-heading h2 {
+    font-weight: 700;
+}
+
+.modal-content {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.modal-body {
+    padding: 0 1rem 1rem;
+}
+
+.modal form label {
+    font-weight: 700;
+}
+.modal {
+    overflow: auto !important;
+}
+
+.modal-dialog {
+    justify-content: center;
+}
+
 @media (max-width: 500px) {
     .time-input > div {
         flex-direction: column;
@@ -507,5 +671,13 @@ main a:focus {
     .padding-1 {
         padding-left: 14px;
         padding-right: 14px;
+    }
+
+    .icons-wrapper .grid-items {
+        width: 50%;
+    }
+
+    #thumbnail-icon-modal .icons-wrapper {
+        max-height: 350px;
     }
 }

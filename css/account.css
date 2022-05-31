@@ -119,6 +119,26 @@ body {
     }
 }
 
+.pass-input {
+    position: relative;
+}
+
+.pass-input input {
+    padding-right: 2.5rem;
+}
+
+.pass-input button {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: #959595;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -155,8 +175,8 @@ main .content-wrapper.hide {
 }
 
 .profile-section.section {
-    padding: 42px 28px;
-    padding-top: 28px;
+    padding: 26px;
+    padding-bottom: 42px;
 }
 
 .user-image-wrapper {
@@ -478,6 +498,11 @@ input[readonly] {
     top: 5px;
     bottom: 5px;
     width: 100%;
+}
+
+.flag.flag-np::before {
+    top: 2px;
+    bottom: 1px;
 }
 
 .form-group .select-container.rotate::after {

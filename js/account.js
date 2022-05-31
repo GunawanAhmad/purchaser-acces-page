@@ -217,3 +217,15 @@ $(".lang-select").on("select2:select", function (e) {
         .tooltip("update")
         .tooltip("hide");
 });
+
+$(".pass-switch").click(function (e) {
+    e.preventDefault();
+    var input = $(this).parent().find("input");
+    if (input.attr("type") === "password") {
+        input.attr("type", "text");
+        $(this).html('<i class="fa-solid fa-eye-slash"></i>');
+    } else {
+        input.attr("type", "password");
+        $(this).html('<i class="fa-solid fa-eye"></i>');
+    }
+});
