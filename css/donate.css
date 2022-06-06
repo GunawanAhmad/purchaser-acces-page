@@ -308,63 +308,15 @@ main {
 
 /* custom chechbox */
 
-.checkbox-container-1 {
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    color: #606060;
-}
-
-.checkbox-container-1 input {
-    opacity: 0;
-}
-
-.checkbox-container-1 .checkmark {
-    position: absolute;
-    left: 0;
-    top: -1px;
-    height: 100%;
-    width: 20px;
-    border: 1px solid #b8b8b8;
-    background: transparent;
-    border-radius: 5px;
-    height: 20px;
-}
-
-.checkbox-container-1 .checkmark::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    height: 0px;
-    width: 0px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    transition: all 150ms ease;
-    opacity: 0;
-    background-color: transparent;
-}
-
-.checkbox-container-1 input:checked ~ .checkmark::before {
-    height: 50%;
-    width: 30%;
-    opacity: 1;
-}
-
-.checkbox-container-1 input:disabled ~ .checkmark::before {
-    opacity: 0.7;
-}
-
-.checkbox-container-1 input:disabled ~ .checkmark {
-    opacity: 0.7;
-}
-
 .checkbox-container-2 {
     position: relative;
     padding-left: 28px;
     cursor: pointer;
     color: black;
+}
+
+.checkbox-container-2.anonim .checkmark {
+    top: -1px;
 }
 
 .checkbox-container-2 input {
@@ -374,7 +326,7 @@ main {
 .checkbox-container-2 .checkmark {
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 1px;
     height: 100%;
     width: 20px;
     border: 1px solid #b8b8b8;
