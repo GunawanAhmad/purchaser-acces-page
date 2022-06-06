@@ -223,9 +223,9 @@ $(".pass-switch").click(function (e) {
     var input = $(this).parent().find("input");
     if (input.attr("type") === "password") {
         input.attr("type", "text");
-        $(this).html('<i class="fa-solid fa-eye-slash"></i>');
+        $(this).html('<i class="fa-solid fa-eye"></i>');
     } else {
         input.attr("type", "password");
-        $(this).html('<i class="fa-solid fa-eye"></i>');
+        $(this).html('<i class="fa-solid fa-eye-slash"></i>');
     }
 });
