@@ -44,6 +44,7 @@ header.hide {
 .dropdown-menu.notification {
     min-width: 18rem;
     padding: 1rem 0;
+    max-height: 405px;
 }
 
 .dropdown-item .text {

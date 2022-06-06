@@ -12,6 +12,23 @@ main {
     margin-bottom: 5rem;
 }
 
+#donateModal .modal-dialog {
+    max-width: 660px !important;
+}
+
+#donateModal {
+    padding-right: 0 !important;
+    z-index: 1049 !important;
+}
+
+#donateModal textarea {
+    height: auto !important;
+}
+
+#donateModal .checkbox-container-2 {
+    font-weight: 400;
+}
+
 .main-img {
     margin: 0 auto;
     height: 91px;
@@ -43,7 +60,7 @@ main {
 }
 
 .gray-bg {
-    background-color: #f5f5f5;
+    background: #f5f5f5 !important;
 }
 
 .padding-1 {
@@ -100,6 +117,10 @@ main {
 
 .mt-11 {
     margin-top: 11px;
+}
+
+.mr-12 {
+    margin-right: 12px;
 }
 
 .mt-15 {
@@ -316,7 +337,7 @@ main {
 }
 
 .checkbox-container-2.anonim .checkmark {
-    top: -1px;
+    top: -2px;
 }
 
 .checkbox-container-2 input {
@@ -456,6 +477,10 @@ main a:focus {
     color: #606060;
 }
 
+#thumbnail-icon-modal {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 #thumbnail-icon-modal .modal-header {
     padding: 0 1rem 0rem;
 }
@@ -577,6 +602,11 @@ main a:focus {
     line-height: normal;
 }
 
+.abrev-currency {
+    word-break: normal;
+    max-width: 100px;
+}
+
 .modal-header {
     border-bottom: none;
     padding: 0;
@@ -606,6 +636,35 @@ main a:focus {
     justify-content: center;
 }
 
+.modal-user-info img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.unit-counter {
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: space-between;
+    border: 1px solid #b8b8b8;
+}
+
+.unit-counter > * {
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-weight: 1rem;
+    padding: 0;
+}
+.unit-counter button {
+    font-size: 1.5rem;
+}
+
 @media (max-width: 500px) {
     .time-input > div {
         flex-direction: column;
@@ -616,6 +675,18 @@ main a:focus {
     .time-input label {
         margin-right: 0;
         margin-bottom: 1px;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal-user-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+    }
+
+    .unit-counter {
+        margin-top: 9px;
     }
 }
 
