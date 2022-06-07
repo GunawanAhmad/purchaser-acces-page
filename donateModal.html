@@ -914,26 +914,14 @@
                                         </button>
                                         <span class="font-size-14" id="record-text" data-state="start">Record your voice</span>
                                     </div>
-                                    <div class="d-flex align-items-center mt-11">
-                                        <button class="icon active">
-                                            <i class="fa-solid fa-microphone-lines"></i>
-                                        </button>
-                                        <span class="font-size-14">Now recording... (00:09)</span>
-                                    </div>
-                                    <div class="d-flex align-items-center mt-11">
-                                        <button class="icon">
-                                            <i class="fa-solid fa-microphone-lines"></i>
-                                        </button>
-                                        <span class="font-size-14">Re-record</span>
-                                    </div>
-                                    <div class="d-flex align-items-center mt-11">
+                                    <div class="d-flex align-items-center mt-11 hide">
                                         <button class="icon" id="listen-btn">
                                             <i class="fa-solid fa-play"></i>
                                         </button>
                                         <span class="font-size-14">Listen to message</span>
                                     </div>
-                                    <div class="d-flex align-items-center mt-11">
-                                        <button class="icon">
+                                    <div class="d-flex align-items-center mt-11 hide">
+                                        <button class="icon" id="deleteAudio-btn">
                                             <i class="fa-solid fa-trash-can"></i>
                                         </button>
                                         <span class="font-size-14">Delete it</span>
@@ -1235,6 +1223,7 @@
             </div>
         </div>
     </footer>
+    <audio src="" id="audioDOM"></audio>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -1362,7 +1351,120 @@
             return match && match[7].length == 11 ? match[7] : false;
         }
 
+        const recordAudio = () => {
+            return new Promise(resolve => {
+                navigator.mediaDevices.getUserMedia({ audio: true })
+                    .then(stream => {
+                        const mediaRecorder = new MediaRecorder(stream);
+                        const audioChunks = [];
 
+                        mediaRecorder.addEventListener("dataavailable", event => {
+                            audioChunks.push(event.data);
+                        });
+
+                        const start = () => {
+                            mediaRecorder.start();
+                        };
+
+                        const stop = () => {
+                            return new Promise(resolve => {
+                                mediaRecorder.addEventListener("stop", () => {
+                                    const audioBlob = new Blob(audioChunks);
+                                    const audioUrl = URL.createObjectURL(audioBlob);
+                                    const audio = new Audio(audioUrl);
+                                    const play = () => {
+                                        audio.play();
+                                    };
+
+                                    resolve({ audioBlob, audioUrl, play });
+                                });
+
+                                mediaRecorder.stop();
+                            });
+                        };
+
+                        resolve({ start, stop });
+                    });
+            });
+        };
+
+        let recorder = null;
+        let audioData = null;
+        let recordBtn = $('#record-btn');
+        let recordText = $('#record-text');
+        let listenBtn = $('#listen-btn');
+        let deleteAudioBtn = $('#deleteAudio-btn');
+        let rerecordBtn = $('#rerecord-btn');
+        let audioDom = $('#audioDOM');
+        async function waitUntil(recorder) {
+            return await new Promise(resolve => {
+                let times = 6;
+                const interval = setInterval(() => {
+                    times = times - 1;
+                    recordText.text('Now recording... (00:0' + times + ')');
+                    recordBtn.addClass('active');
+                    if (times === 0) {
+                        resolve('foo');
+                        clearInterval(interval);
+                        recorder.stop().then(audio => {
+                            recordBtn.prop('disabled', false);
+                            listenBtn.parent().removeClass('hide');
+                            rerecordBtn.parent().removeClass('hide');
+                            deleteAudioBtn.parent().removeClass('hide');
+                            recordBtn.removeClass('active')
+                            recordText.text('Re-record voice')
+                            audioData = audio;
+                            audioDom.attr("src", audio.audioUrl);
+                        }).catch(err => {
+                            console.log(err);
+                            recordBtn.prop('disabled', false);
+                        })
+
+                    };
+                }, 1000);
+            });
+        }
+
+        async function audio() {
+            recorder = await recordAudio();
+            recorder.start();
+            await waitUntil(recorder);
+        };
+
+        audioDom.on('ended', function() {
+            listenBtn.html('<i class="fa-solid fa-play"></i>')
+            console.log("finish");
+            listenBtn.removeClass('active')
+        });
+        deleteAudioBtn.click(function() {
+            audioDom.attr("src", audio.audioUrl);
+            recordText.text('Record your voice');
+            listenBtn.parent().addClass('hide')
+            deleteAudioBtn.parent().addClass('hide')
+        })
+
+        listenBtn.click(()=> {
+            if(listenBtn.hasClass('active')) {
+                listenBtn.removeClass('active');
+                listenBtn.html('<i class="fa-solid fa-play"></i>');
+                document.getElementById("audioDOM").pause();
+            } else {
+                listenBtn.addClass('active')
+                listenBtn.html('<i class="fa-solid fa-pause"></i>')
+                document.getElementById("audioDOM").play()
+            }
+        });
+
+        recordBtn.click((e) => {
+            e.preventDefault();
+            recordBtn.prop('disabled', true);
+            listenBtn.parent().addClass('hide');
+            rerecordBtn.parent().addClass('hide');
+            deleteAudioBtn.parent().addClass('hide');
+            recordBtn.addClass('active');
+            audio();
+            return false;
+        });
 
     </script>
 </body>
