@@ -716,4 +716,8 @@ main a:focus {
     #thumbnail-icon-modal .icons-wrapper {
         max-height: 350px;
     }
+
+    #donateModal .modal-body {
+        padding: 0 4px !important;
+    }
 }
