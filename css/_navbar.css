@@ -36,7 +36,7 @@ header.hide {
     max-width: 270px;
     min-width: 215px;
     border: 1px solid #d9d9d9;
-    height: 100vh;
+    height: calc(100vh - 50px);
     max-height: 380px;
     overflow-y: auto;
 }
@@ -197,7 +197,7 @@ ul.nav-tabs {
 }
 
 .menu-text {
-    max-width: 80px;
+    max-width: 72px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -282,6 +282,10 @@ ul.nav-tabs {
     .dropdown-menu {
         right: 1rem;
         top: auto;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 0;
     }
 
     .dropdown-menu.notification {

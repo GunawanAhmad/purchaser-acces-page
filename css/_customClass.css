@@ -168,7 +168,7 @@ a.btn.btn-primary {
 }
 .btn-fill-light {
     background: rgb(223, 251, 223);
-    border-radius: 3rem;
+    border-radius: 30px;
     min-height: unset;
     padding: 12px 0.75rem;
     color: var(--green-color) !important;

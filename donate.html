@@ -30,7 +30,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <p class="font-weight-bold twelvepx">Pilih icon</p>
+                    <p class="font-weight-bold twelvepx">Search GIF</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -925,21 +925,21 @@
                 dolore magna aliqua. Ut enim ad minim veniam quis nostrud
                 exercitation ullamco.
             </p>
-            <div class="mt-9">
-                <label class="radio-container">
+            <div class="mt-9 select-media">
+                <label class="radio-container ">
                     Option goes here lorem ipsum dolor sit amet consectetur
                     adip ngelitsed do eiusmod tempor incididu
-                    <input type="radio" name="radio" />
+                    <input type="radio" name="radio-media" value="youtube"/>
                     <span class="fake-radio"></span>
                 </label>
                 <label class="radio-container">
                     Option goes here lorem ipsum dolor sit amet consectetur
                     adip ngelitsed do eiusmod tempor incididu
-                    <input type="radio" name="radio" />
+                    <input type="radio" name="radio-media" value="gif"/>
                     <span class="fake-radio"></span>
                 </label>
             </div>
-            <div class="gray-bg gray-border radius-15 padding-3 mt-11">
+            <div class="gray-bg gray-border radius-15 padding-3 mt-11 youtube-section">
                 <p class="font-weight-bold sixteenpx line-h-15">
                     USD10,000.35 per second
                 </p>
@@ -982,7 +982,7 @@
                     </iframe>
                 </div>
             </div>
-            <div class="gray-bg gray-border radius-15 padding-3 mt-17">
+            <div class="gray-bg gray-border radius-15 padding-3 mt-17 gif-section">
                 <button class="button-outline mt-15" data-toggle="modal" data-target="#thumbnail-icon-modal">Choose
                     GIF</button>
                 <p class="text-center line-h-15">
@@ -1032,7 +1032,7 @@
             <span><i class="fa-solid fa-arrow-right"></i></span>
         </button>
     </main>
-    <audio src="" id="audioDOM" ></audio>
+    <audio src="" id="audioDOM"></audio>
     <footer class="bg-dark text-center py-5 ">
         <div class="footer-wrapper">
             <img src="./image/sociabuzz-logo-white.png" class="mb-4 mx-auto d-block" alt="footer image" />
@@ -1215,8 +1215,18 @@
     <script>
 
 
-
-
+        
+        $('.youtube-section').hide()
+        $('.gif-section').hide()
+        $('input[type=radio][name=radio-media]').change(function() {
+            if(this.value === "youtube") {
+                $('.youtube-section').show()
+                $('.gif-section').hide()
+            } else {
+                $('.youtube-section').hide()
+                $('.gif-section').show()
+            }
+        });
 
 
         $('#thumbnail-icon-modal').on('shown.bs.modal', function () {
@@ -1371,10 +1381,11 @@
         let deleteAudioBtn = $('#deleteAudio-btn');
         let rerecordBtn = $('#rerecord-btn');
         let audioDom = $('#audioDOM');
+        let interval = null
         async function waitUntil(recorder) {
             return await new Promise(resolve => {
                 let times = 6;
-                const interval = setInterval(() => {
+                interval = setInterval(() => {
                     times = times - 1;
                     recordText.text('Now recording... (00:0' + times + ')');
                     recordBtn.addClass('active');
@@ -1382,17 +1393,9 @@
                         resolve('foo');
                         clearInterval(interval);
                         recorder.stop().then(audio => {
-                            recordBtn.prop('disabled', false);
-                            listenBtn.parent().removeClass('hide');
-                            rerecordBtn.parent().removeClass('hide');
-                            deleteAudioBtn.parent().removeClass('hide');
-                            recordBtn.removeClass('active')
-                            recordText.text('Re-record voice')
-                            audioData = audio;
-                            audioDom.attr("src", audio.audioUrl);
+                            stop(audio)
                         }).catch(err => {
                             console.log(err);
-                            recordBtn.prop('disabled', false);
                         })
 
                     };
@@ -1401,25 +1404,26 @@
         }
 
         async function audio() {
+            console.log('hei');
             recorder = await recordAudio();
             recorder.start();
             await waitUntil(recorder);
         };
 
-        audioDom.on('ended', function() {
+        audioDom.on('ended', function () {
             listenBtn.html('<i class="fa-solid fa-play"></i>')
             console.log("finish");
             listenBtn.removeClass('active')
         });
-        deleteAudioBtn.click(function() {
+        deleteAudioBtn.click(function () {
             audioDom.attr("src", audio.audioUrl);
             recordText.text('Record your voice');
             listenBtn.parent().addClass('hide')
             deleteAudioBtn.parent().addClass('hide')
         })
 
-        listenBtn.click(()=> {
-            if(listenBtn.hasClass('active')) {
+        listenBtn.click(() => {
+            if (listenBtn.hasClass('active')) {
                 listenBtn.removeClass('active');
                 listenBtn.html('<i class="fa-solid fa-play"></i>');
                 document.getElementById("audioDOM").pause();
@@ -1430,15 +1434,33 @@
             }
         });
 
+        function stop(audio) {
+            recordBtn.prop('disabled', false);
+            listenBtn.parent().removeClass('hide');
+            rerecordBtn.parent().removeClass('hide');
+            deleteAudioBtn.parent().removeClass('hide');
+            recordBtn.removeClass('active')
+            recordText.text('Re-record voice')
+            audioData = audio;
+            audioDom.attr("src", audio.audioUrl);
+        }
+
         recordBtn.click((e) => {
             e.preventDefault();
-            recordBtn.prop('disabled', true);
-            listenBtn.parent().addClass('hide');
-            rerecordBtn.parent().addClass('hide');
-            deleteAudioBtn.parent().addClass('hide');
-            recordBtn.addClass('active');
-            audio();
-            return false;
+            if (recordBtn.hasClass('active')) {
+                clearInterval(interval)
+                recorder.stop().then(audio => {
+                   stop(audio);
+                }).catch(err => {
+                    console.log(err);
+                })
+            } else {
+                listenBtn.parent().addClass('hide');
+                rerecordBtn.parent().addClass('hide');
+                deleteAudioBtn.parent().addClass('hide');
+                recordBtn.addClass('active');
+                audio();
+            }
         });
 
     </script>

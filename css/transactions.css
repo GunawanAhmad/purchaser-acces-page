@@ -109,8 +109,12 @@ table tr {
     display: flex;
     align-items: flex-start;
     font-size: 1rem;
-    flex: 1 1 50%;
-    min-width: 50%;
+    flex: 1 1 40%;
+    min-width: 40%;
+}
+
+.content:nth-child(odd) {
+    margin-right: 1rem;
 }
 
 .content > div {
@@ -131,7 +135,7 @@ table tr {
 
 .content .info-icon {
     color: #e5e5e5;
-    margin-left: 6px;
+    margin-left: 3px;
     background: none;
     outline: none;
     border: none;
@@ -140,6 +144,7 @@ table tr {
 
 table .money-amount {
     margin-bottom: 1px;
+    word-break: normal;
 }
 
 .money-amount.break {
@@ -388,6 +393,10 @@ table .content-desc {
     }
     .filter-container > div {
         flex: inherit;
+    }
+
+    .content:nth-child(odd) {
+        margin-right: 0rem;
     }
 
     .search,
