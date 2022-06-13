@@ -1564,6 +1564,7 @@ main {
 
 textarea {
     height: auto;
+    min-height: 36px !important;
 }
 
 #donateModal .checkbox-container-2 {
