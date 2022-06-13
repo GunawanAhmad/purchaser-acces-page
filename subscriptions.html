@@ -499,7 +499,7 @@
                             type="text"
                             class="form-control tenpx"
                             placeholder="Search"
-                            id="thumbnail_icon_search_input"
+                            id="search_input"
                         />
                         <button class="clear-icon-search">
                             <i class="fas fa-times"></i>
@@ -920,6 +920,17 @@
             crossorigin="anonymous"
         ></script>
         <script src="./js/select2.full.min.js"></script>
-        <script src="./js/items.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".select2").select2();
+            });
+    
+            //clear search input
+            $(".clear-icon-search").click(function (e) {
+                $("#search_input").val("");
+            });
+    
+        </script>
+        <script src="./js/navbarAndFooter.js"></script>
     </body>
 </html>

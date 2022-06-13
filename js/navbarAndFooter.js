@@ -18,7 +18,6 @@ $(document).ready(function () {
             e.stopPropagation();
         }
     });
-    $(".loading-container").css("display", "none");
     $(".abrev-lang-head").html($(".lang").val());
     $(".lang-select").change(function (e) {
         $(".abrev-lang-head").html(e.target.value);
@@ -28,6 +27,19 @@ $(document).ready(function () {
             "Language: " + title
         );
         e.preventDefault();
+    });
+
+    $(".select2.lang").trigger({
+        type: "select2:select",
+        params: { data: { text: $(".select2.lang option:selected").text() } },
+    });
+    $(".lang-select").on("select2:select", function (e) {
+        $(".abrev-lang-head").html($(".select2.lang").val());
+        $("#lang-head-tooltip")
+            .attr("data-original-title", e.params.data.text)
+            .attr("data-original-title", e.params.data.text)
+            .tooltip("update")
+            .tooltip("hide");
     });
 
     $(".select2").on("select2:open", function (e) {
@@ -44,13 +56,4 @@ $(document).ready(function () {
         type: "select2:select",
         params: { data: { text: $(".select2.lang option:selected").text() } },
     });
-});
-
-$(".lang-select").on("select2:select", function (e) {
-    $(".abrev-lang-head").html($(".select2.lang").val());
-    $("#lang-head-tooltip")
-        .attr("data-original-title", e.params.data.text)
-        .attr("data-original-title", e.params.data.text)
-        .tooltip("update")
-        .tooltip("hide");
 });

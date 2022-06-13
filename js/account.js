@@ -154,13 +154,6 @@ function profileSection() {
                     ") "
             );
         });
-
-        $(".select2").on("select2:open", function (e) {
-            $(e.target).parent().toggleClass("rotate");
-        });
-        $(".select2").on("select2:close", function (e) {
-            $(e.target).parent().toggleClass("rotate");
-        });
     });
 }
 
